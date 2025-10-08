@@ -1,4 +1,19 @@
 export default function About() {
+  const cards = [
+    {
+      title: "Our Vision",
+      desc: `To be the most trusted and technology-driven logistics and container depot company in 
+Indonesia, delivering efficiency and reliability for global and domestic trade.`,
+    },
+    {
+      title: "Our Mission",
+      desc: `• Provide professional and customer-oriented container services
+• Continuously innovate with in-house
+• Expand nationwide coverage to support Indonesia's growing logistics sector
+• Create sustainable growth that benefits our partners, employees, and industry`,
+    },
+  ];
+
   return (
     <>
       {/* Hero Section About */}
@@ -25,6 +40,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* Who We Are Section */}
       <section className="w-full py-20 px-6 md:px-20 bg-gray-100">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
           {/* Left: Text */}
@@ -49,68 +65,52 @@ export default function About() {
           </div>
 
           {/* Right: Image */}
-          <div className="flex-1 w-full ml-64">
+          <div className="flex-1 w-full md:ml-20">
             <img
               src="/assets/content-who.jpg"
               alt="Who We Are"
-              className="w-75 h-75 rounded-xl shadow-md object-cover"
+              className="w-full h-auto rounded-xl shadow-md object-cover"
             />
           </div>
         </div>
       </section>
 
-      const cards = [
-    {
-      title: "Our Vision",
-      desc: `To be the most trusted and technology-driven logistics and container depot company in 
-Indonesia, delivering efficiency and reliability for global and domestic trade.`,
-    },
-    {
-      title: "Our Mission",
-      desc: `• Provide professional and customer-oriented container services
-• Continuously innovate with in-house
-• Expand nationwide coverage to support Indonesia's growing logistics sector
-• Create sustainable growth that benefits our partners, employees, and industry`,
-    },
-  ];
-
-  return (
-    <section className="w-full py-20 px-6 md:px-20 bg-white">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
-        {/* Left: Text */}
-        <div className="flex-1 text-left">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6" style={{ color: "#DA1D2C" }}>
-            What Drives Us
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
-            Our journey has always been 
-            guided by more than just 
-            operations it is about building
-            trust, delivering consistency,
-            and embracing innovation.
-            Logistics is the backbone of
-            trade, and we see our role as
-            more than moving containers; we
-            help connect businesses,
-            industries, and communities
-            across Indonesia.
-          </p>
-        </div>
-
-        {/* Right: Cards */}
-        <div className="flex-1 grid grid-cols-1 gap-6">
-          {cards.map((card, idx) => (
-            <div
-              key={idx}
-              className="bg-gray-50 rounded-xl shadow-md p-6 border-b-4 border-[#000065] flex flex-col gap-4"
+      {/* What Drives Us Section */}
+      <section className="w-full py-20 px-6 md:px-20 bg-white">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
+          {/* Left: Text */}
+          <div className="flex-1 text-left">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"
+              style={{ color: "#DA1D2C" }}
             >
-              <h3 className="text-xl font-bold">{card.title}</h3>
-              <p className="text-sm sm:text-base md:text-base text-gray-700 whitespace-pre-line">{card.desc}</p>
-            </div>
-          ))}
+              What Drives Us
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+              Our journey has always been guided by more than just operations —
+              it is about building trust, delivering consistency, and embracing
+              innovation. Logistics is the backbone of trade, and we see our
+              role as more than moving containers; we help connect businesses,
+              industries, and communities across Indonesia.
+            </p>
+          </div>
+
+          {/* Right: Cards */}
+          <div className="flex-1 grid grid-cols-1 gap-6">
+            {cards.map((card, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-50 rounded-xl shadow-md p-6 border-b-4 border-[#000065] flex flex-col gap-4"
+              >
+                <h3 className="text-xl font-bold">{card.title}</h3>
+                <p className="text-sm sm:text-base md:text-base text-gray-700 whitespace-pre-line">
+                  {card.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }
