@@ -265,7 +265,6 @@ export default function About() {
       </section>
 
       {/* Nationwide Coverage Section */}
-      {/* Nationwide Coverage Section */}
       <section className="w-full py-20 px-6 md:px-20 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
@@ -286,18 +285,26 @@ export default function About() {
           <div className="flex flex-col md:flex-row gap-8 mb-16">
             {/* Left Text - Rata Kiri */}
             <div className="flex-1 text-left">
-              <p className="text-sm sm:text-base md:text-lg  leading-relaxed">
-                Additionally, through our group company PT Java Sarana Mitra
-                Sejati (JSMS) we also serve Lampung and Semarang, further
-                strengthening our nationwide presence.
+              <p className="text-sm sm:text-base md:text-lg  leading-tight">
+                Additionally, through our group company
+                <strong className="underline">
+                  {" "}
+                  PT Java Sarana Mitra Sejati (JSMS),
+                </strong>
+                we also serve <strong>Lampung</strong> and{" "}
+                <strong>Semarang</strong>, further strengthening our nationwide
+                presence.
               </p>
             </div>
 
             {/* Right Text - Rata Kanan */}
             <div className="flex-1 text-left md:text-right">
-              <p className="text-sm sm:text-base md:text-lg  leading-relaxed">
-                PT Bintang Nusantara Service (BNS) operates side-by-side with
-                DKM Surabaya and is fully integrated into Surabaya operations.
+              <p className="text-sm sm:text-base md:text-lg  leading-tight">
+                <strong className="underline">
+                  PT Bintang Nusantara Service (BNS){" "}
+                </strong>
+                operates side-by-side with <strong>DKM Surabaya</strong> and is
+                fully integrated into Surabaya operations.
               </p>
             </div>
           </div>
@@ -305,8 +312,8 @@ export default function About() {
           {/* 4 Columns Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
             {/* Surabaya */}
-            <div className="p-6 border-r border-gray-200">
-              <h3 className="font-bold text-lg mb-4 ">Surabaya</h3>
+            <div className="p-6 border-r border-gray-700">
+              <h3 className="font-bold text-lg mb-4">Surabaya</h3>
               <div className="space-y-3 text-sm ">
                 <div>
                   <span className="font-semibold">land space </span>
@@ -332,7 +339,7 @@ export default function About() {
             </div>
 
             {/* Semarang */}
-            <div className="p-6 border-r border-gray-200">
+            <div className="p-6 border-r border-gray-700">
               <h3 className="font-bold text-lg mb-4 ">Semarang</h3>
               <div className="space-y-3 text-sm ">
                 <div>
@@ -362,7 +369,7 @@ export default function About() {
             </div>
 
             {/* Jakarta */}
-            <div className="p-6 border-r border-gray-200">
+            <div className="p-6 border-r border-gray-700">
               <h3 className="font-bold text-lg mb-4 ">Jakarta</h3>
               <div className="space-y-3 text-sm ">
                 <div>
