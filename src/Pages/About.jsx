@@ -105,8 +105,8 @@ export default function About() {
                 {cards.map((card, idx) => (
                   <div
                     key={idx}
-                    className={`bg-white rounded-xl shadow-md flex flex-col overflow-hidden border border-[#000065] 
-                ${idx === 0 ? "lg:w-[35%]" : "lg:w-[65%]"} w-full`}
+                    className={`bg-white rounded-lg shadow-md flex flex-col overflow-hidden 
+      ${idx === 0 ? "lg:w-[35%]" : "lg:w-[65%]"} w-full`}
                   >
                     {/* Gambar */}
                     <div className="relative h-48 overflow-hidden">
@@ -118,9 +118,9 @@ export default function About() {
                     </div>
 
                     {/* Konten */}
-                    <div className="p-6 flex flex-col gap-3 text-left">
+                    <div className="p-6 flex flex-col gap-3 text-left border-2 border-t-0 border-[#000065] rounded-b-lg">
                       <h3 className="text-xl font-bold">{card.title}</h3>
-                      <p className="text-sm sm:text-base  whitespace-pre-line leading-relaxed">
+                      <p className="text-sm sm:text-base whitespace-pre-line leading-relaxed">
                         {card.desc}
                       </p>
                     </div>
@@ -313,117 +313,171 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
             {/* Surabaya */}
             <div className="p-6 border-r border-gray-700">
-              <h3 className="font-bold text-lg mb-4">Surabaya</h3>
-              <div className="space-y-3 text-sm ">
-                <div>
-                  <span className="font-semibold">land space </span>
-                  <span>2.5 HA + 2.75 HA (Concrete)</span>
+              <h3 className="font-bold text-lg mb-3">Surabaya</h3>
+              <div className="space-y-2 text-sm leading-none">
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    land space
+                  </span>
+                  <span className="flex-1">2.5 HA + 2.75 HA (Concrete)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Capacity </span>
-                  <span>+- 2.500 TEUs (Empty) +- 3.000 TEUs (Full)</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Capacity
+                  </span>
+                  <span className="flex-1">
+                    +- 2.500 TEUs (Empty) +- 3.000 TEUs (Full)
+                  </span>
                 </div>
-                <div>
-                  <span className="font-semibold">Container Repair </span>
-                  <span>25 minor, 3 major (2 teams)</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Container Repair
+                  </span>
+                  <span className="flex-1">25 minor, 3 major (2 teams)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Equipment </span>
-                  <span>Side Loaders, Washing Machines, Repair Tools</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Equipment
+                  </span>
+                  <span className="flex-1">
+                    Side Loaders, Washing Machines, Repair Tools
+                  </span>
                 </div>
-                <div>
-                  <span className="font-semibold">Operation Hours </span>
-                  <span>Mon-Fri 08.00-21.00, Sat 08.00-13.00</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Operation Hours
+                  </span>
+                  <span className="flex-1">
+                    Mon-Fri 08.00-21.00, Sat 08.00-13.00
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Semarang */}
             <div className="p-6 border-r border-gray-700">
-              <h3 className="font-bold text-lg mb-4 ">Semarang</h3>
-              <div className="space-y-3 text-sm ">
-                <div>
-                  <span className="font-semibold">land space </span>
-                  <span>2.136 HA (Concrete)</span>
+              <h3 className="font-bold text-lg mb-3">Semarang</h3>
+              <div className="space-y-2 text-sm leading-none">
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    land space
+                  </span>
+                  <span className="flex-1">2.136 HA (Concrete)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Capacity </span>
-                  <span>+- 1.800 TEUs</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Capacity
+                  </span>
+                  <span className="flex-1">+- 1.800 TEUs</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Container Repair </span>
-                  <span>25 minor, 3 major (2 teams)</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Container Repair
+                  </span>
+                  <span className="flex-1">25 minor, 3 major (2 teams)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Equipment </span>
-                  <span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Equipment
+                  </span>
+                  <span className="flex-1">
                     Side Loaders, Welding Machines, Washing Machine, Hangar
                     Washing (2 trucks)
                   </span>
                 </div>
-                <div>
-                  <span className="font-semibold">Operation Hours </span>
-                  <span>Mon-Fri 08.00-16.30, Sat 08.00-12.00</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Operation Hours
+                  </span>
+                  <span className="flex-1">
+                    Mon-Fri 08.00-16.30, Sat 08.00-12.00
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Jakarta */}
             <div className="p-6 border-r border-gray-700">
-              <h3 className="font-bold text-lg mb-4 ">Jakarta</h3>
-              <div className="space-y-3 text-sm ">
-                <div>
-                  <span className="font-semibold">land space </span>
-                  <span>2.5 HA (Concrete)</span>
+              <h3 className="font-bold text-lg mb-3">Jakarta</h3>
+              <div className="space-y-2 text-sm leading-none">
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    land space
+                  </span>
+                  <span className="flex-1">2.5 HA (Concrete)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Capacity </span>
-                  <span>+- 4.500 TEUs (7 High Stack)</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Capacity
+                  </span>
+                  <span className="flex-1">+- 4.500 TEUs (7 High Stack)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Container Repair </span>
-                  <span>30 minor, 5 major (IICL certified staff)</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Container Repair
+                  </span>
+                  <span className="flex-1">
+                    30 minor, 5 major (IICL certified staff)
+                  </span>
                 </div>
-                <div>
-                  <span className="font-semibold">Equipment </span>
-                  <span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Equipment
+                  </span>
+                  <span className="flex-1">
                     Side Loaders, Washing Machines, Welding Machines, Hangar
                     Machines
                   </span>
                 </div>
-                <div>
-                  <span className="font-semibold">Operation Hours </span>
-                  <span>Mon-Fri 24 Hours, Sat 08.00-15.00</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Operation Hours
+                  </span>
+                  <span className="flex-1">
+                    Mon-Fri 24 Hours, Sat 08.00-15.00
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Medan */}
             <div className="p-6">
-              <h3 className="font-bold text-lg mb-4 ">Medan</h3>
-              <div className="space-y-3 text-sm ">
-                <div>
-                  <span className="font-semibold">land space </span>
-                  <span>2.35 HA (Concrete)</span>
+              <h3 className="font-bold text-lg mb-3">Medan</h3>
+              <div className="space-y-2 text-sm leading-none">
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    land space
+                  </span>
+                  <span className="flex-1">2.35 HA (Concrete)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Capacity </span>
-                  <span>+- 2.000 TEUs</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Capacity
+                  </span>
+                  <span className="flex-1">+- 2.000 TEUs</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Container Repair </span>
-                  <span>25 minor, 3 major (2 teams)</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Container Repair
+                  </span>
+                  <span className="flex-1">25 minor, 3 major (2 teams)</span>
                 </div>
-                <div>
-                  <span className="font-semibold">Equipment </span>
-                  <span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Equipment
+                  </span>
+                  <span className="flex-1">
                     Side Loaders, Forklift, Prime Mover, Chassis, Washing
                     Machines, Welding Machines, Generator
                   </span>
                 </div>
-                <div>
-                  <span className="font-semibold">Operation Hours </span>
-                  <span>Mon-Fri 08.00-17.00, Sat 08.00-12.00</span>
+                <div className="flex items-start">
+                  <span className="font-semibold flex-shrink-0 w-32">
+                    Operation Hours
+                  </span>
+                  <span className="flex-1">
+                    Mon-Fri 08.00-17.00, Sat 08.00-12.00
+                  </span>
                 </div>
               </div>
             </div>
@@ -514,9 +568,9 @@ export default function About() {
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 py-8 sm:py-12 md:py-20 gap-4 max-w-3xl mx-auto">
-          <h2 className="text-lg sm:text-xl md:text-3xl font-semibold leading-snug italic">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-snug italic">
             Partner with DKM Group for reliable
-            <span className="block text-lg sm:text-xl md:text-3xl font-semibold leading-snug italic mt-1">
+            <span className="block text-xl sm:text-2xl md:text-4xl font-semibold leading-snug italic mt-1">
               and efficient logistics solutions
             </span>
           </h2>

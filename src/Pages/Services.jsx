@@ -1,3 +1,13 @@
+import {
+  LocalShippingOutlined,
+  LocalShipping,
+  Forklift,
+  Inventory,
+  Warehouse,
+  AcUnit,
+  Description,
+} from "@mui/icons-material";
+
 export default function Services() {
   return (
     <>
@@ -15,9 +25,9 @@ export default function Services() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Our Services
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed italic">
               reliable, technology-driven, and customer-focused solutions for
-              your container needs.
+              <span className="block">your container needs.</span>
             </p>
           </div>
         </div>
@@ -201,7 +211,7 @@ export default function Services() {
 
       {/* Operational Services Section */}
       <section className="py-16 px-6 md:px-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#DA1D2C] mb-4">
@@ -209,64 +219,159 @@ export default function Services() {
             </h2>
           </div>
 
-          {/* Operational Services Grid - 2 columns layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {/* Left Column */}
-            <div className="space-y-4">
-              {[
-                {
-                  title: "Haulage",
-                  desc: "Efficient trucking solutions for both 20ft and 40ft containers, ensuring safe and on-time delivery from port to depot or customer site.",
-                },
-                {
-                  title: "Lift On Lift Off",
-                  desc: "Professional container handling with heavy-duty side loaders and forklifts, designed for fast and accurate loading or unloading.",
-                },
-                {
-                  title: "Stuffing & Stripping",
-                  desc: "Experienced team for stuffing and stripping services, supporting smooth cargo transfer and proper documentation.",
-                },
-              ].map((service, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                >
-                  <h3 className="text-xl font-bold  mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="leading-tight">
+          {/* Operational Services Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {[
+              {
+                icon: (
+                  <LocalShippingOutlined
+                    style={{ color: "#000065", fontSize: "3rem" }}
+                  />
+                ),
+                title: "Haulage",
+                desc: "Efficient trucking solutions for both 20ft and 40ft containers, ensuring safe and on-time delivery from port to depot or customer site.",
+              },
+              {
+                icon: (
+                  <Forklift style={{ color: "#000065", fontSize: "3rem" }} />
+                ),
+                title: (
+                  <>
+                    Lift On <br /> Lift Off
+                  </>
+                ),
+                desc: "Professional container handling with heavy-duty side loaders and forklifts, designed for fast and accurate loading or unloading.",
+              },
+              {
+                icon: (
+                  <Inventory style={{ color: "#000065", fontSize: "3rem" }} />
+                ),
+                title: "Stuffing & Stripping",
+                desc: "Experienced team for stuffing and stripping services, supporting smooth cargo transfer and proper documentation.",
+              },
+              {
+                icon: (
+                  <Warehouse style={{ color: "#000065", fontSize: "3rem" }} />
+                ),
+                title: "Container Storage",
+                desc: "Secure yard management system with concrete surface and monitors capacity to ensure containers are stored safely and efficiently.",
+              },
+              {
+                icon: <AcUnit style={{ color: "#000065", fontSize: "3rem" }} />,
+                title: "Reefer",
+                desc: "Specialized reefer technicians provide inspections, electrical checks, and certified repairs to maintain cold chain reliability.",
+              },
+              {
+                icon: (
+                  <Description style={{ color: "#000065", fontSize: "3rem" }} />
+                ),
+                title: "Custom Clearances",
+                desc: "Assistance with customs documentation and clearance process, ensuring compliance with Indonesian regulations.",
+              },
+            ].map((service, idx) => (
+              <div
+                key={idx}
+                className="bg-gray-100 p-4 sm:p-5 rounded-md shadow hover:shadow-md transition-all duration-300"
+              >
+                <div className="flex items-start space-x-4">
+                  {/* Icon & Title */}
+                  <div className="flex flex-col items-center justify-center w-24 text-center">
+                    <div className="mb-1">{service.icon}</div>
+                    <h3 className="text-base font-bold leading-tight">
+                      {service.title}
+                    </h3>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-base leading-snug flex-1">
                     {service.desc}
                   </p>
                 </div>
-              ))}
-            </div>
-
-            {/* Right Column */}
-            <div className="space-y-4">
-              {[
-                {
-                  title: "Container Storage",
-                  desc: "Secure yard management system with concrete surface and monitors capacity to ensure containers are stored safely and efficiently.",
-                },
-                {
-                  title: "Refer",
-                  desc: "Specialized reefer technicians provide inspections, electrical checks, and certified repairs to maintain cold chain reliability.",
-                },
-                {
-                  title: "Custom Clearances",
-                  desc: "Assistance with customs documentation and clearance process, ensuring compliance with Indonesian regulations.",
-                },
-              ].map((service, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white p-4 rounded-lg shadow-md  hover:shadow-lg transition-shadow duration-300"
-                >
-                  <h3 className="text-xl font-bold  mb-3">{service.title}</h3>
-                  <p className=" leading-tight">{service.desc}</p>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Tariff Information Section */}
+      <section className="py-16 px-6 md:px-20 bg-white">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#DA1D2C] mb-4">
+              Tariff Information
+            </h2>
+          </div>
+
+          {/* Tariff Grid - 4 columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Lift Off & Lift On",
+                price: "Rp 350.000",
+                desc: "Fast, reliable handling for both full and empty containers.",
+                note: "Exclude VAT. Price may change anytime without prior notice.",
+              },
+              {
+                title: "Service Charge",
+                price: "Rp 75.000",
+                desc: "Covers administration and basic depot handling services.",
+                note: "Exclude VAT. Price may change anytime without prior notice.",
+              },
+              {
+                title: "Washing",
+                price: "Rp 165.000",
+                desc: "High-pressure washing and cleaning services to maintain container hygiene.",
+                note: "Exclude VAT. Price may change anytime without prior notice.",
+              },
+              {
+                title: "Storage",
+                price: "Rp 1.000",
+                desc: "Daily storage fee for containers, with FIFO release system applied.",
+                note: "Exclude VAT. Price may change anytime without prior notice.",
+              },
+            ].map((tariff, idx) => (
+              <div
+                key={idx}
+                className="bg-white border border-[#000065] rounded-lg p-6 hover:shadow-lg transition-all duration-300"
+              >
+                {/* Title */}
+                <h3 className="text-lg font-bold  mb-3">{tariff.title}</h3>
+
+                {/* Price */}
+                <div className="mb-4">
+                  <p className="text-2xl font-bold text-[#000065]">
+                    Starting from {tariff.price}
+                  </p>
+                </div>
+
+                {/* Description */}
+                <p className=" mb-4 leading-snug">{tariff.desc}</p>
+
+                {/* Note */}
+                <p className="text-xs  italic border-t border-gray-200 pt-3">
+                  {tariff.note}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Background Section */}
+      <section
+        className="relative w-full h-[35vh] sm:h-[45vh] md:h-[55vh] flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/cta.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 py-8 sm:py-12 md:py-20 gap-6 max-w-3xl mx-auto">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-tight italic whitespace-nowrap">
+            Looking for detailed quotations or customized solutions? Get in
+            <span className="block">touch with our team today.</span>
+          </h2>
+          <button className="bg-[#DA1D2C] hover:bg-[#b01824] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base">
+            Get in touch
+          </button>
         </div>
       </section>
     </>

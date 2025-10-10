@@ -44,27 +44,24 @@ const HeroSection = () => {
               : "transform translate-y-0 opacity-100"
           }`}
         >
-          {/* Judul dengan overflow protection */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-snug overflow-hidden">
-            <span className="flex flex-col justify-start content-stretch flex-wrap-reverse">
-              Trusted Container Depot & Logistics
-            </span>
-            <span className="block mt-2 text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-snug overflow-hidden">
-              Solutions in Indonesia
-            </span>
+          {/* Judul dengan 2 baris */}
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-tight">
+            <span className="block">Trusted Container Depot & Logistics</span>
+            <span className="block">Solutions in Indonesia</span>
           </h1>
 
-          {/* Deskripsi dengan text-nowrap */}
+          {/* Deskripsi dengan 2 baris */}
           <div className="mt-4 sm:mt-6">
-            <span className="block font-medium text-xs sm:text-sm md:text-lg text-nowrap">
-              Providing reliable container storage, repair, and logistics
-            </span>
-            <span className="block font-medium text-xs sm:text-sm md:text-lg text-nowrap">
-              solutions. With in-house systems and nationwide branches,
-            </span>
-            <span className="block font-medium text-xs sm:text-sm md:text-lg text-nowrap">
-              we ensure seamless operations across Indonesia.
-            </span>
+            <p className="font-medium text-xs sm:text-sm md:text-lg leading-relaxed">
+              <span className="block">
+                Providing reliable container storage, repair, and logistics
+                solutions.
+              </span>
+              <span className="block">
+                With in-house systems and nationwide branches, we ensure
+                seamless operations across Indonesia.
+              </span>
+            </p>
           </div>
 
           {/* Button dengan text-nowrap */}
@@ -77,14 +74,14 @@ const HeroSection = () => {
             </button>
           </div>
 
-          {/* Footer text dengan text-nowrap */}
+          {/* Footer text dengan 3 baris */}
           <div
             className="mt-6 sm:mt-10 font-bold italic text-xs sm:text-sm md:text-lg text-right"
             style={{ color: "#FF8D0A" }}
           >
-            <span className="block text-nowrap">Serving shipping lines,</span>
-            <span className="block text-nowrap">forwarders, and logistic</span>
-            <span className="block text-nowrap">companies since 1988.</span>
+            <span className="block">Serving shipping lines,</span>
+            <span className="block">forwarders, and logistic</span>
+            <span className="block">companies since 1988.</span>
           </div>
         </div>
       </section>
@@ -97,7 +94,7 @@ const HeroSection = () => {
         }`}
       >
         <div
-          className={`max-w-4xl transition-all duration-700 ${
+          className={`max-w-4xl ${
             isScrolled
               ? "transform translate-y-0 opacity-100"
               : "transform translate-y-10 opacity-0"
@@ -333,29 +330,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Customer Portal */}
+      {/* DKM Tracker Portal */}
       <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 sm:gap-6">
-          <div className="flex-1 text-center md:text-left">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
+          <div className="flex-1 text-center md:text-left flex flex-col">
             <h2
               className="text-xl sm:text-2xl md:text-3xl font-bold mb-2"
               style={{ color: "#DA1D2C" }}
             >
               Customer Portal
             </h2>
-            <p className="text-base sm:text-base leading-relaxed mb-4">
+            <p className="text-base sm:text-base leading-relaxed mb-3 mt-8 flex-grow">
               Access our container tracker for real-time updates and efficient
-              monitoring. More smart tools coming soon.
+              monitoring. More smart tools are coming soon as we expand out
+              customer portal to deliver faster, technology-driven logistics
+              services.
             </p>
-            <button className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm">
+            <button className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mb-32">
               Go to Tracker Portal
             </button>
           </div>
-          <div className="flex-1 w-full mt-4 md:mt-0">
+          <div className="flex-1 w-full mt-4 md:mt-0 flex items-center">
             <img
               src="/assets/portal.jpg"
               alt="Customer Portal"
-              className="w-full h-auto rounded-xl object-cover shadow-md grayscale hover:grayscale-0 transition duration-500"
+              className="w-full h-full max-h-64 sm:max-h-80 md:max-h-96 rounded-xl object-cover shadow-md grayscale hover:grayscale-0 transition duration-500"
             />
           </div>
         </div>
