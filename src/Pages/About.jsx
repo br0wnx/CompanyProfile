@@ -1,4 +1,6 @@
 import LaunchOutlinedIcon from "@mui/icons-material/LaunchOutlined";
+import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 
 export default function About() {
   return (
@@ -10,7 +12,7 @@ export default function About() {
       >
         {/* Left Text */}
         <div className="flex-1 text-center md:text-left mb-6 md:mb-0">
-          <p className="text-l sm:text-xl md:text-2xl font-semibold leading-snug">
+          <p className="text-l sm:text-xl md:text-2xl font-semibold leading-snug italic">
             Driving Indonesia's Container &<br />
             Logistics Industry with
             <br />
@@ -28,7 +30,7 @@ export default function About() {
       </section>
 
       {/* Who We Are Section */}
-      <section className="w-full py-20 px-6 md:px-20 bg-gray-100">
+      <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC] mt-25">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-10">
           {/* Left: Text */}
           <div className="flex-1 flex flex-col justify-center text-left">
@@ -60,7 +62,7 @@ export default function About() {
       </section>
 
       {/* What Drives Us Section */}
-      <section className="w-full py-20 px-6 md:px-20 bg-white">
+      <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
         {(() => {
           const cards = [
             {
@@ -80,7 +82,7 @@ export default function About() {
 
           return (
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
-              {/* Left: Text - mengambil 1 bagian dari 3 */}
+              {/* Left: Text */}
               <div className="flex-1 flex flex-col justify-between text-left">
                 <div>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#DA1D2C]">
@@ -100,7 +102,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Right: Cards - mengambil 2 bagian dari 3 */}
+              {/* Right: Cards */}
               <div className="flex-[2] flex flex-col lg:flex-row gap-6 w-full">
                 {cards.map((card, idx) => (
                   <div
@@ -133,7 +135,7 @@ export default function About() {
       </section>
 
       {/* Our Journey & Group Section */}
-      <section className="w-full py-12 px-6 md:px-20 bg-gray-50">
+      <section className="w-full py-12 px-6 md:px-20 bg-[#FDFBFC]">
         {/* Intro Text */}
         <div className="max-w-4xl mx-auto text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#DA1D2C]">
@@ -149,7 +151,7 @@ export default function About() {
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 items-stretch">
-          {/* Left: 4 Cards - Diperlebar */}
+          {/* Left: 4 Cards*/}
           <div className="lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               {
@@ -203,34 +205,41 @@ export default function About() {
             ))}
           </div>
 
-          {/* Right: Timeline - Dirampingkan */}
+          {/* Right: Timeline*/}
           <div className="lg:w-2/5 flex flex-col gap-4 h-full">
             {[
               {
+                year: "1988",
                 text: "Dwipa Kharisma Mitra (DKM), formerly known as Dwipakarsa Manunggal, was founded by Temasek Holding Singapore and a local Indonesian company. Dwipakarsa was operating in two big cities in Indonesia, namely Jakarta and Surabaya.",
                 img: "/assets/1.jpg",
               },
               {
+                year: "1995",
                 text: "Temasek Holding Singapore took full ownership of Dwipakarsa Manunggal and was rebranded to Dwipa Kharisma Mitra (DKM). DKM then opened up two more branches in Belawan and Semarang.",
                 img: "/assets/2.jpg",
               },
               {
+                year: "2006",
                 text: "DKM was fully acquired and owned by an Indonesian family for more expansion, and from this point onward DKM's company size has started to grow exponentially.",
                 img: "/assets/3.jpg",
               },
               {
+                year: "2010",
                 text: "DKM acquired another depot company, Java Sarana Mitra Sejati, which operates in Semarang and Bandar Lampung.",
                 img: "/assets/4.jpg",
               },
               {
+                year: "2016",
                 text: "DKM opened up a container depot in Cikarang Dry Port, and three rail intermodal container yards in Jakarta, Semarang, and Surabaya.",
                 img: "/assets/5.jpg",
               },
               {
+                year: "2019",
                 text: "DKM set up a joint venture with CMA CGM, one of the largest shipping container companies in the world, under the name CMA CGM Inland Services (CCIS).",
                 img: "/assets/6.png",
               },
               {
+                year: "2020",
                 text: "DKM acquired another local depot container company in Surabaya, Bintang Nusantara Services (BNS).",
                 img: "/assets/7.jpg",
               },
@@ -241,7 +250,7 @@ export default function About() {
                   idx % 2 !== 0 ? "md:flex-row-reverse" : ""
                 } flex-1`}
               >
-                {/* Text - Lebih ramping */}
+                {/* Text */}
                 <div
                   className={`flex-1 text-xs sm:text-sm leading-relaxed ${
                     idx % 2 !== 0 ? "text-left md:text-right" : "text-left"
@@ -250,13 +259,17 @@ export default function About() {
                   <p className="line-clamp-4">{step.text}</p>
                 </div>
 
-                {/* Image - Diperkecil */}
-                <div className="flex-shrink-0">
-                  <img
-                    src={step.img}
-                    alt={`Step ${idx + 1}`}
-                    className="w-16 h-16 md:w-18 md:h-18 object-cover rounded-lg shadow-sm"
-                  />
+                {/* Image */}
+                <div
+                  className="flex-shrink-0 relative w-16 h-16 md:w-18 md:h-18 rounded-lg shadow-sm bg-cover bg-center"
+                  style={{ backgroundImage: `url('${step.img}')` }}
+                >
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-[#000065]/55 rounded-lg flex items-center justify-center">
+                    <span className="text-[#FF8D0A] font-bold text-sm md:text-base drop-shadow-lg">
+                      {step.year}
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -265,7 +278,7 @@ export default function About() {
       </section>
 
       {/* Nationwide Coverage Section */}
-      <section className="w-full py-20 px-6 md:px-20 bg-white">
+      <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-[#DA1D2C]">
@@ -283,7 +296,7 @@ export default function About() {
 
           {/* Two Column Text */}
           <div className="flex flex-col md:flex-row gap-8 mb-16">
-            {/* Left Text - Rata Kiri */}
+            {/* Left Text */}
             <div className="flex-1 text-left">
               <p className="text-sm sm:text-base md:text-lg  leading-tight">
                 Additionally, through our group company
@@ -297,7 +310,7 @@ export default function About() {
               </p>
             </div>
 
-            {/* Right Text - Rata Kanan */}
+            {/* Right Text*/}
             <div className="flex-1 text-left md:text-right">
               <p className="text-sm sm:text-base md:text-lg  leading-tight">
                 <strong className="underline">
@@ -310,19 +323,32 @@ export default function About() {
           </div>
 
           {/* 4 Columns Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
             {/* Surabaya */}
-            <div className="p-6 border-r border-gray-700">
-              <h3 className="font-bold text-lg mb-3">Surabaya</h3>
-              <div className="space-y-2 text-sm leading-none">
+            <div className="p-4 sm:p-5 lg:p-6 border-r border-gray-700">
+              <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
+                <span className="text-base sm:text-lg lg:text-xl">
+                  Surabaya
+                </span>
+                <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <PhoneOutlinedIcon fontSize="small" />
+                  </div>
+                </div>
+              </h3>
+
+              <div className="space-y-2 text-xs sm:text-sm leading-none">
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     land space
                   </span>
                   <span className="flex-1">2.5 HA + 2.75 HA (Concrete)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Capacity
                   </span>
                   <span className="flex-1">
@@ -330,13 +356,13 @@ export default function About() {
                   </span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Container Repair
                   </span>
                   <span className="flex-1">25 minor, 3 major (2 teams)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Equipment
                   </span>
                   <span className="flex-1">
@@ -344,7 +370,7 @@ export default function About() {
                   </span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Operation Hours
                   </span>
                   <span className="flex-1">
@@ -355,29 +381,41 @@ export default function About() {
             </div>
 
             {/* Semarang */}
-            <div className="p-6 border-r border-gray-700">
-              <h3 className="font-bold text-lg mb-3">Semarang</h3>
-              <div className="space-y-2 text-sm leading-none">
+            <div className="p-4 sm:p-5 lg:p-6 border-r border-gray-700">
+              <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
+                <span className="text-base sm:text-lg lg:text-xl">
+                  Semarang
+                </span>
+                <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <PhoneOutlinedIcon fontSize="small" />
+                  </div>
+                </div>
+              </h3>
+              <div className="space-y-2 text-xs sm:text-sm leading-none">
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     land space
                   </span>
                   <span className="flex-1">2.136 HA (Concrete)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Capacity
                   </span>
                   <span className="flex-1">+- 1.800 TEUs</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Container Repair
                   </span>
                   <span className="flex-1">25 minor, 3 major (2 teams)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Equipment
                   </span>
                   <span className="flex-1">
@@ -386,7 +424,7 @@ export default function About() {
                   </span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Operation Hours
                   </span>
                   <span className="flex-1">
@@ -397,23 +435,33 @@ export default function About() {
             </div>
 
             {/* Jakarta */}
-            <div className="p-6 border-r border-gray-700">
-              <h3 className="font-bold text-lg mb-3">Jakarta</h3>
-              <div className="space-y-2 text-sm leading-none">
+            <div className="p-4 sm:p-5 lg:p-6 border-r border-gray-700">
+              <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
+                <span className="text-base sm:text-lg lg:text-xl">Jakarta</span>
+                <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <PhoneOutlinedIcon fontSize="small" />
+                  </div>
+                </div>
+              </h3>
+              <div className="space-y-2 text-xs sm:text-sm leading-none">
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     land space
                   </span>
                   <span className="flex-1">2.5 HA (Concrete)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Capacity
                   </span>
                   <span className="flex-1">+- 4.500 TEUs (7 High Stack)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Container Repair
                   </span>
                   <span className="flex-1">
@@ -421,7 +469,7 @@ export default function About() {
                   </span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Equipment
                   </span>
                   <span className="flex-1">
@@ -430,7 +478,7 @@ export default function About() {
                   </span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Operation Hours
                   </span>
                   <span className="flex-1">
@@ -441,29 +489,39 @@ export default function About() {
             </div>
 
             {/* Medan */}
-            <div className="p-6">
-              <h3 className="font-bold text-lg mb-3">Medan</h3>
-              <div className="space-y-2 text-sm leading-none">
+            <div className="p-4 sm:p-5 lg:p-6">
+              <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
+                <span className="text-base sm:text-lg lg:text-xl">Medan</span>
+                <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+                  <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
+                    <PhoneOutlinedIcon fontSize="small" />
+                  </div>
+                </div>
+              </h3>
+              <div className="space-y-2 text-xs sm:text-sm leading-none">
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     land space
                   </span>
                   <span className="flex-1">2.35 HA (Concrete)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Capacity
                   </span>
                   <span className="flex-1">+- 2.000 TEUs</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Container Repair
                   </span>
                   <span className="flex-1">25 minor, 3 major (2 teams)</span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Equipment
                   </span>
                   <span className="flex-1">
@@ -472,7 +530,7 @@ export default function About() {
                   </span>
                 </div>
                 <div className="flex items-start">
-                  <span className="font-semibold flex-shrink-0 w-32">
+                  <span className="font-semibold flex-shrink-0 w-24 sm:w-28 lg:w-32">
                     Operation Hours
                   </span>
                   <span className="flex-1">
@@ -486,7 +544,7 @@ export default function About() {
       </section>
 
       {/* Certifications & Standards Section */}
-      <section className="w-full py-20 px-6 md:px-20 bg-gray-50">
+      <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 text-[#DA1D2C]">

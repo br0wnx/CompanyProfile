@@ -34,7 +34,7 @@ export default function Services() {
       </section>
 
       {/* Core Services Section */}
-      <section className="py-16 px-6 md:px-20 bg-white">
+      <section className="py-16 px-6 md:px-20 bg-[#FDFBFC] mt-25">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12">
@@ -70,7 +70,7 @@ export default function Services() {
                 ),
               },
               {
-                img: "/assets/c2.jpg",
+                img: "/assets/las1.jpg",
                 title: "Maintenance & Repair",
                 desc: (
                   <ul className="space-y-2 text-m leading-tight">
@@ -92,7 +92,7 @@ export default function Services() {
                 ),
               },
               {
-                img: "/assets/c3.jpg",
+                img: "/assets/truk.jpg",
                 title: "Trucking & Transportation (BRG)",
                 desc: (
                   <ul className="space-y-2 text-m leading-tight">
@@ -210,7 +210,7 @@ export default function Services() {
       </section>
 
       {/* Operational Services Section */}
-      <section className="py-16 px-6 md:px-20 bg-gray-50">
+      <section className="py-16 px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-4xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12">
@@ -294,7 +294,7 @@ export default function Services() {
       </section>
 
       {/* Tariff Information Section */}
-      <section className="py-16 px-6 md:px-20 bg-white">
+      <section className="py-16 px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12">

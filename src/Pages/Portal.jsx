@@ -24,7 +24,7 @@ export default function Portal() {
       </section>
 
       {/* DKM Tracker Portal */}
-      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20">
+      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
           <div className="flex-1 text-center md:text-left flex flex-col">
             <h2
@@ -52,6 +52,15 @@ export default function Portal() {
               className="w-full h-full max-h-64 sm:max-h-80 md:max-h-96 rounded-xl object-cover shadow-md grayscale hover:grayscale-0 transition duration-500"
             />
           </div>
+        </div>
+        <div
+          className="mt-14 sm:mt-24 text-center font-bold text-sm sm:text-base md:text-lg"
+          style={{ color: "#FF8D0A" }}
+        >
+          <span className="block italic">
+            This portal is continuosly improved to support more digital services
+            for our customers.
+          </span>
         </div>
       </section>
 

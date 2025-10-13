@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="py-8 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
+    <footer className="py-8 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
       {/* Grid utama dengan 4 kolom */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2 sm:gap-4">
         {/* Kolom 1: Logo dan Deskripsi */}
@@ -12,7 +12,7 @@ export default function Footer() {
             alt="DKM Logo"
             className="w-48 h-24 sm:w-40 md:w-48"
           />
-          <div className="text-m text-left text-nowrap">
+          <div className="text-m md:text-wrap text-left text-nowrap leading-none">
             <p>
               DKM Group operates container depots in Jakarta, Surabaya, Lampung,
             </p>
@@ -33,8 +33,8 @@ export default function Footer() {
         {/* Kolom 3: Links dalam 3 kolom horizontal */}
         <div className="md:col-span-2 grid grid-cols-3 gap-4">
           {/* Sub-kolom 1: Company */}
-          <div className="flex flex-col space-y-1 items-center md:items-start">
-            <h4 className="font-bold mb-1 text-md">Company</h4>
+          <div className="flex flex-col space-y-4 items-center md:items-start">
+            <h4 className="font-bold mb-4 text-md">Company</h4>
             <a
               href="#"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
@@ -53,17 +53,11 @@ export default function Footer() {
             >
               Services
             </a>
-            <a
-              href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
-            >
-              Contact
-            </a>
           </div>
 
           {/* Sub-kolom 2: Help */}
-          <div className="flex flex-col space-y-1 items-center md:items-start">
-            <h4 className="font-bold mb-1 text-md">Help</h4>
+          <div className="flex flex-col space-y-4 items-center md:items-start">
+            <h4 className="font-bold mb-4 text-md">Help</h4>
             <a
               href="#"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
@@ -80,19 +74,13 @@ export default function Footer() {
               href="#"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
             >
-              Customer Support
-            </a>
-            <a
-              href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
-            >
-              Delivery Policy
+              Contact
             </a>
           </div>
 
           {/* Sub-kolom 3: Legal */}
-          <div className="flex flex-col space-y-1 items-center md:items-start">
-            <h4 className="font-bold mb-1 text-md">Legal</h4>
+          <div className="flex flex-col space-y-4 items-center md:items-start">
+            <h4 className="font-bold mb-4 text-md">Legal</h4>
             <a
               href="#"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
@@ -111,6 +99,12 @@ export default function Footer() {
             >
               Return & Refund Policy
             </a>
+            <a
+              href="#"
+              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+            >
+              Delivery Policy
+            </a>
           </div>
         </div>
       </div>
@@ -120,13 +114,8 @@ export default function Footer() {
 
       {/* Copyright + Social Media */}
       <div className="max-w-7xl mx-auto mt-4 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 px-2 sm:px-0">
-        {/* Copyright */}
-        <p className="text-xs sm:text-sm text-gray-600 text-center sm:text-left w-full sm:w-auto">
-          © 2025 DKM Group. All Rights Reserved
-        </p>
-
-        {/* Social Media Icons */}
-        <div className="flex space-x-3 sm:space-x-4 justify-center sm:justify-end w-full sm:w-auto">
+        {/* Social Media Icons - Kiri */}
+        <div className="flex space-x-3 sm:space-x-4 justify-start w-full sm:w-auto order-2 sm:order-1">
           <a
             href="#"
             className="text-[#000065] hover:text-[#00004A] transition-colors"
@@ -146,6 +135,11 @@ export default function Footer() {
             <FaFacebook size={20} />
           </a>
         </div>
+
+        {/* Copyright - Kanan */}
+        <p className="text-xs sm:text-sm text-center sm:text-right w-full sm:w-auto order-1 sm:order-2">
+          © 2025 DKM Group. All Rights Reserved
+        </p>
       </div>
     </footer>
   );

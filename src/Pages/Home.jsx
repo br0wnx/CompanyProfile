@@ -76,7 +76,7 @@ const HeroSection = () => {
 
           {/* Footer text dengan 3 baris */}
           <div
-            className="mt-6 sm:mt-10 font-bold italic text-xs sm:text-sm md:text-lg text-right"
+            className="mt-24 sm:mt-28 font-bold italic text-xs sm:text-sm md:text-lg text-right"
             style={{ color: "#FF8D0A" }}
           >
             <span className="block">Serving shipping lines,</span>
@@ -136,9 +136,6 @@ const HeroSection = () => {
             color: "#FF8D0A",
           }}
         >
-          {/* Overlay untuk kontras teks */}
-          {/* <div className="absolute inset-0 bg-black/30 rounded-xl"></div> */}
-
           {/* Konten teks */}
           <div className="relative z-10" style={{ color: "#FF8D0A" }}>
             <span className="block drop-shadow-lg">
@@ -158,7 +155,7 @@ export default function Home() {
     <>
       <HeroSection />
       {/* About Section */}
-      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20">
+      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-m sm:text-l md:text-xl leading-none md:leading-tight">
             DKM Group is an integrated logistics and technology company with
@@ -189,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
+      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20 bg-[#FDFBFC]">
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
           <h2
             className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold"
@@ -254,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* Our Services */}
-      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24">
+      <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-start">
           {/* Left: Cards - Tetap 2x2 grid di semua breakpoint */}
           <div className="grid grid-cols-1 min-[480px]:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8 flex-1 w-full">
@@ -323,7 +320,7 @@ export default function Home() {
               DKM Group delivers comprehensive container depot services with
               high standards in storage, maintenance, and inspection.
             </p>
-            <button className="bg-[#000065] hover:bg-[#00004a] mt-3 sm:mt-4 md:mt-5 rounded-lg font-semibold text-white px-5 sm:px-6 py-2 sm:py-3 w-fit text-xs sm:text-sm md:text-base mx-auto lg:mx-0 transition-colors duration-300">
+            <button className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mb-32">
               View All Services
             </button>
           </div>
@@ -331,7 +328,7 @@ export default function Home() {
       </section>
 
       {/* DKM Tracker Portal */}
-      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20">
+      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
           <div className="flex-1 text-center md:text-left flex flex-col">
             <h2
