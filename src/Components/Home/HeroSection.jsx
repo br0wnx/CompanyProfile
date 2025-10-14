@@ -1,31 +1,33 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const HeroSection = () => {
+
+function HeroSection  () {
+
   const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const heroElement = document.getElementById("home");
-
-      if (heroElement) {
-        const heroHeight = heroElement.offsetHeight;
-
-        if (scrollPosition > heroHeight * 0.3) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const heroElement = document.getElementById("home");
+  
+        if (heroElement) {
+          const heroHeight = heroElement.offsetHeight;
+  
+          if (scrollPosition > heroHeight * 0.3) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
         }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   return (
     <>
-      {/* Hero Section */}
+     {/* Hero Section */}
       <section
         id="home"
         className={`min-h-screen w-full flex flex-col items-end justify-center px-4 sm:px-6 md:px-20 bg-cover bg-center transition-all duration-500 ${
@@ -143,7 +145,7 @@ const HeroSection = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
 export default HeroSection;
