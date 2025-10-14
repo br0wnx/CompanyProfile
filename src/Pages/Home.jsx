@@ -253,7 +253,7 @@ export default function Home() {
       {/* Our Services */}
       <section className="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-start">
-          {/* Left: Cards - Tetap 2x2 grid di semua breakpoint */}
+          {/* Left: Cards */}
           <div className="grid grid-cols-1 min-[480px]:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8 flex-1 w-full">
             {[
               {

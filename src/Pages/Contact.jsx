@@ -5,19 +5,31 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function Contact() {
   // FAQ Data
   const faqItems = [
-    { question: "What services does DKM Group provide?" },
-    { question: "Where are DKM Group's depot locations?" },
-    { question: "What are your operation hours?" },
-    { question: "Do you provide emergency repair services?" },
+    {
+      question: "What services does DKM Group provide?",
+      answer: "Jawaban untuk pertanyaan 1...",
+    },
+    {
+      question: "Where are DKM Group's depot locations?",
+      answer: "Jawaban untuk pertanyaan 2...",
+    },
+    {
+      question: "What are your operation hours?",
+      answer: "Jawaban untuk pertanyaan 3...",
+    },
+    {
+      question: "Do you provide emergency repair services?",
+      answer: "Jawaban untuk pertanyaan 4...",
+    },
   ];
 
   // Icons untuk contact - menggunakan MUI icons
   const MailIcon = () => (
-    <EmailIcon sx={{ fontSize: 12 }} /> // w-3 h-3 equivalent
+    <EmailIcon sx={{ fontSize: 20 }} /> // w-3 h-3 equivalent
   );
 
   const PhoneIconComponent = () => (
-    <PhoneIcon sx={{ fontSize: 12 }} /> // w-3 h-3 equivalent
+    <PhoneIcon sx={{ fontSize: 20 }} /> // w-3 h-3 equivalent
   );
 
   // Management Data
@@ -136,7 +148,7 @@ export default function Contact() {
       </section>
 
       {/* Customer Services & Support Section */}
-      <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-gray-50 mt-25">
+      <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Left: Contact Form */}
@@ -278,7 +290,7 @@ export default function Contact() {
       </section>
 
       {/* FAQ & Management Section */}
-      <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-white">
+      <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
             {/* Left: Frequently Asked Questions - 1 kolom */}
@@ -293,19 +305,35 @@ export default function Contact() {
                     key={index}
                     className="border border-gray-200 rounded-lg overflow-hidden"
                   >
-                    <button className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                    <button
+                      className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                      onClick={() => {
+                        // Toggle dropdown state untuk item ini
+                        const answers =
+                          document.querySelectorAll(".faq-answer");
+                        const icons = document.querySelectorAll(".faq-icon");
+
+                        // Toggle current item
+                        answers[index].classList.toggle("hidden");
+                        icons[index].classList.toggle("rotate-180");
+                      }}
+                    >
                       <span className="font-semibold">{item.question}</span>
                       <ExpandMoreIcon
-                        sx={{ fontSize: 20 }} // w-5 h-5 equivalent
-                        className="transition-transform"
+                        sx={{ fontSize: 20 }}
+                        className="transition-transform faq-icon"
                       />
                     </button>
+                    {/* Answer section */}
+                    <div className="faq-answer hidden px-6 py-4 bg-gray-50 border-t border-gray-200">
+                      <p className="">{item.answer}</p>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right: Management - 2 kolom dengan layout 2 kiri dan 2 kanan */}
+            {/* Right: Management */}
             <div className="lg:col-span-2">
               <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6">
                 Management
@@ -323,14 +351,14 @@ export default function Contact() {
                       <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
                         {person.position}
                       </h3>
-                      <p className="text-[#FF8D0A] font-semibold mb-3 text-sm">
+                      <p className="text-[#FF8D0A] font-semibold mb-3 text-base">
                         {person.name}
                       </p>
                       <div className="space-y-2">
                         {person.contacts.map((contact, contactIndex) => (
                           <div
                             key={contactIndex}
-                            className="flex items-center gap-2 text-xs group-hover:text-white"
+                            className="flex items-center gap-2 font-bold text-sm group-hover:text-white"
                           >
                             <div className="bg-[#000065] text-white p-1 rounded flex-shrink-0 group-hover:bg-white group-hover:text-[#000065] transition-colors">
                               {contact.icon}
@@ -338,8 +366,8 @@ export default function Contact() {
                             <span
                               className={
                                 contact.type === "email"
-                                  ? "break-all text-xs"
-                                  : "text-xs"
+                                  ? "break-all text-sm"
+                                  : "text-sm"
                               }
                             >
                               {contact.info}
@@ -361,14 +389,14 @@ export default function Contact() {
                       <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
                         {person.position}
                       </h3>
-                      <p className="text-[#FF8D0A] font-semibold mb-3 text-sm">
+                      <p className="text-[#FF8D0A] font-semibold mb-3 text-base">
                         {person.name}
                       </p>
                       <div className="space-y-2">
                         {person.contacts.map((contact, contactIndex) => (
                           <div
                             key={contactIndex}
-                            className="flex items-center gap-2 text-xs group-hover:text-white"
+                            className="flex items-center gap-2 font-bold text-sm group-hover:text-white"
                           >
                             <div className="bg-[#000065] text-white p-1 rounded flex-shrink-0 group-hover:bg-white group-hover:text-[#000065] transition-colors">
                               {contact.icon}
@@ -376,8 +404,8 @@ export default function Contact() {
                             <span
                               className={
                                 contact.type === "email"
-                                  ? "break-all text-xs"
-                                  : "text-xs"
+                                  ? "break-all text-sm"
+                                  : "text-sm"
                               }
                             >
                               {contact.info}
@@ -395,7 +423,7 @@ export default function Contact() {
       </section>
 
       {/* Branch Manager Section */}
-      <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-gray-50">
+      <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
         <div className="max-w-7xl mx-auto">
           {/* Rasio kiri : kanan = 1 : 2 */}
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
@@ -412,29 +440,44 @@ export default function Contact() {
                     name: "Mr. Kastrianto",
                     email: "yanto@dwipakharismamitra.co.id",
                     phone: "081331146858",
+                    mapUrl:
+                      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63329.58256492783!2d112.6062398216797!3d-7.229558299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff1d60ba778b%3A0xa59d1dd59e49f7a!2sPT.Dwipa%20Kharisma%20Mitra!5e0!3m2!1sid!2sid!4v1760418067052!5m2!1sid!2sid",
                   },
                   {
                     city: "Jakarta",
                     name: "Mr. Jagoar",
                     email: "jagoar@dwipakharismamitra.co.id",
                     phone: "081331146858",
+                    mapUrl:
+                      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253896.27090963194!2d106.9449293!3d-6.113298599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a208affffffff%3A0xd4354d2466a205f4!2sPT.%20Dwipa%20Kharisma%20Mitra%20Jakarta!5e0!3m2!1sid!2sid!4v1760418195276!5m2!1sid!2sid",
                   },
                   {
                     city: "Semarang",
                     name: "Mrs. Indra",
                     email: "indra_puspitasari@dwipakharismamitra.co.id",
                     phone: "081331146858",
+                    mapUrl:
+                      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63367.89923044979!2d110.34047452167971!3d-6.950941200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70f31529baed9f%3A0xecfff0d5beef68fc!2sPT.%20Dwipa%20Kharisma%20Mitra%20Semarang!5e0!3m2!1sid!2sid!4v1760418223987!5m2!1sid!2sid",
                   },
                   {
-                    city: "Medan",
+                    city: "Belawan",
                     name: "Mr. Defri",
                     email: "defri_suwandi@dwipakharismamitra.co.id",
                     phone: "081331146858",
+                    mapUrl:
+                      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127396.4760292758!2d98.56265014335938!3d3.77972990000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036cc2a5ffbd269%3A0x4da367ddb1e7036d!2sPT.%20Dwipa%20Kharisma%20Mitra%20Belawan!5e0!3m2!1sid!2sid!4v1760418404011!5m2!1sid!2sid",
                   },
                 ].map((branch, index) => (
                   <div
                     key={index}
                     className="bg-white border-2 border-[#000065] rounded-2xl p-4 hover:bg-[#000065] transition-all duration-300 group cursor-pointer"
+                    onClick={() => {
+                      // Update map ketika kota diklik
+                      const mapIframe = document.getElementById("branch-map");
+                      if (mapIframe) {
+                        mapIframe.src = branch.mapUrl;
+                      }
+                    }}
                   >
                     <h3 className="font-bold text-base mb-2 group-hover:text-white">
                       {branch.city}
@@ -447,11 +490,11 @@ export default function Contact() {
                         <div className="bg-[#000065] text-white p-1 rounded flex-shrink-0 group-hover:bg-white group-hover:text-[#000065] transition-colors">
                           <MailIcon />
                         </div>
-                        <span className="break-all text-xs">
+                        <span className="break-all text-sm font-bold">
                           {branch.email}
                         </span>
                       </div>
-                      <div className="flex items-center gap-2 text-xs group-hover:text-white">
+                      <div className="flex items-center gap-2 text-sm font-bold group-hover:text-white">
                         <div className="bg-[#000065] text-white p-1 rounded flex-shrink-0 group-hover:bg-white group-hover:text-[#000065] transition-colors">
                           <PhoneIconComponent />
                         </div>
@@ -470,7 +513,8 @@ export default function Contact() {
               </h2>
               <div className="rounded-xl overflow-hidden shadow-lg h-full min-h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.888058180839!2d107.6185340748201!3d-6.902367067444227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64a1c9bfd2d%3A0x7db0e4b1ce9480e9!2sBandung!5e0!3m2!1sen!2sid!4v1698765432100!5m2!1sen!2sid"
+                  id="branch-map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63329.58256492783!2d112.6062398216797!3d-7.229558299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff1d60ba778b%3A0xa59d1dd59e49f7a!2sPT.Dwipa%20Kharisma%20Mitra!5e0!3m2!1sid!2sid!4v1760418067052!5m2!1sid!2sid"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

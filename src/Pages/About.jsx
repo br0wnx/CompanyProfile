@@ -10,6 +10,7 @@ export default function About() {
         className="w-full h-[75vh] flex flex-col md:flex-row items-center justify-center text-white px-6 md:px-20 bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/bg-about-4.jpg')" }}
       >
+        
         {/* Left Text */}
         <div className="flex-1 text-center md:text-left mb-6 md:mb-0">
           <p className="text-l sm:text-xl md:text-2xl font-semibold leading-snug italic">
