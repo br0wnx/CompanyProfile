@@ -1,81 +1,85 @@
 import LaunchOutlinedIcon from "@mui/icons-material/LaunchOutlined";
 
-
 export function JourneyGroupSection() {
   return (
-    <>
-      <section className="w-full py-12 px-6 md:px-20 bg-[#FDFBFC]">
-        {/* Intro Text */}
-        <div className="max-w-4xl mx-auto text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#DA1D2C]">
-            Our Journey & Group
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-            From humble beginnings to becoming a trusted container depot and
-            logistics partner, our journey reflects growth, innovation and
-            dedication to service excellence. As part of a strong group of
-            companies, we combine depot management, logistics, and IT solutions
-            to deliver integrated support for global trade and supply chains.
-          </p>
-        </div>
+    <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
+      {/* Intro Text */}
+      <div className="max-w-4xl mx-auto text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#DA1D2C] tracking-tight">
+          Our Journey & Group
+        </h2>
+        <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+          From humble beginnings to becoming a trusted container depot and
+          logistics partner, our story is one of growth, innovation, and
+          dedication to service excellence.
+        </p>
+      </div>
 
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 items-stretch">
-          {/* Left: 4 Cards*/}
-          <div className="lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              {
-                title: "PT. Bintang Rejeki Graha (BRG)",
-                img: "/assets/br.png",
-                desc: `A trucking company specializing in 20ft & 40ft container transport, established in the 1980s in Surabaya. Known for skilled drivers, competitive pricing, and a strong customer first culture.`,
-              },
-              {
-                title: "PT. Bintang Nusantara Services (BNS)",
-                img: "/assets/bns.png",
-                desc: `A leading container depot in Surabaya, acquired by DKM Group in 2020. Integrated with DKM Surabaya operations, BNS continues to grow through facility expansion and technology adoption.`,
-              },
-              {
-                title: "PT. Java Sarana Mitra Sejati (JSMS)",
-                img: "/assets/java.png",
-                desc: `Established in 2001, operating depots in Semarang and Lampung. Providing strategic lands, high-standard repair facilities, and premium depot services to support Indonesia's logistics growth.`,
-              },
-              {
-                title: "PT. Bintang Laut Premium (BLP)",
-                img: "/assets/blp.png",
-                desc: `Founded in 2008 as a reach stacker rental provider, later expanded into rail cargo transportation in Surabaya, Jakarta, and Semarang. Currently operating daily train services, supporting safer and more efficient logistics.`,
-              },
-            ].map((card, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all p-4 flex flex-col h-full border border-[#000065]"
-              >
-                {/* Logo + Icon */}
-                <div className="w-full h-14 flex items-center justify-between mb-3">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+        {/* LEFT: Company Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {[
+            {
+              title: "PT. Bintang Rejeki Graha (BRG)",
+              img: "/assets/br.png",
+              desc: `A trucking company specializing in 20ft & 40ft container transport, established in the 1980s in Surabaya.`,
+            },
+            {
+              title: "PT. Bintang Nusantara Services (BNS)",
+              img: "/assets/bns.png",
+              desc: `A leading container depot in Surabaya, acquired by DKM Group in 2020, now integrated with advanced technology.`,
+            },
+            {
+              title: "PT. Java Sarana Mitra Sejati (JSMS)",
+              img: "/assets/java.png",
+              desc: `Operating depots in Semarang and Lampung with high-standard facilities supporting logistics growth.`,
+            },
+            {
+              title: "PT. Bintang Laut Premium (BLP)",
+              img: "/assets/blp.png",
+              desc: `Founded in 2008 as a reach stacker rental provider, later expanded into rail cargo transportation.`,
+            },
+          ].map((card, idx) => (
+            <div
+              key={idx}
+              className="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
+            >
+              {/* Image Section - refined & larger logo */}
+              <div className="relative w-full h-36 flex flex-col items-center justify-center bg-gradient-to-b from-[#f9fafb] to-[#f2f4f8] border-b border-gray-100">
+                <div className="w-24 h-24 flex items-center justify-center bg-white rounded-full shadow-sm ring-1 ring-gray-200 group-hover:ring-[#DA1D2C]/30 transition-all duration-300">
                   <img
                     src={card.img}
                     alt={card.title}
-                    className="h-18 object-contain"
-                  />
-                  <LaunchOutlinedIcon
-                    sx={{ fontSize: 20 }}
-                    className="text-[#000065] hover:text-[#00004a] cursor-pointer transition-colors duration-200"
+                    className="h-14 object-contain transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
 
-                {/* Title */}
-                <h3 className="font-bold text-xl text-left leading-tight mb-2 ">
+                <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <LaunchOutlinedIcon
+                    className="text-[#000065] hover:text-[#00004a] cursor-pointer"
+                    fontSize="small"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col">
+                <h3 className="font-semibold text-lg mb-2 text-[#000065] group-hover:text-[#DA1D2C] transition-colors duration-300">
                   {card.title}
                 </h3>
-
-                {/* Description */}
-                <p className=" text-left leading-relaxed flex-grow">
-                  {card.desc}
-                </p>
+                <p className="text-sm leading-relaxed flex-grow">{card.desc}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
 
-          {/* Right: Timeline*/}
-          <div className="lg:w-2/5 flex flex-col gap-4 h-full">
+        {/* RIGHT: Vertical Timeline with Images */}
+        <div className="relative">
+          {/* Garis Timeline */}
+          <div className="absolute left-4 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#000065] via-[#DA1D2C]/70 to-[#000065]"></div>
+
+          {/* Isi Timeline */}
+          <div className="pl-10 space-y-12">
             {[
               {
                 year: "1988",
@@ -115,36 +119,34 @@ export function JourneyGroupSection() {
             ].map((step, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col md:flex-row items-center md:items-start justify-between gap-4 ${
-                  idx % 2 !== 0 ? "md:flex-row-reverse" : ""
-                } flex-1`}
+                className="relative flex items-start gap-5 group transition-all duration-700 ease-in-out hover:scale-[1.02] hover:translate-x-1"
               >
-                {/* Text */}
-                <div
-                  className={`flex-1 text-xs sm:text-sm leading-relaxed ${
-                    idx % 2 !== 0 ? "text-left md:text-right" : "text-left"
-                  }`}
-                >
-                  <p className="line-clamp-4">{step.text}</p>
+                {/* Titik Timeline */}
+                <div className="absolute -left-[6px] top-2 w-4 h-4 bg-[#000065] rounded-full ring-4 ring-white shadow-md transition-all duration-500 ease-in-out group-hover:bg-[#DA1D2C] group-hover:scale-110"></div>
+
+                {/* Gambar */}
+                <div className="w-20 h-20 rounded-xl overflow-hidden shadow-sm flex-shrink-0 transition-transform duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_20px_rgba(0,0,101,0.15)]">
+                  <img
+                    src={step.img}
+                    alt={step.year}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                  />
                 </div>
 
-                {/* Image */}
-                <div
-                  className="flex-shrink-0 relative w-16 h-16 md:w-18 md:h-18 rounded-lg shadow-sm bg-cover bg-center"
-                  style={{ backgroundImage: `url('${step.img}')` }}
-                >
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-[#000065]/55 rounded-lg flex items-center justify-center">
-                    <span className="text-[#FF8D0A] font-bold text-sm md:text-base drop-shadow-lg">
-                      {step.year}
-                    </span>
-                  </div>
+                {/* Teks */}
+                <div className="flex-1 transition-all duration-700 ease-in-out group-hover:text-[#000065]">
+                  <span className="block text-sm font-bold text-[#DA1D2C] mb-1 transition-colors duration-500 ease-in-out group-hover:text-[#DA1D2C]">
+                    {step.year}
+                  </span>
+                  <p className="text-sm leading-relaxed transition-colors duration-700 ease-in-out group-hover:text-gray-700">
+                    {step.text}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

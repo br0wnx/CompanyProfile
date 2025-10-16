@@ -127,7 +127,7 @@ export function FAQManagementSection() {
                   className="border border-gray-200 rounded-lg overflow-hidden"
                 >
                   <button
-                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors cursor-pointer"
                     onClick={() => toggleFAQ(index)}
                   >
                     <span className="font-semibold">{item.question}</span>

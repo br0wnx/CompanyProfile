@@ -11,7 +11,7 @@ export function CtaSection() {
             Looking for detailed quotations or customized solutions? Get in
             <span className="block">touch with our team today.</span>
           </h2>
-          <button className="bg-[#DA1D2C] hover:bg-[#b01824] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base">
+          <button className="bg-[#DA1D2C] hover:bg-[#b01824] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base cursor-pointer">
             Get in touch
           </button>
         </div>

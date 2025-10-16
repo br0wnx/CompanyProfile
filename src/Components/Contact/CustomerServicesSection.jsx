@@ -71,7 +71,7 @@ export function CustomerServiceSection() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                className="w-full bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer"
               >
                 Send Message
               </button>
@@ -111,7 +111,7 @@ export function CustomerServiceSection() {
                   <h4 className="font-semibold mb-1">Email</h4>
                   <a
                     href="mailto:contactus@dwipakharismamitra.co.id"
-                    className="text-[#000065] hover:text-[#00004a] transition-colors"
+                    className="text-[#000065] hover:text-[#00004a] transition-colors hover:underline"
                   >
                     contactus@dwipakharismamitra.co.id
                   </a>
@@ -127,7 +127,7 @@ export function CustomerServiceSection() {
                   <h4 className="font-semibold mb-1">Phone</h4>
                   <a
                     href="tel:02144854918"
-                    className="text-[#000065] hover:text-[#00004a] transition-colors"
+                    className="text-[#000065] hover:text-[#00004a] transition-colors hover:underline"
                   >
                     021 4485 4918
                   </a>

@@ -1,33 +1,31 @@
 import { useEffect, useState } from "react";
 
-
-function HeroSection  () {
-
+function HeroSection() {
   const [isScrolled, setIsScrolled] = useState(false);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const heroElement = document.getElementById("home");
-  
-        if (heroElement) {
-          const heroHeight = heroElement.offsetHeight;
-  
-          if (scrollPosition > heroHeight * 0.3) {
-            setIsScrolled(true);
-          } else {
-            setIsScrolled(false);
-          }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const heroElement = document.getElementById("home");
+
+      if (heroElement) {
+        const heroHeight = heroElement.offsetHeight;
+
+        if (scrollPosition > heroHeight * 0.3) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
         }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-     {/* Hero Section */}
+      {/* Hero Section */}
       <section
         id="home"
         className={`min-h-screen w-full flex flex-col items-end justify-center px-4 sm:px-6 md:px-20 bg-cover bg-center transition-all duration-500 ${
@@ -42,13 +40,13 @@ function HeroSection  () {
               : "transform translate-y-0 opacity-100"
           }`}
         >
-          {/* Judul dengan 2 baris */}
+          {/* Judul */}
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-tight">
             <span className="block">Trusted Container Depot & Logistics</span>
             <span className="block">Solutions in Indonesia</span>
           </h1>
 
-          {/* Deskripsi dengan 2 baris */}
+          {/* Deskripsi  */}
           <div className="mt-4 sm:mt-6">
             <p className="font-medium text-xs sm:text-sm md:text-lg leading-relaxed">
               <span className="block">
@@ -62,17 +60,17 @@ function HeroSection  () {
             </p>
           </div>
 
-          {/* Button dengan text-nowrap */}
+          {/* Button */}
           <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-6 justify-end">
-            <button className="bg-[#DA1D2C] hover:bg-[#b01824] text-white font-semibold py-2 px-5 rounded-lg transition-colors text-xs sm:text-sm text-nowrap">
+            <button className="bg-[#DA1D2C] hover:bg-[#b01824] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer">
               Explore Services
             </button>
-            <button className="bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-colors text-xs sm:text-sm text-nowrap">
+            <button className="bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer">
               Go to Tracker Portal
             </button>
           </div>
 
-          {/* Footer text dengan 3 baris */}
+          {/* Footer text */}
           <div
             className="mt-24 sm:mt-28 font-bold italic text-xs sm:text-sm md:text-lg text-right"
             style={{ color: "#FF8D0A" }}
@@ -84,7 +82,7 @@ function HeroSection  () {
         </div>
       </section>
 
-      {/* New Section dengan teks yang sama */}
+      {/* New Section */}
       <section
         id="content-section"
         className={`min-h-screen w-full flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-20 transition-all duration-700 ${
@@ -117,16 +115,16 @@ function HeroSection  () {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
-            <button className="bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-colors text-xs sm:text-sm">
+            <button className="flex-1 sm:flex-none bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center">
               Explore Services
             </button>
-            <button className="bg-transparent border-2 border-[#000065] hover:bg-[#000065] text-[#000065] hover:text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300 text-xs sm:text-sm">
+            <button className="flex-1 sm:flex-none bg-transparent border-2 border-[#000065] hover:bg-[#000065] text-[#000065] hover:text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center">
               Go to Tracker Portal
             </button>
           </div>
         </div>
 
-        {/* Background Image dengan Rounded Corners */}
+        {/* Background Image */}
         <div
           className="text-center font-bold italic text-xs sm:text-sm md:text-lg py-16 bg-cover bg-center w-full h-100 relative mt-8 rounded-xl mx-4"
           style={{
@@ -145,7 +143,7 @@ function HeroSection  () {
         </div>
       </section>
     </>
-  )
+  );
 }
 
 export default HeroSection;

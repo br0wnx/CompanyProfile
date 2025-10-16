@@ -18,7 +18,7 @@ export function TrackerSection() {
               ensuring transparency and accuracy in every step of your supply
               chahin.
             </p>
-            <button className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mb-30">
+            <button className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mb-30 cursor-pointer">
               Go to Tracker Portal
             </button>
           </div>
