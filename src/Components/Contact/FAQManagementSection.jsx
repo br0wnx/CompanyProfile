@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -6,7 +8,15 @@ import PhoneIcon from "@mui/icons-material/Phone";
 export function FAQManagementSection() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
-  // FAQ Data
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-in-out",
+      once: false,
+      offset: 50,
+    });
+  }, []);
+
   const faqItems = [
     {
       question: "What services does DKM Group provide?",
@@ -26,12 +36,9 @@ export function FAQManagementSection() {
     },
   ];
 
-  // Icons untuk contact
   const MailIcon = () => <EmailIcon sx={{ fontSize: 20 }} />;
-
   const PhoneIconComponent = () => <PhoneIcon sx={{ fontSize: 20 }} />;
 
-  // Management Data
   const managementData = [
     {
       position: "Executive Director & General Manager",
@@ -106,25 +113,24 @@ export function FAQManagementSection() {
     },
   ];
 
-  const toggleFAQ = (index) => {
-    setOpenFAQ(openFAQ === index ? null : index);
-  };
+  const toggleFAQ = (index) => setOpenFAQ(openFAQ === index ? null : index);
 
   return (
     <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-          {/* Left: Frequently Asked Questions - 1 kolom */}
-          <div className="lg:col-span-1">
+          {/* FAQ */}
+          <div className="lg:col-span-1" data-aos="fade-right">
             <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-8">
               Frequently Asked Questions
             </h2>
-
             <div className="space-y-4">
               {faqItems.map((item, index) => (
                 <div
                   key={index}
                   className="border border-gray-200 rounded-lg overflow-hidden"
+                  data-aos="fade-right"
+                  data-aos-delay={index * 100}
                 >
                   <button
                     className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors cursor-pointer"
@@ -138,33 +144,35 @@ export function FAQManagementSection() {
                       }`}
                     />
                   </button>
-                  {/* Answer section */}
                   <div
                     className={`px-6 py-4 bg-gray-50 border-t border-gray-200 ${
                       openFAQ === index ? "block" : "hidden"
                     }`}
                   >
-                    <p className="">{item.answer}</p>
+                    <p>{item.answer}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right: Management */}
+          {/* Management */}
           <div className="lg:col-span-2">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6">
+            <h2
+              className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6"
+              data-aos="fade-left"
+            >
               Management
             </h2>
-
-            {/* Grid Management */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch">
-              {/* Kolom Kiri */}
+              {/* Left Column */}
               <div className="space-y-4 flex flex-col">
                 {managementData.slice(0, 3).map((person, index) => (
                   <div
                     key={index}
                     className="flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-4 hover:bg-[#000065] transition-all duration-300 group cursor-pointer"
+                    data-aos="fade-left"
+                    data-aos-delay={index * 100}
                   >
                     <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
                       {person.position}
@@ -197,12 +205,14 @@ export function FAQManagementSection() {
                 ))}
               </div>
 
-              {/* Kolom Kanan */}
+              {/* Right Column */}
               <div className="space-y-4 flex flex-col">
                 {managementData.slice(3).map((person, index) => (
                   <div
                     key={index}
                     className="flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-4 hover:bg-[#000065] transition-all duration-300 group cursor-pointer"
+                    data-aos="fade-left"
+                    data-aos-delay={(index + 3) * 100}
                   >
                     <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
                       {person.position}

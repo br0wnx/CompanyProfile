@@ -23,7 +23,7 @@ export default function Navbar() {
     return location.pathname === path;
   };
 
-  // Function to scroll to top
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -31,10 +31,10 @@ export default function Navbar() {
     });
   };
 
-  // Combined function for navigation
+
   const handleNavClick = () => {
     scrollToTop();
-    setIsOpen(false); // Close mobile menu if open
+    setIsOpen(false); 
   };
 
   const navLinks = [
@@ -45,14 +45,14 @@ export default function Navbar() {
     { path: "/contact", label: "Contact" },
   ];
 
-  // Function to get active link color based on scroll state
+ 
   const getActiveLinkColor = () => {
-    return isScrolled ? "text-[#DA1D2C]" : "text-[#FF8D0A]"; // Merah saat scrolled, Orange saat transparent
+    return isScrolled ? "text-[#DA1D2C]" : "text-[#FF8D0A]"; 
   };
 
-  // Function to get active background color for mobile
+  
   const getActiveBgColor = () => {
-    return isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]"; // Merah saat scrolled, Orange saat transparent
+    return isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]"; 
   };
 
   return (

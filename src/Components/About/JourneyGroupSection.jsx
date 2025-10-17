@@ -1,10 +1,25 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import LaunchOutlinedIcon from "@mui/icons-material/LaunchOutlined";
 
 export function JourneyGroupSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700, 
+      easing: "ease-in-out", 
+      once: false, 
+      offset: 50,
+    });
+  }, []);
+
   return (
-    <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
+    <section
+      className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]"
+      data-aos="fade-up"
+    >
       {/* Intro Text */}
-      <div className="max-w-4xl mx-auto text-center mb-16">
+      <div className="max-w-4xl mx-auto text-center mb-16" data-aos="fade-down">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#DA1D2C] tracking-tight">
           Our Journey & Group
         </h2>
@@ -15,9 +30,16 @@ export function JourneyGroupSection() {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+      <div
+        className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         {/* LEFT: Company Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 gap-8"
+          data-aos="fade-right"
+        >
           {[
             {
               title: "PT. Bintang Rejeki Graha (BRG)",
@@ -43,8 +65,10 @@ export function JourneyGroupSection() {
             <div
               key={idx}
               className="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
+              data-aos="zoom-in"
+              data-aos-delay={idx * 100}
             >
-              {/* Image Section - refined & larger logo */}
+              {/* Image Section */}
               <div className="relative w-full h-36 flex flex-col items-center justify-center bg-gradient-to-b from-[#f9fafb] to-[#f2f4f8] border-b border-gray-100">
                 <div className="w-24 h-24 flex items-center justify-center bg-white rounded-full shadow-sm ring-1 ring-gray-200 group-hover:ring-[#DA1D2C]/30 transition-all duration-300">
                   <img
@@ -73,8 +97,8 @@ export function JourneyGroupSection() {
           ))}
         </div>
 
-        {/* RIGHT: Vertical Timeline with Images */}
-        <div className="relative">
+        {/* RIGHT: Vertical Timeline */}
+        <div className="relative" data-aos="fade-left">
           {/* Garis Timeline */}
           <div className="absolute left-4 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#000065] via-[#DA1D2C]/70 to-[#000065]"></div>
 
@@ -120,12 +144,20 @@ export function JourneyGroupSection() {
               <div
                 key={idx}
                 className="relative flex items-start gap-5 group transition-all duration-700 ease-in-out hover:scale-[1.02] hover:translate-x-1"
+                data-aos="fade-up"
+                data-aos-delay={idx * 100}
               >
                 {/* Titik Timeline */}
-                <div className="absolute -left-[6px] top-2 w-4 h-4 bg-[#000065] rounded-full ring-4 ring-white shadow-md transition-all duration-500 ease-in-out group-hover:bg-[#DA1D2C] group-hover:scale-110"></div>
+                <div
+                  className="absolute -left-[6px] top-2 w-4 h-4 
+                  bg-[#000065] rounded-full ring-4 ring-white shadow-md 
+                  opacity-100 scale-100 translate-x-0 translate-y-0
+                  transition-all duration-700 ease-in-out 
+                  group-hover:bg-[#DA1D2C] group-hover:scale-125 group-hover:opacity-0 group-hover:translate-x-2 group-hover:translate-y-2"
+                ></div>
 
                 {/* Gambar */}
-                <div className="w-20 h-20 rounded-xl overflow-hidden shadow-sm flex-shrink-0 transition-transform duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_20px_rgba(0,0,101,0.15)]">
+                <div className="w-20 h-20 rounded-xl overflow-hidden shadow-sm flex-shrink-0 transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_20px_rgba(0,0,101,0.15)]">
                   <img
                     src={step.img}
                     alt={step.year}

@@ -6,7 +6,7 @@ export function HeroSection() {
           className="w-full h-[75vh] flex items-center justify-center text-white px-6 md:px-20 bg-cover bg-center relative"
           style={{ backgroundImage: "url('/assets/servis.jpg')" }}
         >
-          {/* Overlay Lebih Gelap */}
+          {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 "></div>
 
           {/* Content */}

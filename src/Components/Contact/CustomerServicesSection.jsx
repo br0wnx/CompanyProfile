@@ -1,21 +1,34 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 export function CustomerServiceSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-in-out",
+      once: false,
+      offset: 50,
+    });
+  }, []);
+
   return (
     <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left: Contact Form */}
-          <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+          <div
+            className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
+            data-aos="fade-right"
+          >
             <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6">
               Send Us a Message
             </h2>
 
             <form className="space-y-4">
-              {/* Name & Email dalam satu row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Name */}
                 <div>
                   <label className="block text-sm font-medium mb-2">
                     Name *
@@ -27,8 +40,6 @@ export function CustomerServiceSection() {
                     placeholder="Your full name"
                   />
                 </div>
-
-                {/* Email */}
                 <div>
                   <label className="block text-sm font-medium mb-2">
                     Email *
@@ -42,7 +53,6 @@ export function CustomerServiceSection() {
                 </div>
               </div>
 
-              {/* Subject */}
               <div>
                 <label className="block text-sm font-medium mb-2">
                   Subject *
@@ -55,7 +65,6 @@ export function CustomerServiceSection() {
                 />
               </div>
 
-              {/* Message */}
               <div>
                 <label className="block text-sm font-medium mb-2">
                   Message *
@@ -68,7 +77,6 @@ export function CustomerServiceSection() {
                 />
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
                 className="w-full bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer"
@@ -79,9 +87,8 @@ export function CustomerServiceSection() {
           </div>
 
           {/* Right: Contact Information */}
-          <div className="flex flex-col justify-center">
-            {/* Description */}
-            <div className="mb-18">
+          <div className="flex flex-col justify-center" data-aos="fade-left">
+            <div className="mb-18" data-aos="fade-left" data-aos-delay="100">
               <h3 className="text-2xl font-bold mb-4">
                 We're Here to Assist You
               </h3>
@@ -95,15 +102,20 @@ export function CustomerServiceSection() {
               </p>
             </div>
 
-            {/* Title */}
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6">
+            <h2
+              className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               Customer Service & Support
             </h2>
 
-            {/* Contact Details */}
             <div className="space-y-6">
-              {/* Email */}
-              <div className="flex items-start gap-4">
+              <div
+                className="flex items-start gap-4"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
                 <div className="bg-[#000065] text-white p-3 rounded-lg flex-shrink-0">
                   <EmailIcon sx={{ fontSize: 24 }} />
                 </div>
@@ -118,8 +130,11 @@ export function CustomerServiceSection() {
                 </div>
               </div>
 
-              {/* Phone */}
-              <div className="flex items-start gap-4">
+              <div
+                className="flex items-start gap-4"
+                data-aos="fade-left"
+                data-aos-delay="400"
+              >
                 <div className="bg-[#000065] text-white p-3 rounded-lg flex-shrink-0">
                   <PhoneIcon sx={{ fontSize: 24 }} />
                 </div>

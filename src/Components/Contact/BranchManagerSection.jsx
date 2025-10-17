@@ -1,12 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function BranchManagerSection() {
   const [activeBranch, setActiveBranch] = useState(0);
 
-  const MailIcon = () => <EmailIcon sx={{ fontSize: 20 }} />;
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-in-out",
+      once: false, 
+      offset: 50,
+    });
+  }, []);
 
+  const MailIcon = () => <EmailIcon sx={{ fontSize: 20 }} />;
   const PhoneIconComponent = () => <PhoneIcon sx={{ fontSize: 20 }} />;
 
   const branches = [
@@ -45,7 +55,10 @@ export function BranchManagerSection() {
   ];
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
+    <section
+      className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]"
+      data-aos="fade-up"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
           {/* Left: Branch List */}
@@ -74,13 +87,7 @@ export function BranchManagerSection() {
                   >
                     {branch.city}
                   </h3>
-                  <p
-                    className={`font-semibold mb-3 text-sm ${
-                      activeBranch === index
-                        ? "text-[#FF8D0A]"
-                        : "text-[#FF8D0A]"
-                    }`}
-                  >
+                  <p className={`font-semibold mb-3 text-sm text-[#FF8D0A]`}>
                     {branch.name}
                   </p>
                   <div className="space-y-2">
@@ -143,7 +150,7 @@ export function BranchManagerSection() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-2xl"
+                className="rounded-2xl transition-transform duration-500 hover:scale-105"
               />
             </div>
           </div>
