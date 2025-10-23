@@ -69,16 +69,6 @@ function HeroSection() {
               Go to Tracker Portal
             </button>
           </div>
-
-          {/* Footer text */}
-          <div
-            className="mt-24 sm:mt-28 font-bold italic text-xs sm:text-sm md:text-lg text-right"
-            style={{ color: "#FF8D0A" }}
-          >
-            <span className="block">Serving shipping lines,</span>
-            <span className="block">forwarders, and logistic</span>
-            <span className="block">companies since 1988.</span>
-          </div>
         </div>
       </section>
 
@@ -104,11 +94,11 @@ function HeroSection() {
           </h1>
 
           <div className="mb-6">
-            <p className="text-sm sm:text-base md:text-lg leading-tight ">
+            <p className="text-base sm:text-base leading-relaxed flex-grow ">
               Providing reliable container storage, repair, and logistics
               solutions. With in-house systems and
             </p>
-            <p className="text-sm sm:text-base md:text-lg leading-tight ">
+            <p className="text-base sm:text-base leading-relaxed flex-grow ">
               logistics solutions. With in-house systems and nationwide
               branches, we ensure seamless operations across Indonesia.
             </p>

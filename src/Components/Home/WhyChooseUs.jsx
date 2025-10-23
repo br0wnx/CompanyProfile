@@ -45,12 +45,12 @@ function WhyChooseUs() {
             Why Choose Us
           </h2>
           <p
-            className="mt-3 sm:mt-4 md:mt-5 lg:mt-6 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed sm:leading-relaxed px-2 sm:px-4"
+            className="text-base sm:text-base leading-relaxed mb-3 mt-8 flex-grow"
             data-aos="fade-up"
             data-aos-delay={100}
           >
             At DKM Group, we combine over three decades of expertise with
-            technology-driven operations to deliver reliable container and
+            technology-driven <br/> operations to deliver reliable container and
             logistics solutions.
           </p>
         </div>

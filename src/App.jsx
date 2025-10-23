@@ -5,7 +5,9 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
-import Portal from "./Pages/Portal";
+import Tracker from "./Pages/Tracker";
+import Login from "./Pages/Login";
+
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/portal" element={<Portal />} />
+          <Route path="/tracker" element={<Tracker />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />
