@@ -212,6 +212,7 @@ export function FAQManagementSection() {
                     {/* Tooltip dengan gaya khas website */}
                     <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                       Klik untuk chat via WhatsApp
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                     </span>
 
                     <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
@@ -259,6 +260,7 @@ export function FAQManagementSection() {
                     {/* Tooltip dengan gaya khas website */}
                     <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                       Klik untuk chat via WhatsApp
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                     </span>
 
                     <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">

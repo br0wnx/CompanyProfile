@@ -65,7 +65,12 @@ function HeroSection() {
             <button className="bg-[#DA1D2C] hover:bg-[#b01824] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer">
               Explore Services
             </button>
-            <button className="bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer">
+            <button
+              onClick={() =>
+                window.open("https://tracker.dwipakharismamitra.com/", "_blank")
+              }
+              className="bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
+            >
               Go to Tracker Portal
             </button>
           </div>
@@ -105,10 +110,18 @@ function HeroSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+            {/* Explore Services */}
             <button className="flex-1 sm:flex-none bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center">
               Explore Services
             </button>
-            <button className="flex-1 sm:flex-none bg-transparent border-2 border-[#000065] hover:bg-[#000065] text-[#000065] hover:text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center">
+
+            {/* Go to Tracker Portal */}
+            <button
+              onClick={() =>
+                window.open("https://tracker.dwipakharismamitra.com/", "_blank")
+              }
+              className="flex-1 sm:flex-none bg-transparent border-2 border-[#000065] hover:bg-[#000065] text-[#000065] hover:text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center"
+            >
               Go to Tracker Portal
             </button>
           </div>

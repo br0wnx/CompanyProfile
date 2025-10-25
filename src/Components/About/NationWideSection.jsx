@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import { InteractiveLeafletMap} from "../InteractiveMap";
+import { InteractiveLeafletMap } from "../InteractiveMap";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export function NationWideSection() {
@@ -87,6 +87,7 @@ export function NationWideSection() {
 
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
                 <div className="relative group">
@@ -100,6 +101,7 @@ export function NationWideSection() {
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Chat via WhatsApp
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
               </div>
@@ -166,6 +168,7 @@ export function NationWideSection() {
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
                 <div className="relative group">
@@ -179,6 +182,7 @@ export function NationWideSection() {
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Chat via WhatsApp
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
               </div>
@@ -244,6 +248,7 @@ export function NationWideSection() {
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
                 <div className="relative group">
@@ -257,6 +262,7 @@ export function NationWideSection() {
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Chat via WhatsApp
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
               </div>
@@ -322,6 +328,7 @@ export function NationWideSection() {
 
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
                 <div className="relative group">
@@ -335,6 +342,7 @@ export function NationWideSection() {
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Chat via WhatsApp
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
               </div>

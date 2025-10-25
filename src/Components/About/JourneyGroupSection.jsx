@@ -6,9 +6,9 @@ import LaunchOutlinedIcon from "@mui/icons-material/LaunchOutlined";
 export function JourneyGroupSection() {
   useEffect(() => {
     AOS.init({
-      duration: 700, 
-      easing: "ease-in-out", 
-      once: false, 
+      duration: 700,
+      easing: "ease-in-out",
+      once: false,
       offset: 50,
     });
   }, []);
@@ -45,26 +45,30 @@ export function JourneyGroupSection() {
               title: "PT. Bintang Rejeki Graha (BRG)",
               img: "/assets/br.png",
               desc: `A trucking company specializing in 20ft & 40ft container transport, established in the 1980s in Surabaya.`,
+              link: "https://bintangrejeki.com/",
             },
             {
               title: "PT. Bintang Nusantara Services (BNS)",
               img: "/assets/bns.png",
               desc: `A leading container depot in Surabaya, acquired by DKM Group in 2020, now integrated with advanced technology.`,
+              link: "https://www.bns.com",
             },
             {
               title: "PT. Java Sarana Mitra Sejati (JSMS)",
               img: "/assets/java.png",
               desc: `Operating depots in Semarang and Lampung with high-standard facilities supporting logistics growth.`,
+              link: "https://javasaranamitrasejati.com",
             },
             {
               title: "PT. Bintang Laut Premium (BLP)",
               img: "/assets/blp.png",
               desc: `Founded in 2008 as a reach stacker rental provider, later expanded into rail cargo transportation.`,
+              link: "https://bintanglautplatinum.com/",
             },
           ].map((card, idx) => (
             <div
               key={idx}
-              className="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
+              className="group bg-white/80 backdrop-blur-md rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
               data-aos="zoom-in"
               data-aos-delay={idx * 100}
             >
@@ -78,11 +82,24 @@ export function JourneyGroupSection() {
                   />
                 </div>
 
-                <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <LaunchOutlinedIcon
-                    className="text-[#000065] hover:text-[#00004a] cursor-pointer"
-                    fontSize="small"
-                  />
+                {/* Icon */}
+                <div className="absolute top-3 right-3">
+                  <a
+                    href={card.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative flex items-center group"
+                  >
+                    <LaunchOutlinedIcon
+                      className="text-[#000065] hover:text-[#00004a] cursor-pointer"
+                      fontSize="small"
+                    />
+                    {/* Tooltip  */}
+                    <span className="absolute left-1/2 bottom-full mb-3 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                      Visit Site
+                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    </span>
+                  </a>
                 </div>
               </div>
 
@@ -97,7 +114,7 @@ export function JourneyGroupSection() {
           ))}
         </div>
 
-        {/* RIGHT: Vertical Timeline */}
+        {/* RIGHT */}
         <div className="relative" data-aos="fade-left">
           {/* Garis Timeline */}
           <div className="absolute left-4 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#000065] via-[#DA1D2C]/70 to-[#000065]"></div>

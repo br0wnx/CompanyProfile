@@ -23,7 +23,6 @@ export default function Navbar() {
     return location.pathname === path;
   };
 
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -31,10 +30,9 @@ export default function Navbar() {
     });
   };
 
-
   const handleNavClick = () => {
     scrollToTop();
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   const navLinks = [
@@ -46,14 +44,12 @@ export default function Navbar() {
     { path: "/login", label: "Login" },
   ];
 
- 
   const getActiveLinkColor = () => {
-    return isScrolled ? "text-[#DA1D2C]" : "text-[#FF8D0A]"; 
+    return isScrolled ? "text-[#DA1D2C]" : "text-[#FF8D0A]";
   };
 
-  
   const getActiveBgColor = () => {
-    return isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]"; 
+    return isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]";
   };
 
   return (
@@ -79,37 +75,75 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 lg:space-x-12 font-medium">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={handleNavClick}
-                className={`relative py-2 transition-all duration-300 group ${
-                  isActiveLink(link.path)
-                    ? `${getActiveLinkColor()} font-semibold`
-                    : isScrolled
-                    ? "hover:text-[#DA1D2C]"
-                    : "hover:text-[#FF8D0A]"
-                }`}
-              >
-                {link.label}
+            {navLinks.map((link) => {
+              const isButton =
+                link.label === "Tracker" || link.label === "Login";
 
-                {/* Animated underline */}
-                <span
-                  className={`absolute bottom-0 left-0 w-full h-0.5 transition-all duration-300 ${
-                    isActiveLink(link.path)
-                      ? `scale-x-100 ${
-                          isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]"
-                        }`
-                      : `scale-x-0 ${
-                          isScrolled
-                            ? "group-hover:bg-[#DA1D2C]"
-                            : "group-hover:bg-[#FF8D0A]"
-                        } group-hover:scale-x-100`
-                  }`}
-                />
-              </Link>
-            ))}
+              const externalLink =
+                link.label === "Tracker"
+                  ? "https://tracker.dwipakharismamitra.com/"
+                  : link.label === "Login"
+                  ? "https://tracker.dwipakharismamitra.com/login.php"
+                  : null;
+
+              const buttonClass = `py-2 px-5 rounded-lg font-semibold transition-all duration-500 ${
+                link.label === "Tracker"
+                  ? isScrolled
+                    ? "bg-[#DA1D2C] text-white hover:bg-[#b81824]"
+                    : "bg-[#FF8D0A] text-white hover:bg-[#e67a05]"
+                  : isScrolled
+                  ? "border-2 border-[#DA1D2C] text-[#DA1D2C] hover:bg-[#DA1D2C] hover:text-white"
+                  : "border-2 border-[#FF8D0A] text-[#FF8D0A] hover:bg-[#FF8D0A] hover:text-white"
+              }`;
+
+
+              const linkClass = `relative py-2 transition-all duration-300 group ${
+                isActiveLink(link.path)
+                  ? `${getActiveLinkColor()} font-semibold`
+                  : isScrolled
+                  ? "hover:text-[#DA1D2C]"
+                  : "hover:text-[#FF8D0A]"
+              }`;
+
+              if (isButton && externalLink) {
+                return (
+                  <a
+                    key={link.label}
+                    href={externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={buttonClass}
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={handleNavClick}
+                  className={linkClass}
+                >
+                  {link.label}
+
+                  <span
+                    className={`absolute bottom-0 left-0 w-full h-0.5 transition-all duration-300 ${
+                      isActiveLink(link.path)
+                        ? `scale-x-100 ${
+                            isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]"
+                          }`
+                        : `scale-x-0 ${
+                            isScrolled
+                              ? "group-hover:bg-[#DA1D2C]"
+                              : "group-hover:bg-[#FF8D0A]"
+                          } group-hover:scale-x-100`
+                    }`}
+                  />
+                </Link>
+              );
+            })}
           </div>
 
           {/* Mobile Menu Button */}
@@ -127,26 +161,58 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          className={`md:hidden px-6 py-4 space-y-1 transition-all duration-500 backdrop-blur-lg ${
+          className={`md:hidden px-6 py-4 space-y-2 transition-all duration-500 backdrop-blur-lg ${
             isScrolled ? "bg-white/95 text-gray-900" : "bg-black/80 text-white"
           }`}
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              onClick={handleNavClick}
-              className={`block py-3 px-4 rounded-lg transition-all duration-300 ${
-                isActiveLink(link.path)
-                  ? `${getActiveBgColor()} text-white font-semibold shadow-lg`
-                  : isScrolled
-                  ? "hover:bg-[#DA1D2C]/10 hover:text-[#DA1D2C]"
-                  : "hover:bg-white/10 hover:text-[#FF8D0A]"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isButton = link.label === "Tracker" || link.label === "Login";
+            const externalLink =
+              link.label === "Tracker"
+                ? "https://tracker.dwipakharismamitra.com/"
+                : link.label === "Login"
+                ? "https://tracker.dwipakharismamitra.com/login.php"
+                : null;
+
+            if (isButton && externalLink) {
+              return (
+                <a
+                  key={link.label}
+                  href={externalLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block w-full text-center py-3 px-4 rounded-lg font-semibold transition-all duration-500 ${
+                    link.label === "Tracker"
+                      ? isScrolled
+                        ? "bg-[#DA1D2C] text-white hover:bg-[#b81824]"
+                        : "bg-[#FF8D0A] text-white hover:bg-[#e67a05]"
+                      : isScrolled
+                      ? "border-2 border-[#DA1D2C] text-[#DA1D2C] hover:bg-[#DA1D2C] hover:text-white"
+                      : "border-2 border-[#FF8D0A] text-[#FF8D0A] hover:bg-[#FF8D0A] hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              );
+            }
+
+            return (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={handleNavClick}
+                className={`block py-3 px-4 rounded-lg transition-all duration-300 ${
+                  isActiveLink(link.path)
+                    ? `${getActiveBgColor()} text-white font-semibold shadow-lg`
+                    : isScrolled
+                    ? "hover:bg-[#DA1D2C]/10 hover:text-[#DA1D2C]"
+                    : "hover:bg-white/10 hover:text-[#FF8D0A]"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </nav>
