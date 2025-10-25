@@ -103,7 +103,18 @@ export function OurServices() {
               high standards in storage, maintenance, and inspection.
             </p>
             <button
-              className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mb-32 cursor-pointer transition-all duration-700 ease-in-out hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,101,0.15)]"
+              className="
+      bg-[#000065] hover:bg-[#00004a]
+      px-4 sm:px-5 py-2
+      rounded-lg font-semibold text-white
+      text-xs sm:text-sm
+      self-center lg:self-start
+      mx-auto lg:mx-0
+      mb-38
+      cursor-pointer
+      transition-transform duration-700 ease-in-out
+      hover:scale-105
+    "
               data-aos="zoom-in"
               data-aos-delay={200}
             >
