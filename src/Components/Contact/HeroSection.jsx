@@ -15,7 +15,7 @@ export function HeroSection() {
       </div>
       {/* Left Text */}
       <div className="flex-1 text-center md:text-right mb-6 md:mb-0">
-        <p className="text-l sm:text-xl md:text-2xl font-semibold leading-snug">
+        <p className="text-l sm:text-xl md:text-2xl font-semibold leading-snug italic">
           Direct contacts for each
           <br />
           department and branch to serve

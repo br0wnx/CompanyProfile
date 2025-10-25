@@ -23,7 +23,7 @@ export function JourneyGroupSection() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#DA1D2C] tracking-tight">
           Our Journey & Group
         </h2>
-        <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+        <p className="text-base sm:text-base leading-relaxed flex-grow">
           From humble beginnings to becoming a trusted container depot and
           logistics partner, our story is one of growth, innovation, and
           dedication to service excellence.

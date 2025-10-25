@@ -28,7 +28,7 @@ export function WhoWeAreSection() {
               Who We Are
             </h2>
             <p
-              className="text-sm sm:text-base md:text-lg leading-relaxed"
+              className="text-base sm:text-base leading-relaxed flex-grow"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -38,7 +38,7 @@ export function WhoWeAreSection() {
               reliable container storage, repair, and transportation solutions.
             </p>
             <p
-              className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed"
+              className="mb-38 text-base sm:text-base leading-relaxed flex-grow"
               data-aos="fade-up"
               data-aos-delay="200"
             >

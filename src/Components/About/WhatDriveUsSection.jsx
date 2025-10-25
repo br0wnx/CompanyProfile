@@ -48,7 +48,7 @@ export function WhatDriveUsSection() {
                 What Drives Us
               </h2>
               <p
-                className="text-sm sm:text-base md:text-lg leading-relaxed"
+                className="text-base sm:text-base leading-relaxed flex-grow"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
@@ -92,7 +92,7 @@ export function WhatDriveUsSection() {
                   <h3 className="text-xl font-bold transition-colors duration-700 group-hover:text-[#DA1D2C]">
                     {card.title}
                   </h3>
-                  <p className="text-sm sm:text-base whitespace-pre-line leading-relaxed">
+                  <p className="text-base sm:text-base whitespace-pre-line leading-relaxed">
                     {card.desc}
                   </p>
                 </div>

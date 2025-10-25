@@ -15,7 +15,7 @@ export function HeroSection() {
               Our Services
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl leading-relaxed italic">
-              reliable, technology-driven, and customer-focused solutions for
+              Reliable, technology-driven, and customer-focused solutions for
               <span className="block">your container needs.</span>
             </p>
           </div>

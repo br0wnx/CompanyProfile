@@ -92,7 +92,7 @@ export function CustomerServiceSection() {
               <h3 className="text-2xl font-bold mb-4">
                 We're Here to Assist You
               </h3>
-              <p className="leading-snug">
+              <p className="text-base sm:text-base leading-relaxed flex-grow mt-10">
                 For inquiries, assistance, or partnership opportunities,
                 <span className="block">
                   {" "}
@@ -146,11 +146,11 @@ export function CustomerServiceSection() {
                   >
                     021 4485 4918
                   </a>
-                  <p className="text-sm mt-1 text-[#FD8D0A]">
-                    Available Mon - Fri, 08.00 - 17.00 WIB
-                  </p>
                 </div>
               </div>
+              <p className="text-xl mt-1 text-[#FD8D0A]">
+                Available Mon - Fri, 08.00 - 17.00 WIB
+              </p>
             </div>
           </div>
         </div>

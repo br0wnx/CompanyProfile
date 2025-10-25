@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
-import { InteractiveZoomMap } from "../InteractiveMap";
+import { InteractiveLeafletMap} from "../InteractiveMap";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export function NationWideSection() {
   useEffect(() => {
@@ -28,7 +28,7 @@ export function NationWideSection() {
 
         {/* Main Image */}
         <div data-aos="zoom-in">
-          <InteractiveZoomMap />
+          <InteractiveLeafletMap />
         </div>
 
         {/* Two Column Text */}
@@ -38,7 +38,7 @@ export function NationWideSection() {
         >
           {/* Left Text */}
           <div className="flex-1 text-left">
-            <p className="text-sm sm:text-base md:text-lg leading-tight">
+            <p className="text-base sm:text-base leading-relaxed flex-grow">
               Additionally, through our group company
               <strong className="underline">
                 {" "}
@@ -52,7 +52,7 @@ export function NationWideSection() {
 
           {/* Right Text*/}
           <div className="flex-1 text-left md:text-right">
-            <p className="text-sm sm:text-base md:text-lg leading-tight">
+            <p className="text-base sm:text-base leading-relaxed flex-grow">
               <strong className="underline">
                 PT Bintang Nusantara Service (BNS){" "}
               </strong>
@@ -71,12 +71,36 @@ export function NationWideSection() {
           >
             <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
               <span className="text-base sm:text-lg lg:text-xl">Surabaya</span>
-              <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <MapOutlinedIcon fontSize="small" />
+              <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open(
+                        "https://maps.app.goo.gl/FWUtpsK19miFbNz69",
+                        "_blank"
+                      )
+                    }
+                  >
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Lihat Lokasi
+                  </span>
                 </div>
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <PhoneOutlinedIcon fontSize="small" />
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open("https://wa.me/6281331146858", "_blank")
+                    }
+                  >
+                    <WhatsAppIcon fontSize="small" />
+                  </div>
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Chat via WhatsApp
+                  </span>
                 </div>
               </div>
             </h3>
@@ -127,12 +151,35 @@ export function NationWideSection() {
           >
             <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
               <span className="text-base sm:text-lg lg:text-xl">Semarang</span>
-              <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <MapOutlinedIcon fontSize="small" />
+              <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open(
+                        "https://maps.app.goo.gl/EmmGhvCNTibQfRWH6",
+                        "_blank"
+                      )
+                    }
+                  >
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Lihat Lokasi
+                  </span>
                 </div>
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <PhoneOutlinedIcon fontSize="small" />
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open("https://wa.me/6282133771971", "_blank")
+                    }
+                  >
+                    <WhatsAppIcon fontSize="small" />
+                  </div>
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Chat via WhatsApp
+                  </span>
                 </div>
               </div>
             </h3>
@@ -182,12 +229,35 @@ export function NationWideSection() {
           >
             <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
               <span className="text-base sm:text-lg lg:text-xl">Jakarta</span>
-              <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <MapOutlinedIcon fontSize="small" />
+              <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open(
+                        "https://maps.app.goo.gl/aYJUPcEqPpZm5yS46",
+                        "_blank"
+                      )
+                    }
+                  >
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Lihat Lokasi
+                  </span>
                 </div>
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <PhoneOutlinedIcon fontSize="small" />
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open("https://wa.me/62811850039", "_blank")
+                    }
+                  >
+                    <WhatsAppIcon fontSize="small" />
+                  </div>
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Chat via WhatsApp
+                  </span>
                 </div>
               </div>
             </h3>
@@ -236,12 +306,36 @@ export function NationWideSection() {
           <div className="p-4 sm:p-5 lg:p-6" data-aos="fade-left">
             <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
               <span className="text-base sm:text-lg lg:text-xl">Medan</span>
-              <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <MapOutlinedIcon fontSize="small" />
+              <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open(
+                        "https://www.google.com/maps/search/PT.+Dwipa+Kharisma+Mitra/",
+                        "_blank"
+                      )
+                    }
+                  >
+                    <MapOutlinedIcon fontSize="small" />
+                  </div>
+
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Lihat Lokasi
+                  </span>
                 </div>
-                <div className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center">
-                  <PhoneOutlinedIcon fontSize="small" />
+                <div className="relative group">
+                  <div
+                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    onClick={() =>
+                      window.open("https://wa.me/62811632204", "_blank")
+                    }
+                  >
+                    <WhatsAppIcon fontSize="small" />
+                  </div>
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                    Chat via WhatsApp
+                  </span>
                 </div>
               </div>
             </h3>

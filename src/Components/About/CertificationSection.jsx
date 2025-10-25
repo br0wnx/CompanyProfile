@@ -28,7 +28,7 @@ export function CertificationSection() {
 
         {/* Description Text */}
         <div className="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+          <p className="text-base sm:text-base leading-relaxed flex-grow">
             At DKM Group, our certifications reflect our strong commitment to
             international standards and quality assurance in container depot and
             logistics services.

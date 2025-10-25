@@ -77,7 +77,7 @@ function WhyChooseUs() {
                 <span className="font-bold mb-2 sm:mb-3 text-xs sm:text-sm md:text-base">
                   {card.subtitle}
                 </span>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed sm:leading-relaxed">
+                <p className="text-base sm:text-base leading-relaxed flex-grow">
                   {card.desc}
                 </p>
               </div>

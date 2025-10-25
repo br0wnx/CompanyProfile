@@ -63,15 +63,22 @@ export function OurServices() {
             ].map((card, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl shadow-md flex flex-col items-center text-center p-4 sm:p-5 md:p-6 border-2 border-[#000065] cursor-pointer transition-all duration-700 ease-in-out hover:scale-105 hover:shadow-[0_8px_25px_rgba(0,0,101,0.15)]"
+                className="bg-white rounded-xl shadow-md flex flex-col items-center text-center p-4 sm:p-5 md:p-6 border-2 border-[#000065] cursor-pointer transition-all duration-700 ease-in-out hover:scale-105 hover:border-[#DA1D2C] hover:shadow-[0_8px_25px_rgba(218,29,44,0.25)] group"
                 data-aos="fade-up"
                 data-aos-delay={idx * 150}
               >
-                {card.icon}
-                <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 mt-2 sm:mt-3">
+                {/* Icon */}
+                <div className="transform transition-transform duration-500 group-hover:scale-110">
+                  {card.icon}
+                </div>
+
+                {/* Title */}
+                <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 mt-2 sm:mt-3 transition-all duration-500 group-hover:-translate-y-1 group-hover:text-[#DA1D2C]">
                   {card.title}
                 </h3>
-                <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+
+                {/* Description */}
+                <p className="text-xs sm:text-sm md:text-base leading-relaxed opacity-80 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-1">
                   {card.desc}
                 </p>
               </div>
@@ -88,7 +95,7 @@ export function OurServices() {
               Our Services
             </h2>
             <p
-              className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed mb-4 sm:mb-5 md:mb-6"
+              className="text-base sm:text-base leading-relaxed mb-4 flex-grow"
               data-aos="fade-up"
               data-aos-delay={100}
             >

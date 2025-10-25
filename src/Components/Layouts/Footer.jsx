@@ -11,11 +11,10 @@ export default function Footer() {
             alt="DKM Logo"
             className="w-48 h-24 sm:w-40 md:w-48"
           />
-          <div className="text-m md:text-wrap text-left text-nowrap leading-none">
+          <div className="text-sm md:text-wrap text-left text-nowrap leading-relaxed">
             <p>
-              DKM Group operates container depots in Jakarta, Surabaya, Lampung,
+              DKM Group operates container depots in Jakarta, Surabaya, Lampung, Medan, and Semarang.
             </p>
-            <p> Medan, and Semarang.</p>
           </div>
         </div>
 
