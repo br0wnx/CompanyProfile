@@ -111,13 +111,17 @@ export default function Footer() {
         {/* Social Media Icons */}
         <div className="flex justify-center sm:justify-start space-x-4 w-full sm:w-auto order-2 sm:order-1 mt-2 sm:mt-0">
           <a
-            href="#"
+            href="https://www.instagram.com/dwipakharismamitra/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#000065] hover:text-[#00004A] transition-colors"
           >
             <FaInstagram size={18} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/pt-dwipa-kharisma-mitra"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#000065] hover:text-[#00004A] transition-colors"
           >
             <FaLinkedin size={18} />
