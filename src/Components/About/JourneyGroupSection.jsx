@@ -51,7 +51,7 @@ export function JourneyGroupSection() {
               title: "PT. Bintang Nusantara Services (BNS)",
               img: "/assets/bns.png",
               desc: `A leading container depot in Surabaya, acquired by DKM Group in 2020, now integrated with advanced technology.`,
-              link: "https://www.bns.com",
+              link: "#",
             },
             {
               title: "PT. Java Sarana Mitra Sejati (JSMS)",
