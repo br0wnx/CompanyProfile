@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,14 +43,14 @@ function HeroSection() {
           }`}
         >
           {/* Judul */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg leading-relaxed md:leading-relaxed break-words text-right">
             <span className="block">Trusted Container Depot & Logistics</span>
             <span className="block">Solutions in Indonesia</span>
           </h1>
 
           {/* Deskripsi  */}
           <div className="mt-4 sm:mt-6">
-            <p className="font-medium text-xs sm:text-sm md:text-lg leading-relaxed">
+            <p className="font-medium text-[10px] sm:text-xs md:text-base leading-relaxed">
               <span className="block">
                 Providing reliable container storage, repair, and logistics
                 solutions.
@@ -62,7 +64,10 @@ function HeroSection() {
 
           {/* Button */}
           <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-6 justify-end">
-            <button className="bg-[#DA1D2C] hover:bg-[#b01824] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer">
+            <button
+              onClick={() => navigate("/services")}
+              className="bg-[#DA1D2C] hover:bg-[#b01824] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
+            >
               Explore Services
             </button>
             <button
@@ -111,7 +116,13 @@ function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
             {/* Explore Services */}
-            <button className="flex-1 sm:flex-none bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center">
+            <button
+              onClick={() => {
+                navigate("/services");
+                window.scrollTo(0, 0);
+              }}
+              className="flex-1 sm:flex-none bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center border-2 border-transparent"
+            >
               Explore Services
             </button>
 

@@ -1,10 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 export function CustomerServiceSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -13,6 +20,22 @@ export function CustomerServiceSection() {
       offset: 50,
     });
   }, []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=iqbaladrian36@gmail.com&su=${encodeURIComponent(
+      formData.subject
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+
+    window.open(gmailLink, "_blank");
+  };
 
   return (
     <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
@@ -27,7 +50,7 @@ export function CustomerServiceSection() {
               Send Us a Message
             </h2>
 
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">
@@ -35,7 +58,10 @@ export function CustomerServiceSection() {
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all"
                     placeholder="Your full name"
                   />
@@ -46,7 +72,10 @@ export function CustomerServiceSection() {
                   </label>
                   <input
                     type="email"
+                    name="email"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
@@ -59,7 +88,10 @@ export function CustomerServiceSection() {
                 </label>
                 <input
                   type="text"
+                  name="subject"
                   required
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all"
                   placeholder="What is this regarding?"
                 />
@@ -70,8 +102,11 @@ export function CustomerServiceSection() {
                   Message *
                 </label>
                 <textarea
+                  name="message"
                   required
                   rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all resize-none"
                   placeholder="Please describe your inquiry in detail..."
                 />
@@ -95,7 +130,6 @@ export function CustomerServiceSection() {
               <p className="text-base sm:text-base leading-relaxed flex-grow mt-10">
                 For inquiries, assistance, or partnership opportunities,
                 <span className="block">
-                  {" "}
                   please reach out to our support team or connect with the
                 </span>
                 <span className="block"> right department below.</span>
@@ -148,7 +182,7 @@ export function CustomerServiceSection() {
                   </a>
                 </div>
               </div>
-              <p className="text-xl mt-1 text-[#FD8D0A]">
+              <p className="text-xl mt-1 text-[#FD8D0A] italic">
                 Available Mon - Fri, 08.00 - 17.00 WIB
               </p>
             </div>

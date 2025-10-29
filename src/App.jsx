@@ -7,7 +7,8 @@ import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import Tracker from "./Pages/Tracker";
 import Login from "./Pages/Login";
-
+import ScrollToTopButton from "./Components/ScrollToTopButton";
+import Portal from "./Pages/Portal";
 
 function App() {
   return (
@@ -21,8 +22,10 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/tracker" element={<Tracker />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/portal" element={<Portal />} />
         </Routes>
       </main>
+      <ScrollToTopButton />
       <Footer />
     </>
   );

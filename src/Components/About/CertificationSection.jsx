@@ -65,7 +65,7 @@ export function CertificationSection() {
           >
             <div className="w-64 h-64 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center rounded-2xl shadow-md transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_30px_rgba(218,29,44,0.2)] group-hover:bg-white/60 backdrop-blur">
               <img
-                src="/assets/sai.webp"
+                src="/assets/iso.png"
                 alt="IICL Certification"
                 className="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
               />
@@ -86,7 +86,7 @@ export function CertificationSection() {
           >
             <div className="w-64 h-64 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center rounded-2xl shadow-md transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_30px_rgba(0,0,101,0.15)] group-hover:bg-white/60 backdrop-blur">
               <img
-                src="/assets/kan.png"
+                src="/assets/kan2.png"
                 alt="Safety Certification"
                 className="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
               />

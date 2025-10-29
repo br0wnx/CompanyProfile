@@ -140,16 +140,11 @@ export function FAQManagementSection() {
 
   const toggleFAQ = (index) => setOpenFAQ(openFAQ === index ? null : index);
 
-  const handleCardClick = (person) => {
-    const waContact = person.contacts.find((c) => c.type === "whatsapp");
-    if (waContact) {
-      const phoneNumber = waContact.info.replace(/^0/, "62"); // ubah awalan 0 ke 62
-      window.open(`https://wa.me/${phoneNumber}`, "_blank");
-    }
-  };
-
   return (
-    <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
+    <section
+      id="faq"
+      className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
           {/* FAQ */}
@@ -204,44 +199,50 @@ export function FAQManagementSection() {
                 {managementData.slice(0, 3).map((person, index) => (
                   <div
                     key={index}
-                    onClick={() => handleCardClick(person)}
-                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-5 hover:bg-[#000065] transition-all duration-300 group cursor-pointer"
+                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-5"
                     data-aos="fade-left"
                     data-aos-delay={index * 100}
                   >
-                    {/* Tooltip dengan gaya khas website */}
-                    <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
-                      Klik untuk chat via WhatsApp
-                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
-                    </span>
-
-                    <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
+                    <h3 className="font-bold text-base mb-2 leading-tight">
                       {person.position}
                     </h3>
                     <p className="text-[#FF8D0A] font-semibold mb-3 text-base">
                       {person.name}
                     </p>
 
-                    <div className="space-y-2">
-                      {person.contacts.map((contact, contactIndex) => (
-                        <div
-                          key={contactIndex}
-                          className="flex items-center gap-3 font-bold text-sm group-hover:text-white"
-                        >
-                          <div className="flex items-center justify-center w-7 h-7 bg-[#000065] text-white rounded-md flex-shrink-0 group-hover:bg-white group-hover:text-[#000065] transition-colors">
-                            {contact.icon}
-                          </div>
-                          <span
-                            className={
-                              contact.type === "email"
-                                ? "break-all text-sm"
-                                : "text-sm"
-                            }
-                          >
-                            {contact.info}
-                          </span>
-                        </div>
-                      ))}
+                    {/* Contact Buttons */}
+                    <div className="grid grid-cols-2 gap-3 mt-4">
+                      {/* WhatsApp Button */}
+                      <a
+                        href={`https://wa.me/${person.contacts
+                          .find((c) => c.type === "whatsapp")
+                          ?.info?.replace(/[^0-9]/g, "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                      >
+                        <WhatsAppIcon sx={{ fontSize: 20 }} className="mr-2" />
+                        WhatsApp
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                          Chat via WhatsApp
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                        </span>
+                      </a>
+
+                      {/* Email Button */}
+                      <a
+                        href={`mailto:${
+                          person.contacts.find((c) => c.type === "email")?.info
+                        }`}
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                      >
+                        <EmailIcon sx={{ fontSize: 20 }} className="mr-2" />
+                        Email
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                          Kirim Email
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 ))}
@@ -252,44 +253,60 @@ export function FAQManagementSection() {
                 {managementData.slice(3).map((person, index) => (
                   <div
                     key={index}
-                    onClick={() => handleCardClick(person)}
-                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-5 hover:bg-[#000065] transition-all duration-300 group cursor-pointer"
+                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-5"
                     data-aos="fade-left"
                     data-aos-delay={(index + 3) * 100}
                   >
-                    {/* Tooltip dengan gaya khas website */}
-                    <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
-                      Klik untuk chat via WhatsApp
-                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
-                    </span>
-
-                    <h3 className="font-bold text-base mb-2 group-hover:text-white leading-tight">
+                    <h3 className="font-bold text-base mb-2 leading-tight">
                       {person.position}
                     </h3>
                     <p className="text-[#FF8D0A] font-semibold mb-3 text-base">
                       {person.name}
                     </p>
 
-                    <div className="space-y-2">
-                      {person.contacts.map((contact, contactIndex) => (
-                        <div
-                          key={contactIndex}
-                          className="flex items-center gap-3 font-bold text-sm group-hover:text-white"
-                        >
-                          <div className="flex items-center justify-center w-7 h-7 bg-[#000065] text-white rounded-md flex-shrink-0 group-hover:bg-white group-hover:text-[#000065] transition-colors">
-                            {contact.icon}
-                          </div>
-                          <span
-                            className={
-                              contact.type === "email"
-                                ? "break-all text-sm"
-                                : "text-sm"
-                            }
-                          >
-                            {contact.info}
-                          </span>
-                        </div>
-                      ))}
+                    {/* Contact Buttons */}
+                    <div className="grid grid-cols-2 gap-3 mt-4">
+                      {/* WhatsApp Button */}
+                      <a
+                        href={`https://wa.me/${person.contacts
+                          .find((c) => c.type === "whatsapp")
+                          ?.info?.replace(/[^0-9]/g, "")}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                      >
+                        <span className="mr-2">
+                          {
+                            person.contacts.find((c) => c.type === "whatsapp")
+                              ?.icon
+                          }
+                        </span>
+                        WhatsApp
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                          Chat via WhatsApp
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                        </span>
+                      </a>
+
+                      {/* Email Button */}
+                      <a
+                        href={`mailto:${
+                          person.contacts.find((c) => c.type === "email")?.info
+                        }`}
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                      >
+                        <span className="mr-2">
+                          {
+                            person.contacts.find((c) => c.type === "email")
+                              ?.icon
+                          }
+                        </span>
+                        Email
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                          Kirim Email
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 ))}

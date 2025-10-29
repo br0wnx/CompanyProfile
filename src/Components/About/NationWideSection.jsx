@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { InteractiveLeafletMap } from "../InteractiveMap";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 export function NationWideSection() {
   useEffect(() => {
@@ -33,11 +33,11 @@ export function NationWideSection() {
 
         {/* Two Column Text */}
         <div
-          className="flex flex-col md:flex-row gap-8 mb-16"
+          className="flex flex-col md:flex-row gap-8 mb-12"
           data-aos="fade-up"
         >
           {/* Left Text */}
-          <div className="flex-1 text-left">
+          <div className="flex-1 text-left mt-8">
             <p className="text-base sm:text-base leading-relaxed flex-grow">
               Additionally, through our group company
               <strong className="underline">
@@ -51,7 +51,7 @@ export function NationWideSection() {
           </div>
 
           {/* Right Text*/}
-          <div className="flex-1 text-left md:text-right">
+          <div className="flex-1 text-left md:text-right mt-8">
             <p className="text-base sm:text-base leading-relaxed flex-grow">
               <strong className="underline">
                 PT Bintang Nusantara Service (BNS){" "}
@@ -63,7 +63,7 @@ export function NationWideSection() {
         </div>
 
         {/* 4 Columns Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mt-12">
           {/* Surabaya */}
           <div
             className="p-4 sm:p-5 lg:p-6 border-b sm:border-b-0 sm:border-r border-gray-700"
@@ -93,14 +93,15 @@ export function NationWideSection() {
                 <div className="relative group">
                   <div
                     className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
-                    onClick={() =>
-                      window.open("https://wa.me/6281331146858", "_blank")
-                    }
+                    onClick={() => {
+                      window.location.href = "tel:0317490872";
+                    }}
                   >
-                    <WhatsAppIcon fontSize="small" />
+                    <PhoneIcon fontSize="small" />
                   </div>
+
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
-                    Chat via WhatsApp
+                    Call Us
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
@@ -174,14 +175,14 @@ export function NationWideSection() {
                 <div className="relative group">
                   <div
                     className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
-                    onClick={() =>
-                      window.open("https://wa.me/6282133771971", "_blank")
-                    }
+                    onClick={() => {
+                      window.location.href = "tel:0243562053";
+                    }}
                   >
-                    <WhatsAppIcon fontSize="small" />
+                    <PhoneIcon fontSize="small" />
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
-                    Chat via WhatsApp
+                    Call Us
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
@@ -254,14 +255,14 @@ export function NationWideSection() {
                 <div className="relative group">
                   <div
                     className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
-                    onClick={() =>
-                      window.open("https://wa.me/62811850039", "_blank")
-                    }
+                    onClick={() => {
+                      window.location.href = "tel:02144854918";
+                    }}
                   >
-                    <WhatsAppIcon fontSize="small" />
+                    <PhoneIcon fontSize="small" />
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
-                    Chat via WhatsApp
+                    Call Us
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>
@@ -334,14 +335,14 @@ export function NationWideSection() {
                 <div className="relative group">
                   <div
                     className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
-                    onClick={() =>
-                      window.open("https://wa.me/62811632204", "_blank")
-                    }
+                    onClick={() => {
+                      window.location.href = "tel:0616941256";
+                    }}
                   >
-                    <WhatsAppIcon fontSize="small" />
+                    <PhoneIcon fontSize="small" />
                   </div>
                   <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
-                    Chat via WhatsApp
+                    Call Us
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>
                 </div>

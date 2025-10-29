@@ -1,7 +1,7 @@
 export function HeroSection() {
   return (
     <>
-      <section>
+      <section id="portal">
         <div
           className="w-full h-[75vh] flex items-center justify-center text-white px-6 md:px-20 bg-cover bg-center relative"
           style={{ backgroundImage: "url('/assets/port.jpg')" }}

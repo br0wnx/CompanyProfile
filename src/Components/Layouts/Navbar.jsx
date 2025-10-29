@@ -23,15 +23,7 @@ export default function Navbar() {
     return location.pathname === path;
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   const handleNavClick = () => {
-    scrollToTop();
     setIsOpen(false);
   };
 
@@ -64,9 +56,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <Link to="/" onClick={scrollToTop}>
+            <Link to="/">
               <img
-                src="/assets/logo-dkm.png"
+                src="/assets/favicon4.png"
                 alt="DKM Logo"
                 className="h-8 w-auto transition-transform duration-500 hover:scale-105"
               />
@@ -89,13 +81,12 @@ export default function Navbar() {
               const buttonClass = `py-2 px-5 rounded-lg font-semibold transition-all duration-500 ${
                 link.label === "Tracker"
                   ? isScrolled
-                    ? "bg-[#DA1D2C] text-white hover:bg-[#b81824]"
-                    : "bg-[#FF8D0A] text-white hover:bg-[#e67a05]"
+                    ? "border-2 border-transparent bg-[#DA1D2C] text-white hover:bg-[#b81824]"
+                    : "border-2 border-transparent bg-[#FF8D0A] text-white hover:bg-[#e67a05]"
                   : isScrolled
                   ? "border-2 border-[#DA1D2C] text-[#DA1D2C] hover:bg-[#DA1D2C] hover:text-white"
                   : "border-2 border-[#FF8D0A] text-[#FF8D0A] hover:bg-[#FF8D0A] hover:text-white"
               }`;
-
 
               const linkClass = `relative py-2 transition-all duration-300 group ${
                 isActiveLink(link.path)

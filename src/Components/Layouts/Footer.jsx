@@ -1,6 +1,17 @@
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
+  const handleFAQClick = () => {
+    navigate("/contact"); 
+    setTimeout(() => {
+    
+      const element = document.getElementById("faq");
+      if (element) element.scrollIntoView();
+    }, 100);
+  };
+
   return (
     <footer className="py-8 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
       {/* Main Grid */}
@@ -32,19 +43,19 @@ export default function Footer() {
           <div className="flex flex-col space-y-4 items-center lg:items-start">
             <h4 className="font-bold mb-4 text-md">Company</h4>
             <a
-              href="#"
+              href="/"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
             >
               Home
             </a>
             <a
-              href="#"
+              href="about"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
             >
               About
             </a>
             <a
-              href="#"
+              href="services"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
             >
               Services
@@ -54,19 +65,19 @@ export default function Footer() {
           <div className="flex flex-col space-y-4 items-center lg:items-start">
             <h4 className="font-bold mb-4 text-md">Help</h4>
             <a
-              href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              onClick={handleFAQClick}
+              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors cursor-pointer"
             >
               FAQ
             </a>
             <a
-              href="#"
+              href="portal"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
             >
               Portal
             </a>
             <a
-              href="#"
+              href="contact"
               className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
             >
               Contact

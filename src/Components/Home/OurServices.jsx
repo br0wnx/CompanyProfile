@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { useNavigate } from "react-router-dom";
 import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import CleaningServicesOutlinedIcon from "@mui/icons-material/CleaningServicesOutlined";
 import FactCheckOutlinedIcon from "@mui/icons-material/FactCheckOutlined";
 
 export function OurServices() {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -103,18 +104,11 @@ export function OurServices() {
               high standards in storage, maintenance, and inspection.
             </p>
             <button
-              className="
-      bg-[#000065] hover:bg-[#00004a]
-      px-4 sm:px-5 py-2
-      rounded-lg font-semibold text-white
-      text-xs sm:text-sm
-      self-center lg:self-start
-      mx-auto lg:mx-0
-      mb-38
-      cursor-pointer
-      transition-transform duration-700 ease-in-out
-      hover:scale-105
-    "
+              onClick={() => {
+                navigate("/services");
+                window.scrollTo(0, 0); 
+              }}
+              className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center lg:self-start mx-auto lg:mx-0 mb-38 cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
               data-aos="zoom-in"
               data-aos-delay={200}
             >
