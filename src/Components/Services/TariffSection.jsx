@@ -17,7 +17,7 @@ export function TariffSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#DA1D2C] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#C6463D] mb-4">
             Tariff Information
           </h2>
         </div>
@@ -52,7 +52,7 @@ export function TariffSection() {
           ].map((tariff, idx) => (
             <div
               key={idx}
-              className="bg-white border border-[#000065] rounded-lg p-6 transition-all duration-500 hover:shadow-xl hover:scale-105 group"
+              className="bg-white border border-[#1F2D4B] rounded-lg p-6 transition-all duration-500 hover:shadow-xl hover:scale-105 group"
               data-aos="fade-up"
               data-aos-delay={idx * 100}
             >
@@ -63,7 +63,7 @@ export function TariffSection() {
 
               {/* Price */}
               <div className="mb-4 transition-transform duration-500 group-hover:translate-y-[-3px] group-hover:delay-150">
-                <p className="text-2xl font-bold text-[#000065]">
+                <p className="text-2xl font-bold text-[#1F2D4B]">
                   Starting from {tariff.price}
                 </p>
               </div>

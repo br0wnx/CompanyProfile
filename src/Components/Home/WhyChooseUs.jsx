@@ -39,7 +39,7 @@ function WhyChooseUs() {
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
           <h2
             className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold"
-            style={{ color: "#DA1D2C" }}
+            style={{ color: "#C6463D" }} 
             data-aos="fade-down"
           >
             Why Choose Us
@@ -50,7 +50,7 @@ function WhyChooseUs() {
             data-aos-delay={100}
           >
             At DKM Group, we combine over three decades of expertise with
-            technology-driven <br/> operations to deliver reliable container and
+            technology-driven <br /> operations to deliver reliable container and
             logistics solutions.
           </p>
         </div>
@@ -59,7 +59,7 @@ function WhyChooseUs() {
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="group bg-white rounded-lg sm:rounded-xl shadow-[0_4px_15px_rgba(0,0,101,0.08)] flex flex-col h-full overflow-hidden transform transition-all duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_12px_35px_rgba(0,0,101,0.15)] hover:border-[#DA1D2C]/50"
+              className="group bg-white rounded-lg sm:rounded-xl shadow-[0_4px_15px_rgba(0,0,101,0.08)] flex flex-col h-full overflow-hidden transform transition-all duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_12px_35px_rgba(0,0,101,0.15)] hover:border-[#C6463D]/50"  /* merah hover */
               data-aos="fade-up"
               data-aos-delay={idx * 150}
             >
@@ -70,8 +70,8 @@ function WhyChooseUs() {
                   className="w-full h-full object-cover transform transition-transform duration-[1000ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-110"
                 />
               </div>
-              <div className="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col items-center border-2 border-t-0 border-[#000065] rounded-b-lg sm:rounded-b-xl flex-1 transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:border-[#DA1D2C]/40">
-                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-1 sm:mb-2 transition-colors duration-700 group-hover:text-[#DA1D2C]">
+              <div className="p-3 sm:p-4 md:p-5 lg:p-6 flex flex-col items-center border-2 border-t-0 border-[#1F2D4B] rounded-b-lg sm:rounded-b-xl flex-1 transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:border-[#C6463D]/40"> {/* border biru -> biru baru */}
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-1 sm:mb-2 transition-colors duration-700 group-hover:text-[#C6463D]"> {/* hover merah baru */}
                   {card.title}
                 </h3>
                 <span className="font-bold mb-2 sm:mb-3 text-xs sm:text-sm md:text-base">

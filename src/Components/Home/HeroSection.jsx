@@ -36,19 +36,19 @@ function HeroSection() {
         style={{ backgroundImage: "url('/assets/bg-home.jpg')" }}
       >
         <div
-          className={`transition-all duration-500 max-w-2xl text-right ${
+          className={`transition-all duration-500 text-right ${
             isScrolled
               ? "transform translate-y-10 opacity-0"
               : "transform translate-y-0 opacity-100"
           }`}
         >
           {/* Judul */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg leading-relaxed md:leading-relaxed break-words text-right">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-lg leading-tight sm:leading-relaxed text-right">
             <span className="block">Trusted Container Depot & Logistics</span>
             <span className="block">Solutions in Indonesia</span>
           </h1>
 
-          {/* Deskripsi  */}
+          {/* Deskripsi */}
           <div className="mt-4 sm:mt-6">
             <p className="font-medium text-[10px] sm:text-xs md:text-base leading-relaxed">
               <span className="block">
@@ -66,7 +66,7 @@ function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-6 justify-end">
             <button
               onClick={() => navigate("/services")}
-              className="bg-[#DA1D2C] hover:bg-[#b01824] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
+              className="bg-[#C6463D] hover:bg-[#A53A33] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
             >
               Explore Services
             </button>
@@ -74,7 +74,7 @@ function HeroSection() {
               onClick={() =>
                 window.open("https://tracker.dwipakharismamitra.com/", "_blank")
               }
-              className="bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
+              className="bg-[#1F2D4B] hover:bg-[#162239] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
             >
               Go to Tracker Portal
             </button>
@@ -96,9 +96,9 @@ function HeroSection() {
               : "transform translate-y-10 opacity-0"
           }`}
         >
-          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#DA1D2C] leading-tight text-center mb-6">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#C6463D] leading-tight text-center mb-6">
             <span className="block">Trusted Container Depot & Logistics</span>
-            <span className="block text-xl sm:text-2xl md:text-4xl font-bold text-[#DA1D2C] leading-tight mt-2">
+            <span className="block text-xl sm:text-2xl md:text-4xl font-bold text-[#C6463D] leading-tight mt-2">
               Solutions in Indonesia
             </span>
           </h1>
@@ -121,7 +121,7 @@ function HeroSection() {
                 navigate("/services");
                 window.scrollTo(0, 0);
               }}
-              className="flex-1 sm:flex-none bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center border-2 border-transparent"
+              className="flex-1 sm:flex-none bg-[#1F2D4B] hover:bg-[#162239] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center border-2 border-transparent"
             >
               Explore Services
             </button>
@@ -131,14 +131,13 @@ function HeroSection() {
               onClick={() =>
                 window.open("https://tracker.dwipakharismamitra.com/", "_blank")
               }
-              className="flex-1 sm:flex-none bg-transparent border-2 border-[#000065] hover:bg-[#000065] text-[#000065] hover:text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center"
+              className="flex-1 sm:flex-none bg-transparent border-2 border-[#1F2D4B] hover:bg-[#1F2D4B] text-[#1F2D4B] hover:text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center cursor-pointer text-center"
             >
               Go to Tracker Portal
             </button>
           </div>
         </div>
 
-        {/* Background Image */}
         <div
           className="text-center font-bold italic text-xs sm:text-sm md:text-lg py-16 bg-cover bg-center w-full h-100 relative mt-8 rounded-xl mx-4"
           style={{
@@ -146,8 +145,7 @@ function HeroSection() {
             color: "#FF8D0A",
           }}
         >
-          {/* Konten teks */}
-          <div className="relative z-10" style={{ color: "#FF8D0A" }}>
+          <div className="relative z-10" style={{ color: "#42526E" }}>
             <span className="block drop-shadow-lg">
               Serving shipping lines, forwarders, and logistic
             </span>

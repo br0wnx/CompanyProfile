@@ -17,9 +17,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-2 sm:gap-4">
         <div className="flex flex-col space-y-4 items-center lg:items-start">
           <img
-            src="/assets/logo-dkm.png"
+            src="/assets/dkm-footer.png"
             alt="DKM Logo"
-            className="w-48 h-24 sm:w-40 md:w-48"
+            className="w-64 h-24 sm:w-54 md:w-64"
           />
           <div className="text-xs sm:text-sm md:text-sm text-left leading-snug md:leading-relaxed break-words max-w-full md:max-w-md">
             <p>
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-2 items-center lg:items-start lg:mr-8 mt-6 lg:mt-0">
           <h2
             className="font-semibold text-base sm:text-lg md:text-xl italic text-center lg:text-left"
-            style={{ color: "#000065" }}
+            style={{ color: "#1F2D4B" }}
           >
             Trusted Container Depot & Logistics Solutions in Indonesia
           </h2>
@@ -43,19 +43,19 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-md">Company</h4>
             <a
               href="/"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Home
             </a>
             <a
               href="about"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               About
             </a>
             <a
               href="services"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Services
             </a>
@@ -65,19 +65,19 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-md">Help</h4>
             <a
               onClick={handleFAQClick}
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors cursor-pointer"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors cursor-pointer"
             >
               FAQ
             </a>
             <a
               href="portal"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Portal
             </a>
             <a
               href="contact"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Contact
             </a>
@@ -87,25 +87,25 @@ export default function Footer() {
             <h4 className="font-bold mb-4 text-md">Legal</h4>
             <a
               href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Terms & Conditions
             </a>
             <a
               href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Return & Refund Policy
             </a>
             <a
               href="#"
-              className="text-sm font-semibold hover:text-[#00004A] hover:underline transition-colors"
+              className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Delivery Policy
             </a>
@@ -124,10 +124,10 @@ export default function Footer() {
             href="https://www.instagram.com/dwipakharismamitra/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative group text-[#000065] hover:text-[#00004A] transition-colors"
+            className="relative group text-[#1F2D4B] hover:text-[#5B6D8B] transition-colors"
           >
             <FaInstagram size={18} />
-            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#000065] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#1F2D4B] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
               Instagram
             </span>
           </a>
@@ -136,20 +136,20 @@ export default function Footer() {
             href="https://www.linkedin.com/company/pt-dwipa-kharisma-mitra"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative group text-[#000065] hover:text-[#00004A] transition-colors"
+            className="relative group text-[#1F2D4B] hover:text-[#5B6D8B] transition-colors"
           >
             <FaLinkedin size={18} />
-            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#000065] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#1F2D4B] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
               LinkedIn
             </span>
           </a>
 
           <a
             href="#"
-            className="relative group text-[#000065] hover:text-[#00004A] transition-colors"
+            className="relative group text-[#1F2D4B] hover:text-[#5B6D8B] transition-colors"
           >
             <FaFacebook size={18} />
-            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#000065] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#1F2D4B] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
               Facebook
             </span>
           </a>

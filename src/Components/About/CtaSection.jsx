@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 export function CtaSection() {
+  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -34,7 +36,11 @@ export function CtaSection() {
           </span>
         </h2>
         <button
-          className="bg-[#DA1D2C] hover:bg-[#b01824] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
+          onClick={() => {
+            navigate("/contact");
+            window.scrollTo(0, 0);
+          }}
+          className="bg-[#C6463D] hover:bg-[#9F392F] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
           data-aos="zoom-in"
           data-aos-delay="400"
         >

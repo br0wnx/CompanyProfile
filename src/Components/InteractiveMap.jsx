@@ -2,8 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
 import L from "leaflet";
 import { useEffect, useState } from "react";
 import "leaflet/dist/leaflet.css";
-import "../Components/About/MarkerStyle.css"; 
-
+import "../Components/About/MarkerStyle.css";
 
 const branches = [
   {
@@ -26,12 +25,15 @@ const branches = [
     coords: [-6.9835, 110.4144],
     link: "https://maps.app.goo.gl/MqtQuyRg2KaopVbj6",
   },
+  {
+    name: "PT. Java Sarana Mitra Sejati Lampung", 
+    coords: [-5.3971, 105.2667], 
+    link: "https://maps.app.goo.gl/A6YfA7CkwRw5z7Jz9",
+  },
 ];
-
 
 function HoverMarker({ branch }) {
   const [hover, setHover] = useState(false);
-
 
   const icon = L.divIcon({
     className: hover ? "custom-marker hover" : "custom-marker",
@@ -82,13 +84,11 @@ export function InteractiveLeafletMap() {
         scrollWheelZoom={false}
         className="w-full h-full"
       >
-
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
         />
 
-   
         {branches.map((branch, i) => (
           <HoverMarker key={i} branch={branch} />
         ))}

@@ -42,7 +42,7 @@ export function WhatDriveUsSection() {
           >
             <div>
               <h2
-                className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#DA1D2C]"
+                className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#C6463D]"
                 data-aos="fade-down"
               >
                 What Drives Us
@@ -73,7 +73,7 @@ export function WhatDriveUsSection() {
             {cards.map((card, idx) => (
               <div
                 key={idx}
-                className={`group bg-white rounded-lg shadow-md flex flex-col overflow-hidden transform transition-all duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_12px_35px_rgba(0,0,101,0.15)] hover:border-[#DA1D2C]/60
+                className={`group bg-white rounded-lg shadow-md flex flex-col overflow-hidden transform transition-all duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_12px_35px_rgba(31,45,75,0.15)] hover:border-[#C6463D]/60
                 ${idx === 0 ? "lg:w-[35%]" : "lg:w-[65%]"} w-full`}
                 data-aos="zoom-in"
                 data-aos-delay={idx * 150}
@@ -88,8 +88,8 @@ export function WhatDriveUsSection() {
                 </div>
 
                 {/* Konten */}
-                <div className="p-6 flex flex-col gap-3 text-left border-2 border-t-0 border-[#000065] rounded-b-lg transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:border-[#DA1D2C]/50">
-                  <h3 className="text-xl font-bold transition-colors duration-700 group-hover:text-[#DA1D2C]">
+                <div className="p-6 flex flex-col gap-3 text-left border-2 border-t-0 border-[#1F2D4B] rounded-b-lg transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:border-[#C6463D]/50">
+                  <h3 className="text-xl font-bold transition-colors duration-700 group-hover:text-[#C6463D]">
                     {card.title}
                   </h3>
                   <p className="text-base sm:text-base whitespace-pre-line leading-relaxed">

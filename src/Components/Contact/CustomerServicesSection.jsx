@@ -46,7 +46,7 @@ export function CustomerServiceSection() {
             className="bg-white rounded-xl shadow-lg p-6 sm:p-8"
             data-aos="fade-right"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6">
               Send Us a Message
             </h2>
 
@@ -62,7 +62,7 @@ export function CustomerServiceSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-[#1F2D4B] rounded-lg focus:border-transparent transition-all"
                     placeholder="Your full name"
                   />
                 </div>
@@ -76,7 +76,7 @@ export function CustomerServiceSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-[#1F2D4B] rounded-lg focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -92,7 +92,7 @@ export function CustomerServiceSection() {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-[#1F2D4B] rounded-lg focus:border-transparent transition-all"
                   placeholder="What is this regarding?"
                 />
               </div>
@@ -107,14 +107,14 @@ export function CustomerServiceSection() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-[#000065] rounded-lg focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 border border-[#1F2D4B] rounded-lg focus:border-transparent transition-all resize-none"
                   placeholder="Please describe your inquiry in detail..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#000065] hover:bg-[#00004a] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer"
+                className="w-full bg-[#1F2D4B] hover:bg-[#5B6D8B] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer"
               >
                 Send Message
               </button>
@@ -137,7 +137,7 @@ export function CustomerServiceSection() {
             </div>
 
             <h2
-              className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6"
+              className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6"
               data-aos="fade-left"
               data-aos-delay="200"
             >
@@ -150,14 +150,14 @@ export function CustomerServiceSection() {
                 data-aos="fade-left"
                 data-aos-delay="300"
               >
-                <div className="bg-[#000065] text-white p-3 rounded-lg flex-shrink-0">
+                <div className="bg-[#1F2D4B] text-white p-3 rounded-lg flex-shrink-0">
                   <EmailIcon sx={{ fontSize: 24 }} />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <a
                     href="mailto:contactus@dwipakharismamitra.co.id"
-                    className="text-[#000065] hover:text-[#00004a] transition-colors hover:underline"
+                    className="text-[#1F2D4B] hover:text-[#5B6D8B] transition-colors hover:underline"
                   >
                     contactus@dwipakharismamitra.co.id
                   </a>
@@ -169,20 +169,20 @@ export function CustomerServiceSection() {
                 data-aos="fade-left"
                 data-aos-delay="400"
               >
-                <div className="bg-[#000065] text-white p-3 rounded-lg flex-shrink-0">
+                <div className="bg-[#1F2D4B] text-white p-3 rounded-lg flex-shrink-0">
                   <PhoneIcon sx={{ fontSize: 24 }} />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
                   <a
                     href="tel:02144854918"
-                    className="text-[#000065] hover:text-[#00004a] transition-colors hover:underline"
+                    className="text-[#1F2D4B] hover:text-[#5B6D8B] transition-colors hover:underline"
                   >
                     021 4485 4918
                   </a>
                 </div>
               </div>
-              <p className="text-xl mt-1 text-[#FD8D0A] italic">
+              <p className="text-xl mt-1 text-[#42526E] italic">
                 Available Mon - Fri, 08.00 - 17.00 WIB
               </p>
             </div>

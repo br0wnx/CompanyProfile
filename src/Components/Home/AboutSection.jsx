@@ -14,7 +14,7 @@ export function AboutSection() {
 
         <div
           className="mt-14 sm:mt-24 text-center font-bold text-sm sm:text-base md:text-lg"
-          style={{ color: "#FF8D0A" }}
+          style={{ color: "#42526E" }}
         >
           <span className="block">Over 1000+ Clients All Over The World</span>
         </div>

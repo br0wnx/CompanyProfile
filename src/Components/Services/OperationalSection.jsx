@@ -25,7 +25,7 @@ export function OperationalSection() {
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#DA1D2C] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#C6463D] mb-4">
             Operational Services
           </h2>
         </div>
@@ -35,13 +35,13 @@ export function OperationalSection() {
           {[
             {
               icon: (
-                <LocalShipping style={{ color: "#000065", fontSize: "3rem" }} />
+                <LocalShipping style={{ color: "#1F2D4B", fontSize: "3rem" }} />
               ),
               title: "Haulage",
               desc: "Efficient trucking solutions for both 20ft and 40ft containers, ensuring safe and on-time delivery from port to depot or customer site.",
             },
             {
-              icon: <Forklift style={{ color: "#000065", fontSize: "3rem" }} />,
+              icon: <Forklift style={{ color: "#1F2D4B", fontSize: "3rem" }} />,
               title: (
                 <>
                   Lift On <br /> Lift Off
@@ -51,26 +51,26 @@ export function OperationalSection() {
             },
             {
               icon: (
-                <Inventory style={{ color: "#000065", fontSize: "3rem" }} />
+                <Inventory style={{ color: "#1F2D4B", fontSize: "3rem" }} />
               ),
               title: "Stuffing & Stripping",
               desc: "Experienced team for stuffing and stripping services, supporting smooth cargo transfer and proper documentation.",
             },
             {
               icon: (
-                <Warehouse style={{ color: "#000065", fontSize: "3rem" }} />
+                <Warehouse style={{ color: "#1F2D4B", fontSize: "3rem" }} />
               ),
               title: "Container Storage",
               desc: "Secure yard management system with concrete surface and monitors capacity to ensure containers are stored safely and efficiently.",
             },
             {
-              icon: <AcUnit style={{ color: "#000065", fontSize: "3rem" }} />,
+              icon: <AcUnit style={{ color: "#1F2D4B", fontSize: "3rem" }} />,
               title: "Reefer",
               desc: "Specialized reefer technicians provide inspections, electrical checks, and certified repairs to maintain cold chain reliability.",
             },
             {
               icon: (
-                <Description style={{ color: "#000065", fontSize: "3rem" }} />
+                <Description style={{ color: "#1F2D4B", fontSize: "3rem" }} />
               ),
               title: "Custom Clearances",
               desc: "Assistance with customs documentation and clearance process, ensuring compliance with Indonesian regulations.",
@@ -88,7 +88,7 @@ export function OperationalSection() {
                   <div className="mb-1 transform transition-transform duration-500 group-hover:scale-110">
                     {service.icon}
                   </div>
-                  <h3 className="text-base font-bold leading-tight transition-all duration-500 group-hover:-translate-y-1 group-hover:text-[#DA1D2C]">
+                  <h3 className="text-base font-bold leading-tight transition-all duration-500 group-hover:-translate-y-1 group-hover:text-[#C6463D]">
                     {service.title}
                   </h3>
                 </div>

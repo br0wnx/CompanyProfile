@@ -37,11 +37,11 @@ export default function Navbar() {
   ];
 
   const getActiveLinkColor = () => {
-    return isScrolled ? "text-[#DA1D2C]" : "text-[#FF8D0A]";
+    return isScrolled ? "text-[#C6463D]" : "text-[#1F2D4B]";
   };
 
   const getActiveBgColor = () => {
-    return isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]";
+    return isScrolled ? "bg-[#C6463D]" : "bg-[#1F2D4B]";
   };
 
   return (
@@ -58,7 +58,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center gap-3">
             <Link to="/">
               <img
-                src="/assets/favicon4.png"
+                src="/assets/logo-dkmr.png"
                 alt="DKM Logo"
                 className="h-8 w-auto transition-transform duration-500 hover:scale-105"
               />
@@ -81,19 +81,19 @@ export default function Navbar() {
               const buttonClass = `py-2 px-5 rounded-lg font-semibold transition-all duration-500 ${
                 link.label === "Tracker"
                   ? isScrolled
-                    ? "border-2 border-transparent bg-[#DA1D2C] text-white hover:bg-[#b81824]"
-                    : "border-2 border-transparent bg-[#FF8D0A] text-white hover:bg-[#e67a05]"
+                    ? "border-2 border-transparent bg-[#C6463D] text-white hover:bg-[#b81824]"
+                    : "border-2 border-transparent bg-[#1F2D4B] text-white hover:bg-[#162239]"
                   : isScrolled
-                  ? "border-2 border-[#DA1D2C] text-[#DA1D2C] hover:bg-[#DA1D2C] hover:text-white"
-                  : "border-2 border-[#FF8D0A] text-[#FF8D0A] hover:bg-[#FF8D0A] hover:text-white"
+                  ? "border-2 border-[#C6463D] text-[#C6463D] hover:bg-[#C6463D] hover:text-white"
+                  : "border-2 border-[#1F2D4B] text-[#1F2D4B] hover:bg-[#1F2D4B] hover:text-white"
               }`;
 
               const linkClass = `relative py-2 transition-all duration-300 group ${
                 isActiveLink(link.path)
                   ? `${getActiveLinkColor()} font-semibold`
                   : isScrolled
-                  ? "hover:text-[#DA1D2C]"
-                  : "hover:text-[#FF8D0A]"
+                  ? "hover:text-[#C6463D]"
+                  : "hover:text-[#1F2D4B]"
               }`;
 
               if (isButton && externalLink) {
@@ -123,12 +123,12 @@ export default function Navbar() {
                     className={`absolute bottom-0 left-0 w-full h-0.5 transition-all duration-300 ${
                       isActiveLink(link.path)
                         ? `scale-x-100 ${
-                            isScrolled ? "bg-[#DA1D2C]" : "bg-[#FF8D0A]"
+                            isScrolled ? "bg-[#C6463D]" : "bg-[#1F2D4B]"
                           }`
                         : `scale-x-0 ${
                             isScrolled
-                              ? "group-hover:bg-[#DA1D2C]"
-                              : "group-hover:bg-[#FF8D0A]"
+                              ? "group-hover:bg-[#C6463D]"
+                              : "group-hover:bg-[#1F2D4B]"
                           } group-hover:scale-x-100`
                     }`}
                   />
@@ -175,11 +175,11 @@ export default function Navbar() {
                   className={`block w-full text-center py-3 px-4 rounded-lg font-semibold transition-all duration-500 ${
                     link.label === "Tracker"
                       ? isScrolled
-                        ? "bg-[#DA1D2C] text-white hover:bg-[#b81824]"
-                        : "bg-[#FF8D0A] text-white hover:bg-[#e67a05]"
+                        ? "bg-[#C6463D] text-white hover:bg-[#b81824]"
+                        : "bg-[#1F2D4B] text-white hover:bg-[#162239]"
                       : isScrolled
-                      ? "border-2 border-[#DA1D2C] text-[#DA1D2C] hover:bg-[#DA1D2C] hover:text-white"
-                      : "border-2 border-[#FF8D0A] text-[#FF8D0A] hover:bg-[#FF8D0A] hover:text-white"
+                      ? "border-2 border-[#C6463D] text-[#C6463D] hover:bg-[#C6463D] hover:text-white"
+                      : "border-2 border-[#1F2D4B] text-[#1F2D4B] hover:bg-[#1F2D4B] hover:text-white"
                   }`}
                 >
                   {link.label}
@@ -196,8 +196,8 @@ export default function Navbar() {
                   isActiveLink(link.path)
                     ? `${getActiveBgColor()} text-white font-semibold shadow-lg`
                     : isScrolled
-                    ? "hover:bg-[#DA1D2C]/10 hover:text-[#DA1D2C]"
-                    : "hover:bg-white/10 hover:text-[#FF8D0A]"
+                    ? "hover:bg-[#C6463D]/10 hover:text-[#C6463D]"
+                    : "hover:bg-white/10 hover:text-[#1F2D4B]"
                 }`}
               >
                 {link.label}

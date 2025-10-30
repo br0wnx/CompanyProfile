@@ -22,11 +22,12 @@ export function WhoWeAreSection() {
             data-aos="fade-right"
           >
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#DA1D2C]"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-[#C6463D]"
               data-aos="fade-down"
             >
               Who We Are
             </h2>
+
             <p
               className="text-base sm:text-base leading-relaxed flex-grow"
               data-aos="fade-up"

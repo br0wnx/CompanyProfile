@@ -20,7 +20,7 @@ export function CertificationSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Title */}
         <h2
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 text-[#DA1D2C]"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 text-[#C6463D]"
           data-aos="fade-down"
         >
           Certifications & Standards
@@ -49,7 +49,7 @@ export function CertificationSection() {
                 className="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
               />
             </div>
-            <p className="text-center leading-relaxed mt-3 group-hover:text-[#000065]">
+            <p className="text-center leading-relaxed mt-3 group-hover:text-[#1F2D4B]">
               Accreditation for container
               <br />
               inspection and repair, ensuring
@@ -63,14 +63,23 @@ export function CertificationSection() {
             className="flex flex-col items-center text-center group"
             data-aos="zoom-in"
           >
-            <div className="w-64 h-64 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center rounded-2xl shadow-md transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_30px_rgba(218,29,44,0.2)] group-hover:bg-white/60 backdrop-blur">
+            <a
+              href="https://register.saiglobal.com/client/schedule.aspx?setID=SF01&custID=AS205962&appCertNo=QEC27745"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-64 h-64 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center rounded-2xl shadow-md transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:shadow-[0_8px_30px_rgba(218,29,44,0.2)] group-hover:bg-white/60 backdrop-blur"
+            >
+              <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#C6463D] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                Klik untuk melihat sertifikat
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#C6463D]"></div>
+              </span>
               <img
                 src="/assets/iso.png"
                 alt="IICL Certification"
                 className="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
               />
-            </div>
-            <p className="text-center leading-relaxed mt-3 group-hover:text-[#DA1D2C]">
+            </a>
+            <p className="text-center leading-relaxed mt-3 group-hover:text-[#C6463D]">
               Certified for excellence in quality
               <br />
               management system and
@@ -91,7 +100,7 @@ export function CertificationSection() {
                 className="w-full h-full object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
               />
             </div>
-            <p className="text-center leading-relaxed mt-3 group-hover:text-[#000065]">
+            <p className="text-center leading-relaxed mt-3 group-hover:text-[#1F2D4B]">
               Recognized for maintaining
               <br />
               quality processes, customer satisfaction,

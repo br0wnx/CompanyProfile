@@ -149,7 +149,7 @@ export function FAQManagementSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
           {/* FAQ */}
           <div className="lg:col-span-1" data-aos="fade-right">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
@@ -187,7 +187,7 @@ export function FAQManagementSection() {
           {/* Management */}
           <div className="lg:col-span-2 relative">
             <h2
-              className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6"
+              className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6"
               data-aos="fade-left"
             >
               Management
@@ -199,14 +199,14 @@ export function FAQManagementSection() {
                 {managementData.slice(0, 3).map((person, index) => (
                   <div
                     key={index}
-                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-5"
+                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#1F2D4B] rounded-2xl p-5"
                     data-aos="fade-left"
                     data-aos-delay={index * 100}
                   >
                     <h3 className="font-bold text-base mb-2 leading-tight">
                       {person.position}
                     </h3>
-                    <p className="text-[#FF8D0A] font-semibold mb-3 text-base">
+                    <p className="text-[#42526E] font-semibold mb-3 text-base">
                       {person.name}
                     </p>
 
@@ -219,13 +219,13 @@ export function FAQManagementSection() {
                           ?.info?.replace(/[^0-9]/g, "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
                       >
                         <WhatsAppIcon sx={{ fontSize: 20 }} className="mr-2" />
                         WhatsApp
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
                           Chat via WhatsApp
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                         </span>
                       </a>
 
@@ -234,13 +234,13 @@ export function FAQManagementSection() {
                         href={`mailto:${
                           person.contacts.find((c) => c.type === "email")?.info
                         }`}
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
                       >
                         <EmailIcon sx={{ fontSize: 20 }} className="mr-2" />
                         Email
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
                           Kirim Email
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                         </span>
                       </a>
                     </div>
@@ -253,14 +253,14 @@ export function FAQManagementSection() {
                 {managementData.slice(3).map((person, index) => (
                   <div
                     key={index}
-                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#000065] rounded-2xl p-5"
+                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#1F2D4B] rounded-2xl p-5"
                     data-aos="fade-left"
                     data-aos-delay={(index + 3) * 100}
                   >
                     <h3 className="font-bold text-base mb-2 leading-tight">
                       {person.position}
                     </h3>
-                    <p className="text-[#FF8D0A] font-semibold mb-3 text-base">
+                    <p className="text-[#42526E] font-semibold mb-3 text-base">
                       {person.name}
                     </p>
 
@@ -273,7 +273,7 @@ export function FAQManagementSection() {
                           ?.info?.replace(/[^0-9]/g, "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
                       >
                         <span className="mr-2">
                           {
@@ -282,9 +282,9 @@ export function FAQManagementSection() {
                           }
                         </span>
                         WhatsApp
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
                           Chat via WhatsApp
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                         </span>
                       </a>
 
@@ -293,7 +293,7 @@ export function FAQManagementSection() {
                         href={`mailto:${
                           person.contacts.find((c) => c.type === "email")?.info
                         }`}
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#000065] text-white font-semibold transition-all"
+                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
                       >
                         <span className="mr-2">
                           {
@@ -302,9 +302,9 @@ export function FAQManagementSection() {
                           }
                         </span>
                         Email
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
                           Kirim Email
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                         </span>
                       </a>
                     </div>

@@ -20,7 +20,7 @@ export function NationWideSection() {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2
-          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-[#DA1D2C]"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-[#C6463D]"
           data-aos="fade-down"
         >
           Nationwide Coverage
@@ -74,7 +74,7 @@ export function NationWideSection() {
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() =>
                       window.open(
                         "https://maps.app.goo.gl/FWUtpsK19miFbNz69",
@@ -85,14 +85,14 @@ export function NationWideSection() {
                     <MapOutlinedIcon fontSize="small" />
                   </div>
 
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() => {
                       window.location.href = "tel:0317490872";
                     }}
@@ -100,9 +100,9 @@ export function NationWideSection() {
                     <PhoneIcon fontSize="small" />
                   </div>
 
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Call Us
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export function NationWideSection() {
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() =>
                       window.open(
                         "https://maps.app.goo.gl/EmmGhvCNTibQfRWH6",
@@ -167,23 +167,23 @@ export function NationWideSection() {
                   >
                     <MapOutlinedIcon fontSize="small" />
                   </div>
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() => {
                       window.location.href = "tel:0243562053";
                     }}
                   >
                     <PhoneIcon fontSize="small" />
                   </div>
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Call Us
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export function NationWideSection() {
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() =>
                       window.open(
                         "https://maps.app.goo.gl/aYJUPcEqPpZm5yS46",
@@ -247,23 +247,23 @@ export function NationWideSection() {
                   >
                     <MapOutlinedIcon fontSize="small" />
                   </div>
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() => {
                       window.location.href = "tel:02144854918";
                     }}
                   >
                     <PhoneIcon fontSize="small" />
                   </div>
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Call Us
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
               </div>
@@ -316,7 +316,7 @@ export function NationWideSection() {
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5">
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() =>
                       window.open(
                         "https://www.google.com/maps/search/PT.+Dwipa+Kharisma+Mitra/",
@@ -327,23 +327,23 @@ export function NationWideSection() {
                     <MapOutlinedIcon fontSize="small" />
                   </div>
 
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Lihat Lokasi
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
                 <div className="relative group">
                   <div
-                    className="bg-[#000065] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#00004a] transition"
+                    className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() => {
                       window.location.href = "tel:0616941256";
                     }}
                   >
                     <PhoneIcon fontSize="small" />
                   </div>
-                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#000065] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
+                  <span className="absolute top-[-32px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2.5 py-1.5 rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out whitespace-nowrap shadow-md">
                     Call Us
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
                   </span>
                 </div>
               </div>

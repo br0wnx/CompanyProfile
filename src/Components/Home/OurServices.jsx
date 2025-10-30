@@ -64,7 +64,7 @@ export function OurServices() {
             ].map((card, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl shadow-md flex flex-col items-center text-center p-4 sm:p-5 md:p-6 border-2 border-[#000065] cursor-pointer transition-all duration-700 ease-in-out hover:scale-105 hover:border-[#DA1D2C] hover:shadow-[0_8px_25px_rgba(218,29,44,0.25)] group"
+                className="bg-white rounded-xl shadow-md flex flex-col items-center text-center p-4 sm:p-5 md:p-6 border-2 border-[#1F2D4B] cursor-pointer transition-all duration-700 ease-in-out hover:scale-105 hover:border-[#C6463D] hover:shadow-[0_8px_25px_rgba(198,70,61,0.25)] group"
                 data-aos="fade-up"
                 data-aos-delay={idx * 150}
               >
@@ -74,7 +74,7 @@ export function OurServices() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 mt-2 sm:mt-3 transition-all duration-500 group-hover:-translate-y-1 group-hover:text-[#DA1D2C]">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 mt-2 sm:mt-3 transition-all duration-500 group-hover:-translate-y-1 group-hover:text-[#C6463D]">
                   {card.title}
                 </h3>
 
@@ -90,11 +90,12 @@ export function OurServices() {
           <div className="flex-1 flex flex-col justify-center text-center lg:text-left w-full mt-8 lg:mt-0">
             <h2
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-5 md:mb-6"
-              style={{ color: "#DA1D2C" }}
+              style={{ color: "#C6463D" }}
               data-aos="fade-down"
             >
               Our Services
             </h2>
+
             <p
               className="text-base sm:text-base leading-relaxed mb-4 flex-grow"
               data-aos="fade-up"
@@ -103,12 +104,13 @@ export function OurServices() {
               DKM Group delivers comprehensive container depot services with
               high standards in storage, maintenance, and inspection.
             </p>
+
             <button
               onClick={() => {
                 navigate("/services");
-                window.scrollTo(0, 0); 
+                window.scrollTo(0, 0);
               }}
-              className="bg-[#000065] hover:bg-[#00004a] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center lg:self-start mx-auto lg:mx-0 mb-38 cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
+              className="bg-[#1F2D4B] hover:bg-[#162133] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center lg:self-start mx-auto lg:mx-0 cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
               data-aos="zoom-in"
               data-aos-delay={200}
             >

@@ -20,9 +20,18 @@ export function CustomerSection() {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] overflow-hidden">
+    <section className="relative w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] overflow-hidden">
+      <div className="pointer-events-none absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-[#FDFBFC] to-transparent"></div>
+      <div className="pointer-events-none absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-[#FDFBFC] to-transparent"></div>
+
       <div className="relative w-full overflow-hidden">
-        <div className="animate-scroll-horizontal">
+        {/* Highlight Track Glow */}
+        <div className="absolute top-1/2 left-0 w-full h-10 -translate-y-1/2 pointer-events-none">
+          <div className="w-full h-full bg-gradient-to-r from-transparent via-[#00006520] to-transparent blur-2xl"></div>
+        </div>
+
+        {/* Scrolling Logos */}
+        <div className="animate-scroll-horizontal relative flex items-center">
           {duplicatedLogos.map((logo, index) => (
             <img
               key={index}

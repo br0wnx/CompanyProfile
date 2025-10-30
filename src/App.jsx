@@ -3,35 +3,38 @@ import { useEffect, useState } from "react";
 
 import Navbar from "./Components/Layouts/Navbar";
 import Footer from "./Components/Layouts/Footer";
+import ScrollToTopButton from "./Components/ScrollToTopButton";
+
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import Tracker from "./Pages/Tracker";
 import Login from "./Pages/Login";
-import ScrollToTopButton from "./Components/ScrollToTopButton";
 import Portal from "./Pages/Portal";
 
-import PageLoader from "./Components/PageLoader";
+import PageLoader from "./Components/PageLoader"; 
 
 function App() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    
+    setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); 
+    }, 700); 
 
     return () => clearTimeout(timer);
-  }, [location]);
+  }, [location.pathname]);
 
   return (
     <>
       {loading && <PageLoader />}
-
       <Navbar />
       <main className="min-h-screen">
         <Routes>

@@ -64,73 +64,61 @@ export function BranchManagerSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
           {/* Left: Branch List */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6">
               Branch Manager
             </h2>
 
-            <div className="space-y-4">
+            <div className="space-y-5">
               {branches.map((branch, index) => (
-                <a
+                <div
                   key={index}
-                  href={branch.waLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`relative block border-2 rounded-2xl p-4 transition-all duration-300 cursor-pointer group
-                    ${
-                      activeBranch === index
-                        ? "bg-[#000065] text-white border-[#000065]"
-                        : "bg-white border-[#000065] hover:bg-[#000065] hover:text-white"
-                    }`}
+                  className="border border-[#1F2D4B] bg-white rounded-2xl p-5 shadow-md"
                 >
-                  {/* Tooltip */}
-                  <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#000065] text-white text-xs px-3 py-1.5 rounded-full opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out shadow-md">
-                    Klik untuk chat via WhatsApp
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
-                  </span>
+                  {/* City */}
+                  <h3 className="font-bold text-base mb-1">{branch.city}</h3>
 
-                  <h3
-                    className={`font-bold text-base mb-2 ${
-                      activeBranch === index
-                        ? "text-white"
-                        : "group-hover:text-white"
-                    }`}
-                  >
-                    {branch.city}
-                  </h3>
-                  <p className="font-semibold mb-3 text-sm text-[#FF8D0A]">
+                  {/* Manager Name */}
+                  <p className="font-semibold mb-3 text-sm text-[#42526E] py-2">
                     {branch.name}
                   </p>
 
-                  <div className="space-y-2 text-xs font-bold">
-                    {/* Email */}
-                    <div className="flex items-center gap-3">
-                      <div
-                        className={`flex items-center justify-center w-7 h-7 rounded-md flex-shrink-0 ${
-                          activeBranch === index
-                            ? "bg-white text-[#000065]"
-                            : "bg-[#000065] text-white group-hover:bg-white group-hover:text-[#000065]"
-                        }`}
-                      >
-                        <EmailIcon sx={{ fontSize: 18 }} />
-                      </div>
-                      <span>{branch.email}</span>
-                    </div>
+                  {/* Buttons */}
+                  <div className="flex items-center justify-between gap-3 mt-4">
+                    {/* WhatsApp Button (with tooltip) */}
+                    <div className="relative group flex-1">
+                      {/* Tooltip */}
+                      <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                        Chat via WhatsApp
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
+                      </span>
 
-                    {/* WhatsApp */}
-                    <div className="flex items-center gap-3">
-                      <div
-                        className={`flex items-center justify-center w-7 h-7 rounded-md flex-shrink-0 ${
-                          activeBranch === index
-                            ? "bg-white text-[#000065]"
-                            : "bg-[#000065] text-white group-hover:bg-white group-hover:text-[#000065]"
-                        }`}
+                      <a
+                        href={branch.waLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full py-2 px-3 bg-[#1F2D4B] text-white rounded-lg font-semibold text-sm hover:opacity-90 transition flex items-center justify-center gap-2"
                       >
-                        <WhatsAppIcon sx={{ fontSize: 18 }} />
-                      </div>
-                      <span>{branch.phone}</span>
+                        <WhatsAppIcon sx={{ fontSize: 16 }} />
+                        WhatsApp
+                      </a>
+                    </div>
+                    <div className="relative group flex-1">
+                      {/* Tooltip */}
+                      <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
+                        Kirim Email
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
+                      </span>
+
+                      <a
+                        href={`mailto:${branch.email}`}
+                        className="w-full py-2 px-3 bg-[#1F2D4B] text-white rounded-lg font-semibold text-sm hover:opacity-90 transition flex items-center justify-center gap-2"
+                      >
+                        <EmailIcon sx={{ fontSize: 16 }} />
+                        Email
+                      </a>
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -141,9 +129,9 @@ export function BranchManagerSection() {
             data-aos="fade-left"
           >
             {/* Decorative Background Accent */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#000065]/5 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#1F2D4B]/5 rounded-full blur-3xl -z-10"></div>
 
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#DA1D2C] mb-8 text-center sm:text-left">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-8 text-center sm:text-left">
               Our Location
             </h2>
 
@@ -156,15 +144,15 @@ export function BranchManagerSection() {
                   className={`relative px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer 
           ${
             activeBranch === index
-              ? "bg-[#000065] text-white shadow-lg scale-105"
-              : "bg-white text-[#000065] border border-[#000065] hover:bg-[#000065] hover:text-white hover:shadow-md"
+              ? "bg-[#1F2D4B] text-white shadow-lg scale-105"
+              : "bg-white text-[#1F2D4B] border border-[#1F2D4B] hover:bg-[#1F2D4B] hover:text-white hover:shadow-md"
           }`}
                 >
                   {branch.city}
 
                   {/* Active indicator (underline) */}
                   {activeBranch === index && (
-                    <span className="absolute -bottom-[6px] left-1/2 -translate-x-1/2 w-3 h-1 rounded-full bg-[#FF8D0A]"></span>
+                    <span className="absolute -bottom-[6px] left-1/2 -translate-x-1/2 w-3 h-1 rounded-full bg-[#42526E]"></span>
                   )}
                 </button>
               ))}
@@ -185,9 +173,9 @@ export function BranchManagerSection() {
               />
 
               {/* Overlay Info */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#000065] text-white text-xs sm:text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-xs sm:text-sm px-4 py-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300">
                 Showing location:{" "}
-                <span className="text-[#FF8D0A] font-semibold">
+                <span className="text-[#42526E] font-semibold">
                   {branches[activeBranch].city}
                 </span>
               </div>

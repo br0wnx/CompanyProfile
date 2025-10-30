@@ -20,7 +20,7 @@ export function JourneyGroupSection() {
     >
       {/* Intro Text */}
       <div className="max-w-4xl mx-auto text-center mb-16" data-aos="fade-down">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#DA1D2C] tracking-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#C6463D] tracking-tight">
           Our Revolution
         </h2>
         <p className="text-base sm:text-base leading-relaxed flex-grow">
@@ -30,7 +30,7 @@ export function JourneyGroupSection() {
         </p>
       </div>
 
-      {/* TIMELINE HORIZONTAL */}
+      {/* Timeline*/}
       <div
         className="max-w-7xl mx-auto overflow-x-auto pb-10"
         data-aos="fade-up"
@@ -85,7 +85,7 @@ export function JourneyGroupSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-gradient-to-r from-[#DA1D2C] to-[#b91825] text-white px-5 py-2 rounded-full font-bold text-lg shadow-md">
+              <div className="bg-gradient-to-r from-[#C6463D] to-[#A2342E] text-white px-5 py-2 rounded-full font-bold text-lg shadow-md">
                 {step.year}
               </div>
               <p className="text-sm text-center leading-relaxed text-gray-700 px-2">
@@ -107,13 +107,13 @@ export function JourneyGroupSection() {
       >
         {/* Section Divider */}
         <div className="flex items-center justify-center mb-12 gap-4">
-          <div className="h-[2px] flex-1 bg-gradient-to-r from-transparent via-[#DA1D2C]/40 to-[#DA1D2C]"></div>
+          <div className="h-[2px] flex-1 bg-gradient-to-r from-transparent via-[#C6463D]/40 to-[#C6463D]"></div>
           <div className="flex gap-2">
-            <div className="w-2 h-2 rounded-full bg-[#DA1D2C]"></div>
-            <div className="w-2 h-2 rounded-full bg-[#DA1D2C]/60"></div>
-            <div className="w-2 h-2 rounded-full bg-[#DA1D2C]/30"></div>
+            <div className="w-2 h-2 rounded-full bg-[#C6463D]"></div>
+            <div className="w-2 h-2 rounded-full bg-[#C6463D]/60"></div>
+            <div className="w-2 h-2 rounded-full bg-[#C6463D]/30"></div>
           </div>
-          <div className="h-[2px] flex-1 bg-gradient-to-l from-transparent via-[#DA1D2C]/40 to-[#DA1D2C]"></div>
+          <div className="h-[2px] flex-1 bg-gradient-to-l from-transparent via-[#C6463D]/40 to-[#C6463D]"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -145,13 +145,13 @@ export function JourneyGroupSection() {
           ].map((card, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl border-2 border-gray-200/50 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-[#DA1D2C]/30 transition-all duration-500 flex flex-col overflow-hidden group"
+              className="bg-white rounded-3xl border-2 border-gray-200/50 shadow-xl hover:shadow-2xl hover:scale-105 hover:border-[#C6463D]/30 transition-all duration-500 flex flex-col overflow-hidden group"
             >
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#DA1D2C] to-[#b91825] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#C6463D] to-[#A2342E] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
               {/* Image */}
               <div className="relative w-full h-40 flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-50 border-b-2 border-gray-100">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#DA1D2C]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#C6463D]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="w-28 h-28 flex items-center justify-center bg-white rounded-2xl shadow-md border border-gray-100 group-hover:shadow-xl group-hover:scale-110 transition-all duration-500 relative z-10">
                   <img
                     src={card.img}
@@ -163,7 +163,7 @@ export function JourneyGroupSection() {
 
               {/* Content */}
               <div className="p-7 flex flex-col flex-grow">
-                <h3 className="font-bold text-lg mb-3 text-[#000065] group-hover:text-[#DA1D2C] transition-colors duration-300">
+                <h3 className="font-bold text-lg mb-3 text-[#1F2D4B] group-hover:text-[#C6463D] transition-colors duration-300">
                   {card.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-600 flex-grow mb-4">
@@ -176,7 +176,7 @@ export function JourneyGroupSection() {
                     href={card.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#DA1D2C] hover:gap-3 transition-all duration-300 group/link"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#C6463D] hover:gap-3 transition-all duration-300 group/link"
                   >
                     <span>Visit Website</span>
                     <LaunchOutlinedIcon className="text-base group-hover/link:translate-x-1 transition-transform duration-300" />

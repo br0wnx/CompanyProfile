@@ -17,7 +17,7 @@ export function CoreServices() {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#DA1D2C] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#C6463D] mb-4">
             Core Services
           </h2>
         </div>
@@ -161,7 +161,7 @@ export function CoreServices() {
               key={idx}
               className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:bg-white/90"
               data-aos="flip-right"
-              data-aos-delay={idx * 100} 
+              data-aos-delay={idx * 100}
             >
               <div className="h-48 flex items-center justify-center overflow-hidden">
                 <img
@@ -172,7 +172,7 @@ export function CoreServices() {
               </div>
 
               {/* Border */}
-              <div className="p-6 flex flex-col flex-grow border-2 border-t-0 border-[#000065] rounded-b-lg transition-all duration-500 hover:border-[#DA1D2C]">
+              <div className="p-6 flex flex-col flex-grow border-2 border-t-0 border-[#1F2D4B] rounded-b-lg transition-all duration-500 hover:border-[#C6463D]">
                 <h3 className="text-xl font-bold mb-4 text-center">
                   {service.title}
                 </h3>
