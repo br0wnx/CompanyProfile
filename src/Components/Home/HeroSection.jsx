@@ -30,7 +30,7 @@ function HeroSection() {
       {/* Hero Section */}
       <section
         id="home"
-        className={`min-h-screen w-full flex flex-col items-end justify-center px-4 sm:px-6 md:px-20 bg-cover bg-center transition-all duration-500 ${
+        className={`min-h-screen w-full flex flex-col items-end justify-start pt-32 px-4 sm:px-6 md:px-20 bg-cover bg-center transition-all duration-500 ${
           isScrolled ? "opacity-0" : "opacity-100"
         }`}
         style={{ backgroundImage: "url('/assets/bg-home.jpg')" }}
