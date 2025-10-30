@@ -83,7 +83,7 @@ export function BranchManagerSection() {
                     }`}
                 >
                   {/* Tooltip */}
-                  <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#000065] text-white text-xs px-3 py-1.5 rounded-full opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out shadow-md">
+                  <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-[#000065] text-white text-xs px-3 py-1.5 rounded-full opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-out shadow-md">
                     Klik untuk chat via WhatsApp
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#000065]"></div>
                   </span>

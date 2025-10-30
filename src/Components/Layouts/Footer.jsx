@@ -4,9 +4,8 @@ import { useNavigate } from "react-router-dom";
 export default function Footer() {
   const navigate = useNavigate();
   const handleFAQClick = () => {
-    navigate("/contact"); 
+    navigate("/contact");
     setTimeout(() => {
-    
       const element = document.getElementById("faq");
       if (element) element.scrollIntoView();
     }, 100);
@@ -125,23 +124,34 @@ export default function Footer() {
             href="https://www.instagram.com/dwipakharismamitra/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#000065] hover:text-[#00004A] transition-colors"
+            className="relative group text-[#000065] hover:text-[#00004A] transition-colors"
           >
             <FaInstagram size={18} />
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#000065] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+              Instagram
+            </span>
           </a>
+
           <a
             href="https://www.linkedin.com/company/pt-dwipa-kharisma-mitra"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#000065] hover:text-[#00004A] transition-colors"
+            className="relative group text-[#000065] hover:text-[#00004A] transition-colors"
           >
             <FaLinkedin size={18} />
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#000065] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+              LinkedIn
+            </span>
           </a>
+
           <a
             href="#"
-            className="text-[#000065] hover:text-[#00004A] transition-colors"
+            className="relative group text-[#000065] hover:text-[#00004A] transition-colors"
           >
             <FaFacebook size={18} />
+            <span className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#000065] text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+              Facebook
+            </span>
           </a>
         </div>
 

@@ -17,24 +17,21 @@ export function CustomerSection() {
     "/assets/logo-cust/15.png",
   ];
 
-  return (
-    <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]">
+  const duplicatedLogos = [...logos, ...logos];
 
-      {/* Logos Grid */}
-      <div
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-delay="200"
-        className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center items-center"
-      >
-        {logos.map((logo, index) => (
-          <img
-            key={index}
-            src={logo}
-            alt={`Customer Logo ${index + 1}`}
-            className="h-16 sm:h-20 md:h-24 w-auto object-contain filter grayscale hover:grayscale-0 transition-transform duration-700 ease-in-out hover:scale-105"
-          />
-        ))}
+  return (
+    <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] overflow-hidden">
+      <div className="relative w-full overflow-hidden">
+        <div className="animate-scroll-horizontal">
+          {duplicatedLogos.map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              alt={`Customer Logo ${index + 1}`}
+              className="h-14 sm:h-16 md:h-20 w-auto object-contain filter grayscale hover:grayscale-0 transition-transform duration-500 hover:scale-105"
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
