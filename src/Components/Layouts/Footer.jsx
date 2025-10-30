@@ -19,7 +19,7 @@ export default function Footer() {
           <img
             src="/assets/dkm-footer.png"
             alt="DKM Logo"
-            className="w-64 h-24 sm:w-54 md:w-64"
+            className="w-auto max-h-24 object-contain"
           />
           <div className="text-xs sm:text-sm md:text-sm text-left leading-snug md:leading-relaxed break-words max-w-full md:max-w-md">
             <p>
