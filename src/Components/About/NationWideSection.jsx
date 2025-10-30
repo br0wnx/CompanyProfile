@@ -319,7 +319,7 @@ export function NationWideSection() {
                     className="bg-[#1F2D4B] text-white p-1 sm:p-1.5 rounded flex items-center justify-center cursor-pointer hover:bg-[#5B6D8B] transition"
                     onClick={() =>
                       window.open(
-                        "https://www.google.com/maps/search/PT.+Dwipa+Kharisma+Mitra/",
+                        "https://maps.app.goo.gl/TrR4VFAZc2Sy7DHP8",
                         "_blank"
                       )
                     }
