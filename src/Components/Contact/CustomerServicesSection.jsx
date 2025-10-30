@@ -182,7 +182,7 @@ export function CustomerServiceSection() {
                   </a>
                 </div>
               </div>
-              <p className="text-xl mt-1 text-[#42526E] italic">
+              <p className="text-l mt-1 text-[#42526E] italic font-semibold">
                 Available Mon - Fri, 08.00 - 17.00 WIB
               </p>
             </div>
