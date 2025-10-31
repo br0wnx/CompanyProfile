@@ -143,16 +143,16 @@ export function FAQManagementSection() {
   return (
     <section
       id="faq"
-      className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]"
+      className="w-full py-12 sm:py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
           {/* FAQ */}
           <div className="lg:col-span-1" data-aos="fade-right">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6 sm:mb-8">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {faqItems.map((item, index) => (
                 <div
                   key={index}
@@ -161,19 +161,21 @@ export function FAQManagementSection() {
                   data-aos-delay={index * 100}
                 >
                   <button
-                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors cursor-pointer"
+                    className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors cursor-pointer"
                     onClick={() => toggleFAQ(index)}
                   >
-                    <span className="font-semibold">{item.question}</span>
+                    <span className="font-semibold text-sm sm:text-base pr-2">
+                      {item.question}
+                    </span>
                     <ExpandMoreIcon
-                      sx={{ fontSize: 20 }}
-                      className={`transition-transform ${
+                      sx={{ fontSize: { xs: 18, sm: 20 } }}
+                      className={`transition-transform flex-shrink-0 ${
                         openFAQ === index ? "rotate-180" : ""
                       }`}
                     />
                   </button>
                   <div
-                    className={`px-6 py-4 bg-gray-50 border-t border-gray-200 ${
+                    className={`px-4 sm:px-6 py-3 sm:py-4 bg-gray-50 border-t border-gray-200 text-sm sm:text-base ${
                       openFAQ === index ? "block" : "hidden"
                     }`}
                   >
@@ -187,130 +189,77 @@ export function FAQManagementSection() {
           {/* Management */}
           <div className="lg:col-span-2 relative">
             <h2
-              className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6"
+              className="text-2xl sm:text-3xl font-bold text-[#C6463D] mb-6 sm:mb-8"
               data-aos="fade-left"
             >
               Management
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-              {/* Left Column */}
-              <div className="flex flex-col gap-6 h-full">
-                {managementData.slice(0, 3).map((person, index) => (
-                  <div
-                    key={index}
-                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#1F2D4B] rounded-2xl p-5"
-                    data-aos="fade-left"
-                    data-aos-delay={index * 100}
-                  >
-                    <h3 className="font-bold text-base mb-2 leading-tight">
+            {/* Responsive Grid for Management Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              {managementData.map((person, index) => (
+                <div
+                  key={index}
+                  className="relative flex flex-col justify-between bg-white border-2 border-[#1F2D4B] rounded-2xl p-4 sm:p-5 hover:shadow-lg transition-shadow duration-300"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                >
+                  <div>
+                    <h3 className="font-bold text-sm sm:text-base mb-2 leading-tight text-[#1F2D4B]">
                       {person.position}
                     </h3>
-                    <p className="text-[#42526E] font-semibold mb-3 text-base">
+                    <p className="text-[#42526E] font-semibold mb-3 text-sm sm:text-base">
                       {person.name}
                     </p>
-
-                    {/* Contact Buttons */}
-                    <div className="grid grid-cols-2 gap-3 mt-4">
-                      {/* WhatsApp Button */}
-                      <a
-                        href={`https://wa.me/${person.contacts
-                          .find((c) => c.type === "whatsapp")
-                          ?.info?.replace(/[^0-9]/g, "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
-                      >
-                        <WhatsAppIcon sx={{ fontSize: 20 }} className="mr-2" />
-                        WhatsApp
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
-                          Chat via WhatsApp
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
-                        </span>
-                      </a>
-
-                      {/* Email Button */}
-                      <a
-                        href={`mailto:${
-                          person.contacts.find((c) => c.type === "email")?.info
-                        }`}
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
-                      >
-                        <EmailIcon sx={{ fontSize: 20 }} className="mr-2" />
-                        Email
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
-                          Kirim Email
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
-                        </span>
-                      </a>
-                    </div>
                   </div>
-                ))}
-              </div>
 
-              {/* Right Column */}
-              <div className="flex flex-col gap-6 h-full">
-                {managementData.slice(3).map((person, index) => (
-                  <div
-                    key={index}
-                    className="relative flex flex-col justify-between h-full bg-white border-2 border-[#1F2D4B] rounded-2xl p-5"
-                    data-aos="fade-left"
-                    data-aos-delay={(index + 3) * 100}
-                  >
-                    <h3 className="font-bold text-base mb-2 leading-tight">
-                      {person.position}
-                    </h3>
-                    <p className="text-[#42526E] font-semibold mb-3 text-base">
-                      {person.name}
-                    </p>
+                  {/* Contact Buttons */}
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mt-3 sm:mt-4">
+                    {/* WhatsApp Button */}
+                    <a
+                      href={`https://wa.me/62${person.contacts
+                        .find((c) => c.type === "whatsapp")
+                        ?.info?.replace(/^0/, "")
+                        .replace(/[^0-9]/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative group flex items-center justify-center w-full py-2 sm:py-2.5 rounded-lg bg-[#1F2D4B] text-white text-xs sm:text-sm font-semibold hover:bg-[#2a3f5f] transition-all"
+                    >
+                      <WhatsAppIcon
+                        sx={{ fontSize: { xs: 16, sm: 18 } }}
+                        className="mr-1 sm:mr-2"
+                      />
+                      <span className="hidden xs:inline">WhatsApp</span>
+                      <span className="xs:hidden">Whatsapp</span>
 
-                    {/* Contact Buttons */}
-                    <div className="grid grid-cols-2 gap-3 mt-4">
-                      {/* WhatsApp Button */}
-                      <a
-                        href={`https://wa.me/${person.contacts
-                          .find((c) => c.type === "whatsapp")
-                          ?.info?.replace(/[^0-9]/g, "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
-                      >
-                        <span className="mr-2">
-                          {
-                            person.contacts.find((c) => c.type === "whatsapp")
-                              ?.icon
-                          }
-                        </span>
-                        WhatsApp
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
-                          Chat via WhatsApp
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
-                        </span>
-                      </a>
+                      {/* Tooltip */}
+                      <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2 sm:px-3 py-1 sm:py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap pointer-events-none z-10">
+                        Chat via WhatsApp
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
+                      </span>
+                    </a>
 
-                      {/* Email Button */}
-                      <a
-                        href={`mailto:${
-                          person.contacts.find((c) => c.type === "email")?.info
-                        }`}
-                        className="relative group flex items-center justify-center w-full py-2.5 rounded-lg bg-[#1F2D4B] text-white font-semibold transition-all"
-                      >
-                        <span className="mr-2">
-                          {
-                            person.contacts.find((c) => c.type === "email")
-                              ?.icon
-                          }
-                        </span>
-                        Email
-                        <span className="absolute top-[-36px] left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap">
-                          Kirim Email
-                          <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
-                        </span>
-                      </a>
-                    </div>
+                    {/* Email Button */}
+                    <a
+                      href={`mailto:${
+                        person.contacts.find((c) => c.type === "email")?.info
+                      }`}
+                      className="relative group flex items-center justify-center w-full py-2 sm:py-2.5 rounded-lg bg-[#1F2D4B] text-white text-xs sm:text-sm font-semibold hover:bg-[#2a3f5f] transition-all"
+                    >
+                      <EmailIcon
+                        sx={{ fontSize: { xs: 16, sm: 18 } }}
+                        className="mr-1 sm:mr-2"
+                      />
+                      Email
+                      {/* Tooltip */}
+                      <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-[#1F2D4B] text-white text-[10px] sm:text-xs px-2 sm:px-3 py-1 sm:py-1.5 rounded-full opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md whitespace-nowrap pointer-events-none z-10">
+                        Kirim Email
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#1F2D4B]"></div>
+                      </span>
+                    </a>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

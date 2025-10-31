@@ -63,7 +63,9 @@ export function NationWideSection() {
         </div>
 
         {/* 4 Columns Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mt-12">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mt-12 sm:[&>div:nth-child(odd)]:border-r sm:[&>div:nth-child(even)]:border-r-0"
+        >
           {/* Surabaya */}
           <div
             className="p-4 sm:p-5 lg:p-6 border-b sm:border-b-0 sm:border-r border-gray-700"
