@@ -28,7 +28,7 @@ export function CustomerServiceSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=iqbaladrian36@gmail.com&su=${encodeURIComponent(
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=contactus@dwipakharismamitra.co.id&su=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
