@@ -39,7 +39,7 @@ function HeroSection() {
           className={`transition-all duration-500 text-center sm:text-right ${
             isScrolled
               ? "transform translate-y-10 opacity-0"
-              : "transform translate-y-0 opacity-100"
+              : "-translate-y-8 sm:-translate-y-12 opacity-100"
           }`}
         >
           {/* Judul */}
