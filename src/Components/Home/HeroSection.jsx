@@ -30,27 +30,27 @@ function HeroSection() {
       {/* Hero Section */}
       <section
         id="home"
-        className={`min-h-screen w-full flex flex-col items-end justify-start pt-32 px-4 sm:px-6 md:px-20 bg-cover bg-center transition-all duration-500 ${
+        className={`min-h-screen w-full flex flex-col items-center sm:items-end justify-center px-4 sm:px-6 md:px-20 bg-cover bg-center transition-all duration-500 ${
           isScrolled ? "opacity-0" : "opacity-100"
         }`}
         style={{ backgroundImage: "url('/assets/bg-home.jpg')" }}
       >
         <div
-          className={`transition-all duration-500 text-right ${
+          className={`transition-all duration-500 text-center sm:text-right ${
             isScrolled
               ? "transform translate-y-10 opacity-0"
               : "transform translate-y-0 opacity-100"
           }`}
         >
           {/* Judul */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-lg leading-tight sm:leading-relaxed text-right">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-lg leading-tight sm:leading-relaxed text-center sm:text-right">
             <span className="block">Trusted Container Depot & Logistics</span>
             <span className="block">Solutions in Indonesia</span>
           </h1>
 
           {/* Deskripsi */}
           <div className="mt-4 sm:mt-6">
-            <p className="font-medium text-[10px] sm:text-xs md:text-base leading-relaxed">
+            <p className="font-medium text-[10px] sm:text-xs md:text-base leading-relaxed text-center sm:text-right">
               <span className="block">
                 Providing reliable container storage, repair, and logistics
                 solutions.
@@ -63,7 +63,7 @@ function HeroSection() {
           </div>
 
           {/* Button */}
-          <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-6 justify-end">
+          <div className="flex flex-col sm:flex-row gap-3 mt-4 sm:mt-6 justify-center sm:justify-end">
             <button
               onClick={() => navigate("/services")}
               className="bg-[#C6463D] hover:bg-[#A53A33] text-white font-semibold py-2 px-5 rounded-lg transition-transform duration-700 ease-in-out hover:scale-105 text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 cursor-pointer"
