@@ -21,13 +21,19 @@ export function CtaSection() {
       data-aos="fade-up"
     >
       <div className="absolute inset-0 bg-black/40"></div>
-      <div
-        className="relative flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 py-8 sm:py-12 md:py-20 gap-6 max-w-3xl mx-auto"
-        data-aos="fade-up"
-      >
-        <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-tight italic whitespace-normal md:whitespace-nowrap">
-          Looking for detailed quotations or customized solutions? Get in
-          <span className="block">touch with our team today.</span>
+      <div className="relative flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 py-8 sm:py-12 md:py-20 gap-4 max-w-3xl mx-auto">
+        <h2
+          className="text-lg sm:text-xl md:text-3xl font-semibold leading-snug italic"
+          data-aos="fade-down"
+        >
+          Looking for detailed quotations or customized 
+          <span
+            className="block text-lg sm:text-xl md:text-3xl font-semibold leading-snug italic mt-1"
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
+            solutions? Get in touch with our team today.
+          </span>
         </h2>
         <button
           onClick={() => {
