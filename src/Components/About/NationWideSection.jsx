@@ -63,12 +63,10 @@ export function NationWideSection() {
         </div>
 
         {/* 4 Columns Grid */}
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mt-12 sm:[&>div:nth-child(odd)]:border-r sm:[&>div:nth-child(even)]:border-r-0"
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mt-12 lg:[&>div:nth-child(-n+3)]:border-r">
           {/* Surabaya */}
           <div
-            className="p-4 sm:p-5 lg:p-6 border-b sm:border-b-0 sm:border-r border-gray-700"
+            className="p-4 sm:p-5 lg:p-6 border-b sm:border-b sm:border-r lg:border-b-0 border-gray-700"
             data-aos="fade-right"
           >
             <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
@@ -151,7 +149,7 @@ export function NationWideSection() {
 
           {/* Semarang */}
           <div
-            className="p-4 sm:p-5 lg:p-6 border-b sm:border-b-0 sm:border-r border-gray-700"
+            className="p-4 sm:p-5 lg:p-6 border-b sm:border-b lg:border-r lg:border-b-0 border-gray-700"
             data-aos="fade-left"
           >
             <h3 className="font-bold text-lg sm:text-xl lg:text-2xl mb-3 flex items-center justify-between">
