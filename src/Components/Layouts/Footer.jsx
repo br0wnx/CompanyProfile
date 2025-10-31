@@ -41,24 +41,23 @@ export default function Footer() {
         <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-8 mt-6 lg:mt-0">
           <div className="flex flex-col space-y-4 items-center lg:items-start">
             <h4 className="font-bold mb-4 text-md">Company</h4>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Home
-            </a>
-            <a
-              href="about"
+            </Link>
+            <Link to = "/about"
               className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               About
-            </a>
-            <a
-              href="services"
+            </Link>
+            <Link
+              to="services"
               className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Services
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col space-y-4 items-center lg:items-start">
