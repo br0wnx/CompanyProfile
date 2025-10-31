@@ -69,18 +69,18 @@ export default function Footer() {
             >
               FAQ
             </a>
-            <a
-              href="portal"
+            <Link
+              to="portal"
               className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Portal
-            </a>
-            <a
-              href="contact"
+            </Link>
+            <Link
+              to="contact"
               className="text-sm font-semibold hover:text-[#5B6D8B] hover:underline transition-colors"
             >
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col space-y-4 items-center lg:items-start">
