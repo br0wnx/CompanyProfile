@@ -30,7 +30,7 @@ export function TrackerSection() {
             </h2>
 
             <p
-              className="text-base sm:text-base leading-relaxed mb-3 mt-8 flex-grow"
+              className="text-base sm:text-base leading-relaxed mb-3 mt-8"
               data-aos="fade-up"
               data-aos-delay={100}
             >
@@ -44,7 +44,7 @@ export function TrackerSection() {
               onClick={() =>
                 window.open("https://tracker.dwipakharismamitra.com/", "_blank")
               }
-              className="bg-[#1F2D4B] hover:bg-[#162133] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mb-38 cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
+              className="bg-[#1F2D4B] hover:bg-[#162133] px-4 sm:px-5 py-2 rounded-lg font-semibold text-white text-xs sm:text-sm self-center md:self-start mx-auto md:mx-0 mt-4 md:mt-6 cursor-pointer transition-transform duration-700 ease-in-out hover:scale-105"
               data-aos="zoom-in"
               data-aos-delay={200}
             >
