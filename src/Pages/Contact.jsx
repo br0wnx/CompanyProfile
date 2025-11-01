@@ -8,31 +8,31 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | DKM Group</title>
+        <title>Contact Us | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Get in touch with DKM Group for inquiries, partnerships, and customer support. Check our FAQ for common questions."
+          content="Get in touch with Dwipa Kharisma Mitra for inquiries, partnerships, and customer support. Check our FAQ for common questions."
         />
         <meta
           name="keywords"
-          content="contact, DKM Group, support, FAQ, logistics, customer service"
+          content="contact, Dwipa Kharisma Mitra, support, FAQ, logistics, customer service"
         />
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact DKM Group" />
+        <meta property="og:title" content="Contact Dwipa Kharisma Mitra" />
         <meta
           property="og:description"
-          content="Reach out to DKM Group for business inquiries or support. Find quick answers in our FAQ."
+          content="Reach out to Dwipa Kharisma Mitra for business inquiries or support. Find quick answers in our FAQ."
         />
         <meta property="og:url" content="https://profil.dwipakharismamitra.com/contact" />
         <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-contact.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact DKM Group" />
+        <meta name="twitter:title" content="Contact Dwipa Kharisma Mitra" />
         <meta
           name="twitter:description"
-          content="Get in touch with DKM Group. Find answers to FAQs or talk to our support team."
+          content="Get in touch with Dwipa Kharisma Mitra. Find answers to FAQs or talk to our support team."
         />
         <meta
           name="twitter:image"

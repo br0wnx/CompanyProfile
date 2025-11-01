@@ -9,10 +9,10 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Our Services | DKM Group</title>
+        <title>Our Services | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Explore DKM Group’s logistics services — container tracking, freight forwarding, and depot management designed for efficiency."
+          content="Explore Dwipa Kharisma Mitra’s logistics services — container tracking, freight forwarding, and depot management designed for efficiency."
         />
         <meta
           name="keywords"
@@ -21,7 +21,7 @@ export default function Services() {
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/services" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="DKM Group Services" />
+        <meta property="og:title" content="Dwipa Kharisma Mitra Services" />
         <meta
           property="og:description"
           content="Smarter logistics services powered by technology and innovation."
@@ -30,7 +30,7 @@ export default function Services() {
         <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-services.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DKM Group Services" />
+        <meta name="twitter:title" content="Dwipa Kharisma Mitra Services" />
         <meta
           name="twitter:description"
           content="Efficient and technology-powered logistics solutions."

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Home | DKM Group</title>
+        <title>Home | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
           content="MiniHub Company provides reliable and technology-driven logistics services. Explore our smart solutions for efficient container operations."
@@ -24,7 +24,7 @@ export default function Home() {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="DKM Group - Smart Logistics Solutions" />
+        <meta property="og:title" content="Dwipa Kharisma Mitra - Smart Logistics Solutions" />
         <meta
           property="og:description"
           content="Technology-driven logistics solutions with real-time container tracking and integrated tools."
@@ -34,7 +34,7 @@ export default function Home() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DKM Group - Smart Logistics Solutions" />
+        <meta name="twitter:title" content="Dwipa Kharisma Mitra - Smart Logistics Solutions" />
         <meta
           name="twitter:description"
           content="Efficient and technology-driven logistics services for modern businesses."

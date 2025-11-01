@@ -11,19 +11,19 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | DKM Group</title>
+        <title>About Us | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Discover DKM Group's mission, values, and journey in delivering efficient logistics and digital transformation."
+          content="Discover Dwipa Kharisma Mitra's mission, values, and journey in delivering efficient logistics and digital transformation."
         />
         <meta
           name="keywords"
-          content="about DKM Group, logistics company, company profile, mission, values"
+          content="about Dwipa Kharisma Mitra, logistics company, company profile, mission, values"
         />
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/about" />
 
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="About DKM Group" />
+        <meta property="og:title" content="About Dwipa Kharisma Mitra" />
         <meta
           property="og:description"
           content="Learn about our journey and dedication to advancing logistics innovation."
@@ -32,7 +32,7 @@ export default function About() {
         <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-about.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About DKM Group" />
+        <meta name="twitter:title" content="About Dwipa Kharisma Mitra" />
         <meta
           name="twitter:description"
           content="Discover our mission and innovation in logistics."
