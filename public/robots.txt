@@ -1,0 +1,29 @@
+# robots.txt for https://www.namadomainmu.com/
+# Last updated: 2025-11-01
+
+User-agent: *
+Allow: /
+
+# Disallow common non-public directories (kalau ada)
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /public/
+Disallow: /build/
+
+# Sitemap link
+Sitemap: https://profil.dwipakharismamitra.com/sitemap.xml
+
+# Crawl-delay untuk bot yang agresif (opsional)
+Crawl-delay: 5
+
+# Extra: rekomendasi meta untuk SEO
+# - Pastikan setiap halaman punya <title> dan <meta description> unik
+# - Gunakan react-helmet-async untuk dynamic SEO meta tags
+
+# Example pages
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /portal
+Allow: /contact
+Allow: /contact#faq
