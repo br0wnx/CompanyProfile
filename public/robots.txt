@@ -5,10 +5,10 @@ User-agent: *
 Allow: /
 
 # Disallow common non-public directories (kalau ada)
-Disallow: /node_modules/
-Disallow: /src/
-Disallow: /public/
-Disallow: /build/
+# Disallow: /node_modules/
+# Disallow: /src/
+# Disallow: /public/
+# Disallow: /build/
 
 # Sitemap link
 Sitemap: https://profil.dwipakharismamitra.com/sitemap.xml
