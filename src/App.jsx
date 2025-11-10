@@ -12,7 +12,7 @@ import Services from "./Pages/Services";
 import Tracker from "./Pages/Tracker";
 import Login from "./Pages/Login";
 import Portal from "./Pages/Portal";
-import JourneyGroupSection from "./Pages/About/JourneyGroupSection";
+
 
 import PageLoader from "./Components/PageLoader"; 
 
@@ -41,7 +41,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/about/journey" element={<JourneyGroupSection />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/tracker" element={<Tracker />} />
