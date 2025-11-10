@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>PT Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions</title>
+        <title>Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions</title>
         <meta
           name="description"
-          content="PT Dwipa Kharisma Mitra provides integrated logistics and container depot solutions across Indonesia. Trusted for smart, reliable, and technology-driven operations since 1988."
+          content="Dwipa Kharisma Mitra provides integrated logistics and container depot solutions across Indonesia. Trusted for smart, reliable, and technology-driven operations since 1988."
         />
         <meta
           name="keywords"
@@ -24,7 +24,7 @@ export default function Home() {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="PT Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions" />
+        <meta property="og:title" content="Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions" />
         <meta
           property="og:description"
           content="Providing nationwide logistics, depot management, and container handling solutions with advanced technology and decades of experience."
@@ -34,7 +34,7 @@ export default function Home() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PT Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions" />
+        <meta name="twitter:title" content="Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions" />
         <meta
           name="twitter:description"
           content="Nationwide container depot and logistics solutions powered by technology and trusted experience."

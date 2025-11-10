@@ -9,20 +9,20 @@ export default function Services() {
   return (
     <>
       <Helmet>
-        <title>Our Services | PT Dwipa Kharisma Mitra</title>
+        <title>Our Services | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Discover PT Dwipa Kharisma Mitra’s comprehensive logistics solutions — from full container depot services and repair, to freight forwarding and inventory management across Indonesia."
+          content="Discover Dwipa Kharisma Mitra’s comprehensive logistics solutions — from full container depot services and repair, to freight forwarding and inventory management across Indonesia."
         />
         <meta
           name="keywords"
-          content="PT Dwipa Kharisma Mitra services, container depot, logistics Indonesia, freight forwarding, container repair, container tracking"
+          content="Dwipa Kharisma Mitra services, container depot, logistics Indonesia, freight forwarding, container repair, container tracking"
         />
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/services" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="PT Dwipa Kharisma Mitra – Logistics & Container Services" />
+        <meta property="og:title" content="Dwipa Kharisma Mitra – Logistics & Container Services" />
         <meta
           property="og:description"
           content="Reliable logistics services including container depot, maintenance, and forwarding solutions throughout Indonesia."
@@ -32,7 +32,7 @@ export default function Services() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PT Dwipa Kharisma Mitra – Logistics & Container Services" />
+        <meta name="twitter:title" content="Dwipa Kharisma Mitra – Logistics & Container Services" />
         <meta
           name="twitter:description"
           content="Technology-driven logistics and container depot services designed for efficiency and reliability."

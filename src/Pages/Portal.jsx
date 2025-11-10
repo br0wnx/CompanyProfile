@@ -7,10 +7,10 @@ export default function Portal() {
   return (
     <>
       <Helmet>
-        <title>Customer Portal | PT Dwipa Kharisma Mitra</title>
+        <title>Customer Portal | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Access PT Dwipa Kharisma Mitra’s Customer Portal for real-time container tracking, depot management, and smart logistics tools — all in one place."
+          content="Access Dwipa Kharisma Mitra’s Customer Portal for real-time container tracking, depot management, and smart logistics tools — all in one place."
         />
         <meta
           name="keywords"
@@ -30,10 +30,10 @@ export default function Portal() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Customer Portal | PT Dwipa Kharisma Mitra" />
+        <meta name="twitter:title" content="Customer Portal | Dwipa Kharisma Mitra" />
         <meta
           name="twitter:description"
-          content="Manage and track your containers efficiently through PT Dwipa Kharisma Mitra’s smart logistics platform."
+          content="Manage and track your containers efficiently through Dwipa Kharisma Mitra’s smart logistics platform."
         />
         <meta name="twitter:image" content="https://profil.dwipakharismamitra.com/assets/og-portal.jpg" />
         <script type="application/ld+json">{`
@@ -42,7 +42,7 @@ export default function Portal() {
             "@type": "WebApplication",
             "name": "DKM Customer Portal",
             "url": "https://profil.dwipakharismamitra.com/portal",
-            "description": "A secure online platform by PT Dwipa Kharisma Mitra that provides real-time container tracking, depot management, and smart logistics tools.",
+            "description": "A secure online platform by Dwipa Kharisma Mitra that provides real-time container tracking, depot management, and smart logistics tools.",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "All",
             "creator": {

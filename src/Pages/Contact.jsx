@@ -8,10 +8,10 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | PT Dwipa Kharisma Mitra</title>
+        <title>Contact Us | Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Contact PT Dwipa Kharisma Mitra for logistics inquiries, business collaborations, or container support. Explore our FAQ for quick assistance."
+          content="Contact Dwipa Kharisma Mitra for logistics inquiries, business collaborations, or container support. Explore our FAQ for quick assistance."
         />
         <meta
           name="keywords"
@@ -21,17 +21,17 @@ export default function Contact() {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact PT Dwipa Kharisma Mitra" />
+        <meta property="og:title" content="Contact Dwipa Kharisma Mitra" />
         <meta
           property="og:description"
-          content="Reach out to PT Dwipa Kharisma Mitra for business inquiries, depot information, or customer support. Visit our FAQ for quick answers."
+          content="Reach out to Dwipa Kharisma Mitra for business inquiries, depot information, or customer support. Visit our FAQ for quick answers."
         />
         <meta property="og:url" content="https://profil.dwipakharismamitra.com/contact" />
         <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-contact.jpg" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact PT Dwipa Kharisma Mitra" />
+        <meta name="twitter:title" content="Contact Dwipa Kharisma Mitra" />
         <meta
           name="twitter:description"
           content="Connect with our logistics support team or visit our FAQ for quick help regarding container and depot operations."
