@@ -36,6 +36,37 @@ export default function Portal() {
           content="Manage and track your containers efficiently through PT Dwipa Kharisma Mitra’s smart logistics platform."
         />
         <meta name="twitter:image" content="https://profil.dwipakharismamitra.com/assets/og-portal.jpg" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "DKM Customer Portal",
+            "url": "https://profil.dwipakharismamitra.com/portal",
+            "description": "A secure online platform by PT Dwipa Kharisma Mitra that provides real-time container tracking, depot management, and smart logistics tools.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "All",
+            "creator": {
+              "@type": "Organization",
+              "name": "PT Dwipa Kharisma Mitra",
+              "url": "https://profil.dwipakharismamitra.com"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "IDR",
+              "availability": "https://schema.org/InStock"
+            },
+            "featureList": [
+              "Real-time container tracking",
+              "Depot operations management",
+              "Integrated customer dashboard",
+              "Logistics performance insights"
+            ],
+            "image": "https://profil.dwipakharismamitra.com/assets/og-portal.jpg",
+            "datePublished": "2025-01-01",
+            "inLanguage": "en"
+          }
+          `}</script>
       </Helmet>
       <HeroSection />
       <TrackerSection />
