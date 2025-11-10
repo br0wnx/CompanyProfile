@@ -57,6 +57,7 @@ export function BranchManagerSection() {
 
   return (
     <section
+      id="branch, location"
       className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]"
       data-aos="fade-up"
     >

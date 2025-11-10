@@ -11,31 +11,33 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>About Us | Dwipa Kharisma Mitra</title>
+        <title>About Us | PT Dwipa Kharisma Mitra</title>
         <meta
           name="description"
-          content="Discover Dwipa Kharisma Mitra's mission, values, and journey in delivering efficient logistics and digital transformation."
+          content="Learn about PT Dwipa Kharisma Mitra — a trusted logistics and container depot company in Indonesia since 1988. Discover our mission, values, and commitment to innovation in logistics."
         />
         <meta
           name="keywords"
-          content="about Dwipa Kharisma Mitra, logistics company, company profile, mission, values"
+          content="PT Dwipa Kharisma Mitra, logistics Indonesia, container depot company, company profile, logistics innovation, about DKM"
         />
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/about" />
 
+        {/* Open Graph */}
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="About Dwipa Kharisma Mitra" />
+        <meta property="og:title" content="About PT Dwipa Kharisma Mitra" />
         <meta
           property="og:description"
-          content="Learn about our journey and dedication to advancing logistics innovation."
+          content="Established in 1988, PT Dwipa Kharisma Mitra continues to deliver innovative and reliable logistics and container solutions across Indonesia."
         />
         <meta property="og:url" content="https://profil.dwipakharismamitra.com/about" />
         <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-about.jpg" />
 
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Dwipa Kharisma Mitra" />
+        <meta name="twitter:title" content="About PT Dwipa Kharisma Mitra" />
         <meta
           name="twitter:description"
-          content="Discover our mission and innovation in logistics."
+          content="Discover the story, mission, and innovation behind one of Indonesia’s leading logistics companies."
         />
         <meta name="twitter:image" content="https://profil.dwipakharismamitra.com/assets/og-about.jpg" />
       </Helmet>

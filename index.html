@@ -1,51 +1,80 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/png" href="/assets/logo-dkmr.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
 
-    <!-- 🌟 SEO Essentials -->
-    <title>PT Dwipa Kharisma Mitra | Trusted Logistic Solutions in Indonesia</title>
-    <meta name="description" content="PT Dwipa Kharisma Mitra adalah perusahaan yang bergerak di bidang pengelolaan sumber daya dan kemitraan bisnis, memberikan solusi profesional untuk kebutuhan perusahaan Anda di Indonesia." />
-    <meta name="keywords" content="Dwipa Kharisma Mitra, PT DKM, kemitraan bisnis, outsourcing, manajemen SDM, perusahaan Indonesia" />
+    <!-- Title & Description (SEO) -->
+    <title>PT Dwipa Kharisma Mitra (DKM) — Container Depot & Integrated Logistics Indonesia</title>
+    <meta name="description" content="PT Dwipa Kharisma Mitra (DKM) is a leading container depot and integrated logistics provider in Indonesia — offering container storage, repair, washing, inspections, and tracking supported by in-house systems and nationwide depots." />
+    <meta name="keywords" content="DKM, Dwipa Kharisma Mitra, container depot, container repair, container storage, logistics Indonesia, depot services, container tracking" />
     <meta name="author" content="PT Dwipa Kharisma Mitra" />
+    <meta name="theme-color" content="#1F2D4B" />
 
-    <!-- ✅ Open Graph / Facebook -->
+    <!-- Open Graph (Facebook / Social previews) -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PT Dwipa Kharisma Mitra (DKM)" />
     <meta property="og:url" content="https://profil.dwipakharismamitra.com/" />
-    <meta property="og:title" content="PT Dwipa Kharisma Mitra | Solusi Profesional Kemitraan Bisnis" />
-    <meta property="og:description" content="Solusi terbaik untuk pengelolaan sumber daya dan kemitraan bisnis Anda." />
-    <meta property="og:image" content="https://profil.dwipakharismamitra.com/og-image.jpg" />
+    <meta property="og:title" content="PT Dwipa Kharisma Mitra (DKM) — Container Depot & Logistics" />
+    <meta property="og:description" content="DKM operates nationwide container depots, repair & maintenance, washing, and an integrated tracker portal for real-time container, invoice and EIR monitoring." />
+    <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-image.jpg" />
+    <meta property="og:image:alt" content="DKM Group — container depot operations" />
 
-    <!-- ✅ Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="PT Dwipa Kharisma Mitra" />
-    <meta name="twitter:description" content="Solusi profesional untuk pengelolaan sumber daya dan kemitraan bisnis Anda." />
-    <meta name="twitter:image" content="https://profil.dwipakharismamitra.com/og-image.jpg" />
+    <meta name="twitter:site" content="@dkm_official" />
+    <meta name="twitter:title" content="PT Dwipa Kharisma Mitra (DKM) — Container Depot & Logistics" />
+    <meta name="twitter:description" content="Nationwide container depot services, repair, washing, inspections and an in-house tracker portal for efficient operations." />
+    <meta name="twitter:image" content="https://profil.dwipakharismamitra.com/assets/og-image.jpg" />
 
-    <!-- ✅ Canonical URL -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://profil.dwipakharismamitra.com/" />
 
-    <!-- ✅ Structured Data (Schema.org) -->
+    <!-- Structured Data (Organization) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "PT Dwipa Kharisma Mitra",
-        "url": "https://profil.dwipakharismamitra.com",
-        "logo": "https://profil.dwipakharismamitra.com/assets/logo-dkmr.png",
-        "sameAs": [
-          "https://www.linkedin.com/company/dwipa-kharisma-mitra",
-          "https://www.instagram.com/dwipakharismamitra"
-        ],
-        "description": "Perusahaan yang bergerak di bidang kemitraan bisnis dan pengelolaan sumber daya profesional di Indonesia."
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PT Dwipa Kharisma Mitra",
+      "alternateName": "DKM Group",
+      "url": "https://profil.dwipakharismamitra.com/",
+      "logo": "https://profil.dwipakharismamitra.com/assets/logo-dkmr.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/dwipa-kharisma-mitra",
+        "https://www.instagram.com/dwipakharismamitra",
+        "https://www.facebook.com/dkmgroup"
+      ],
+      "description": "DKM is a leading container depot and integrated logistics operator in Indonesia, providing storage, repair, washing, inspection and real-time tracking services supported by in-house systems.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+62812xxxxxxxx",
+          "contactType": "customer service",
+          "areaServed": "ID",
+          "availableLanguage": ["id","en"]
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Greges Barat No.2-4, Asemrowo",
+        "addressLocality": "Surabaya",
+        "addressRegion": "East Java",
+        "postalCode": "60183",
+        "addressCountry": "ID"
       }
+    }
     </script>
 
-    <!-- ✅ Optional: Theme color for mobile -->
-    <meta name="theme-color" content="#ffffff" />
+    <!-- Optional: preload critical CSS or fonts -->
+    <!-- <link rel="preload" href="/assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin> -->
+
+    <!-- Your app entry (keep as-is) -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

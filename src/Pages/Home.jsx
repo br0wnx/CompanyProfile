@@ -11,33 +11,33 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Home | Dwipa Kharisma Mitra</title>
+        <title>PT Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions</title>
         <meta
           name="description"
-          content="MiniHub Company provides reliable and technology-driven logistics services. Explore our smart solutions for efficient container operations."
+          content="PT Dwipa Kharisma Mitra provides integrated logistics and container depot solutions across Indonesia. Trusted for smart, reliable, and technology-driven operations since 1988."
         />
         <meta
           name="keywords"
-          content="MiniHub Company, logistics, container tracking, shipping, depot management"
+          content="Dwipa Kharisma Mitra, logistics Indonesia, container depot, container tracking, intermodal transport, smart logistics"
         />
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Dwipa Kharisma Mitra - Smart Logistics Solutions" />
+        <meta property="og:title" content="PT Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions" />
         <meta
           property="og:description"
-          content="Technology-driven logistics solutions with real-time container tracking and integrated tools."
+          content="Providing nationwide logistics, depot management, and container handling solutions with advanced technology and decades of experience."
         />
         <meta property="og:url" content="https://profil.dwipakharismamitra.com/" />
         <meta property="og:image" content="https://profil.dwipakharismamitra.com/assets/og-home.jpg" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dwipa Kharisma Mitra - Smart Logistics Solutions" />
+        <meta name="twitter:title" content="PT Dwipa Kharisma Mitra | Smart & Reliable Logistics Solutions" />
         <meta
           name="twitter:description"
-          content="Efficient and technology-driven logistics services for modern businesses."
+          content="Nationwide container depot and logistics solutions powered by technology and trusted experience."
         />
         <meta name="twitter:image" content="https://profil.dwipakharismamitra.com/assets/og-home.jpg" />
       </Helmet>

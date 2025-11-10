@@ -67,13 +67,13 @@ export function WhatDriveUsSection() {
 
           {/* Right: Cards */}
           <div
-            className="flex-[2] flex flex-col lg:flex-row gap-6 w-full"
+            className="flex-[2] flex flex-col lg:flex-row gap-6 w-full items-stretch"
             data-aos="fade-left"
           >
             {cards.map((card, idx) => (
               <div
                 key={idx}
-                className={`group bg-white rounded-lg shadow-md flex flex-col overflow-hidden transform transition-all duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_12px_35px_rgba(31,45,75,0.15)] hover:border-[#C6463D]/60
+                className={`group bg-white rounded-lg shadow-md flex flex-col overflow-hidden h-full transform transition-all duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_12px_35px_rgba(31,45,75,0.15)] hover:border-[#C6463D]/60
                 ${idx === 0 ? "lg:w-[35%]" : "lg:w-[65%]"} w-full`}
                 data-aos="zoom-in"
                 data-aos-delay={idx * 150}
@@ -88,7 +88,7 @@ export function WhatDriveUsSection() {
                 </div>
 
                 {/* Konten */}
-                <div className="p-6 flex flex-col gap-3 text-left border-2 border-t-0 border-[#1F2D4B] rounded-b-lg transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:border-[#C6463D]/50">
+                <div className="p-6 flex flex-col gap-3 text-left border-2 border-t-0 border-[#1F2D4B] rounded-b-lg h-full min-h-[220px] sm:min-h-[250px] md:min-h-[280px] transition-all duration-[800ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:border-[#C6463D]/50">
                   <h3 className="text-xl font-bold transition-colors duration-700 group-hover:text-[#C6463D]">
                     {card.title}
                   </h3>
