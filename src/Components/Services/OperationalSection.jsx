@@ -21,7 +21,7 @@ export function OperationalSection() {
   }, []);
 
   return (
-    <section className="py-16 px-6 md:px-20 bg-[#FDFBFC]">
+    <section id="operational" className="py-16 px-6 md:px-20 bg-[#FDFBFC]">
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">

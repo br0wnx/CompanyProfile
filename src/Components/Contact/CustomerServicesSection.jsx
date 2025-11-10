@@ -38,7 +38,7 @@ export function CustomerServiceSection() {
   };
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
+    <section id="customerservice" className="w-full py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left: Contact Form */}
@@ -164,7 +164,7 @@ export function CustomerServiceSection() {
                 </div>
               </div>
 
-              <div
+              {/* <div
                 className="flex items-start gap-4"
                 data-aos="fade-left"
                 data-aos-delay="400"
@@ -181,9 +181,9 @@ export function CustomerServiceSection() {
                     021 4485 4918
                   </a>
                 </div>
-              </div>
+              </div> */}
               <p className="text-l mt-1 text-[#42526E] italic font-semibold">
-                Available Mon - Fri, 08.00 - 17.00 WIB
+                Available Mon - Fri, 08.00 - 16.30 WIB
               </p>
             </div>
           </div>

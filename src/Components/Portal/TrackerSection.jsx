@@ -14,7 +14,7 @@ export function TrackerSection() {
 
   return (
     <>
-      <section className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
+      <section id="tracker" className="w-full py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-20 bg-[#FDFBFC] mt-25">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-4 sm:gap-6">
           <div className="flex-1 text-center md:text-left flex flex-col">
             <h2

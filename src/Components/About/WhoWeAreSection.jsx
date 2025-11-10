@@ -33,7 +33,7 @@ export function WhoWeAreSection() {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              DKM Group is a leading depot and integrated logistics provider in
+              DKM is a leading depot and integrated logistics provider in
               Indonesia. With more than three decades of experience, we support
               shipping lines, freight forwarders, and trucking companies through
               reliable container storage, repair, and transportation solutions.

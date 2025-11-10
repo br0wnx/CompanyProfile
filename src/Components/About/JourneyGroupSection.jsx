@@ -15,6 +15,7 @@ export function JourneyGroupSection() {
 
   return (
     <section
+      id="journey"
       className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]"
       data-aos="fade-up"
     >

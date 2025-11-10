@@ -147,7 +147,7 @@ export function CoreServices() {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-20 bg-[#FDFBFC] mt-25">
+    <section id="core" className="py-16 px-6 md:px-20 bg-[#FDFBFC] mt-25">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">

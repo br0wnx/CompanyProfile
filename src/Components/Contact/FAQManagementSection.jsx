@@ -145,6 +145,7 @@ export function FAQManagementSection() {
       id="faq"
       className="w-full py-12 sm:py-16 px-4 sm:px-6 md:px-20 bg-[#FDFBFC]"
     >
+      <span id="management" className="block"></span>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
           {/* FAQ */}

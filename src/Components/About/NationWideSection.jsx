@@ -16,7 +16,7 @@ export function NationWideSection() {
   }, []);
 
   return (
-    <section className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
+    <section id="location" className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2

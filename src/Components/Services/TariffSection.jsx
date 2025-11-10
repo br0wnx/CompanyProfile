@@ -13,12 +13,12 @@ export function TariffSection() {
   }, []);
 
   return (
-    <section id="tariff" className="py-16 px-6 md:px-20 bg-[#FDFBFC]">
+    <section id="pricing" className="py-16 px-6 md:px-20 bg-[#FDFBFC]">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#C6463D] mb-4">
-            Tariff Information
+            Pricing
           </h2>
         </div>
 
