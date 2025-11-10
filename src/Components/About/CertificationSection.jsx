@@ -13,6 +13,7 @@ export function CertificationSection() {
   }, []);
 
   return (
+    
     <section id="certification" className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC] relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-[#FDFBFC] opacity-60 pointer-events-none animate-pulse"></div>

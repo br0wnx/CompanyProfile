@@ -19,6 +19,8 @@ export default function Contact() {
         />
         <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact" />
 
+
+
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contact Dwipa Kharisma Mitra" />
@@ -71,6 +73,45 @@ export default function Contact() {
             ]
           }
         `}</script>
+      </Helmet>
+      {/* Customer Service */}
+      <Helmet>
+        <title>Customer Service | Dwipa Kharisma Mitra</title>
+        <meta
+          name="description"
+          content="Contact our customer service team for inquiries, support, or partnership opportunities with Dwipa Kharisma Mitra."
+        />
+        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#customerservice" />
+      </Helmet>
+
+      {/* FAQ */}
+      <Helmet>
+        <title>FAQ | Dwipa Kharisma Mitra</title>
+        <meta
+          name="description"
+          content="Find answers to frequently asked questions about Dwipa Kharisma Mitra's logistics services, operations, and partnerships."
+        />
+        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#faq" />
+      </Helmet>
+
+      {/* Management */}
+      <Helmet>
+        <title>Management | Dwipa Kharisma Mitra</title>
+        <meta
+          name="description"
+          content="Meet the management team behind Dwipa Kharisma Mitra — professionals dedicated to advancing logistics excellence in Indonesia."
+        />
+        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#management" />
+      </Helmet>
+
+      {/* Branch Manager */}
+      <Helmet>
+        <title>Branch Managers | Dwipa Kharisma Mitra</title>
+        <meta
+          name="description"
+          content="Reach our branch managers across Indonesia for depot operations, logistics coordination, and customer support."
+        />
+        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#branchmanager" />
       </Helmet>
       <HeroSection />
       <CustomerServiceSection />
