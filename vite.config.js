@@ -1,6 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import pages from 'vite-plugin-pages'
+import { SitemapStream, streamToPromise } from 'sitemap'
+import fs from 'fs'
+import path from 'path'
+
+// ✅ Konfigurasi dasar website
+const SITE_URL = 'https://profil.dwipakharismamitra.com'
 
 // https://vite.dev/config/
 export default defineConfig({
