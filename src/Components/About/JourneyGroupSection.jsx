@@ -16,18 +16,6 @@ export function JourneyGroupSection() {
   }, []);
 
   return (
-    <>
-    <Helmet>
-        <title>Our Revolution | Dwipa Kharisma Mitra</title>
-        <meta
-          name="description"
-          content="Discover the evolution of Dwipa Kharisma Mitra — from humble beginnings to a trusted logistics partner."
-        />
-        <meta
-          name="keywords"
-          content="Dwipa Kharisma Mitra, Our Revolution, company journey, logistics partner, container depot"
-        />
-    </Helmet>
     <section
       id="journey"
       className="w-full py-20 px-6 md:px-20 bg-[#FDFBFC]"
@@ -203,6 +191,5 @@ export function JourneyGroupSection() {
         </div>
       </div>
     </section>
-    </>
   );
 }

@@ -5,6 +5,40 @@ import { HeroSection } from "../Components/Contact/HeroSection";
 import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Dwipa Kharisma Mitra",
+    "url": "https://profil.dwipakharismamitra.com/contact",
+    "description": "Get in touch with Dwipa Kharisma Mitra's team including customer service, management, and branch offices across Indonesia.",
+    "hasPart": [
+      {
+        "@type": "WebPageElement",
+        "name": "Customer Service",
+        "url": "https://profil.dwipakharismamitra.com/contact#customerservice",
+        "description": "Contact our customer service team for inquiries, support, or partnership opportunities with Dwipa Kharisma Mitra."
+      },
+      {
+        "@type": "WebPageElement",
+        "name": "FAQ",
+        "url": "https://profil.dwipakharismamitra.com/contact#faq",
+        "description": "Find answers to frequently asked questions about Dwipa Kharisma Mitra's logistics services, operations, and partnerships."
+      },
+      {
+        "@type": "WebPageElement",
+        "name": "Management",
+        "url": "https://profil.dwipakharismamitra.com/contact#management",
+        "description": "Meet the management team behind Dwipa Kharisma Mitra — professionals dedicated to advancing logistics excellence in Indonesia."
+      },
+      {
+        "@type": "WebPageElement",
+        "name": "Branch Manager",
+        "url": "https://profil.dwipakharismamitra.com/contact#branchmanager",
+        "description": "Reach our branch managers across Indonesia for depot operations, logistics coordination, and customer support."
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -73,46 +107,12 @@ export default function Contact() {
             ]
           }
         `}</script>
+        {/* Structured Data (JSON-LD) */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
-      {/* Customer Service */}
-      <Helmet>
-        <title>Customer Service | Dwipa Kharisma Mitra</title>
-        <meta
-          name="description"
-          content="Contact our customer service team for inquiries, support, or partnership opportunities with Dwipa Kharisma Mitra."
-        />
-        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#customerservice" />
-      </Helmet>
-
-      {/* FAQ */}
-      <Helmet>
-        <title>FAQ | Dwipa Kharisma Mitra</title>
-        <meta
-          name="description"
-          content="Find answers to frequently asked questions about Dwipa Kharisma Mitra's logistics services, operations, and partnerships."
-        />
-        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#faq" />
-      </Helmet>
-
-      {/* Management */}
-      <Helmet>
-        <title>Management | Dwipa Kharisma Mitra</title>
-        <meta
-          name="description"
-          content="Meet the management team behind Dwipa Kharisma Mitra — professionals dedicated to advancing logistics excellence in Indonesia."
-        />
-        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#management" />
-      </Helmet>
-
-      {/* Branch Manager */}
-      <Helmet>
-        <title>Branch Managers | Dwipa Kharisma Mitra</title>
-        <meta
-          name="description"
-          content="Reach our branch managers across Indonesia for depot operations, logistics coordination, and customer support."
-        />
-        <link rel="canonical" href="https://profil.dwipakharismamitra.com/contact#branchmanager" />
-      </Helmet>
+      
       <HeroSection />
       <CustomerServiceSection />
       <FAQManagementSection />
