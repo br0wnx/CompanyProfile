@@ -10,7 +10,7 @@ export default defineConfig({
       name: 'vite-plugin-generate-sitemap',
       apply: 'build',
       async closeBundle() {
-        const routes = ['/', '/about', '/contact']
+        const routes = ['/', '/about', '/services', '/portal', '/contact', '/contact#faq', '/services#tariff']
         const smStream = new SitemapStream({ hostname: SITE_URL })
 
         routes.forEach((route) => {
