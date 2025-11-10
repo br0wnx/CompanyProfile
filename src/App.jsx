@@ -12,6 +12,7 @@ import Services from "./Pages/Services";
 import Tracker from "./Pages/Tracker";
 import Login from "./Pages/Login";
 import Portal from "./Pages/Portal";
+import JourneyGroupSection from "./Pages/About/JourneyGroupSection";
 
 import PageLoader from "./Components/PageLoader"; 
 
